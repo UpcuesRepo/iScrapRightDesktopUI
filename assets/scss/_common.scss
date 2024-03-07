@@ -1,0 +1,62 @@
+button{
+    background-color: transparent;
+    border: 0;
+    &:hover, &:active{
+        color: $secondary;
+        &.icon-tag{
+            .bg-icon-black{
+                background-color: $secondary;
+            }
+            .bg-icon-white{
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+    }
+    &.icon-tag{
+        .bg-icon-black{
+            background-color: $black;
+        }
+        .bg-icon-white{
+            background-color: $white;
+        }
+    }
+}
+a{
+    &:hover{
+        color: $secondary;
+        span{
+            color: $secondary;
+        }
+    }
+}
+
+.pagination-navbar{
+    a{
+        &.bg-icon{
+            border: 1px solid $white;
+            border-radius: $radius-50;
+            width: 25px;
+            height: 25px;
+            &.disabled{
+                opacity: 0.2;       
+                span{
+                    width: 12px;
+                }
+                &:hover{
+                    span{
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.clickable{
+            &:hover{
+                &.bg-icon{
+                    border: 1px solid $secondary;
+                }
+            }
+        }
+    }
+}
+

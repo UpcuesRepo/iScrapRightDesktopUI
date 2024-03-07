@@ -1,0 +1,15 @@
+nav{
+    &.navbar{
+        height: 70px;
+        padding: 0;
+        &.main-navbar{
+            background-color: $primary;
+            .nav-link{
+                &:hover{
+                    background-color: $secondary;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,277 @@
+.form-group{
+    position: relative;
+}
+.form-control {
+    border-radius: 0;
+    border: $border-grey;
+    font-weight: $font-400;
+    font-size: $font-size-sm;
+    padding: $padding-forminput;
+    color: $grey-2;
+    margin-bottom: 0;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+        border: $border-grey;
+        color: $grey-2;
+    }
+    &::placeholder{
+        font-size: $font-size-sm;
+        color: $grey-2;
+    }
+}
+
+.dropdown{
+    &.bootstrap-select{
+        width: 100% !important;
+        .btn{
+            border-radius: 0;
+            &.btn-select{
+                height: $form-height40;
+                font-weight: $font-400;
+                border: $border-grey;
+                color: $grey-2;
+                letter-spacing: inherit;
+                background: $white;
+                width: 100%;
+                text-transform: inherit;
+                font-size: $font-size-sm;
+                padding: 10px;
+                &:focus,&:hover{
+                    outline: none !important;
+                    color: $grey-2;
+                    border: $border-grey;
+                }
+            }
+            &.dropdown-toggle{
+                &.show{
+                    &:after{
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='10' fill='%23D5D5D5' viewBox='0 96 960 960' width='6'%3E%3Cpath d='m283 711-43-43 240-240 240 239-43 43-197-197-197 198Z'/%3E%3C/svg%3E%0A");
+                    }
+                }
+                &:after{
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='10' viewBox='0 96 960 960' width='6' fill='%23D5D5D5'%3E%3Cpath d='M480 711 240 471l43-43 197 198 197-197 43 43-240 239Z'/%3E%3C/svg%3E%0A");
+                    background-size: 100%;
+                    border: 0;
+                    width: 24px;
+                    height: 24px;
+                    content: '';
+                    margin-top: 0px;
+                    background-position: center;
+                    margin-right: -10px;
+                }
+            }
+        }
+        
+        .bs-actionsbox, 
+        .bs-donebutton, 
+        .bs-searchbox{
+            margin-bottom: 10px;
+        }
+        .dropdown-menu{
+            font-weight: $font-600;
+            font-size: $font-size-sm;
+            .form-control{
+                height: 30px;  
+            }
+            a{
+                color: $black;
+                &:hover, &:focus{
+                    background-color: #000;
+                    span{
+                        color: $black;
+                    }
+                }
+                &.active{
+                    background-color: #000;
+                    span{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input[type="date"] {
+    position: relative;
+    &::-webkit-calendar-picker-indicator {
+        color: transparent;
+        background: none;
+        z-index: 1;
+    }
+    &:before {
+        color: transparent;
+        background: none;
+        display: block;
+        content: '';
+        background-image: url("../../../images/icons/calender.svg");
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        opacity: 0.10;
+    }
+}
+
+.custom-switch{
+    &.switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+            &:checked{
+                & + .slider {
+                    background-color: $primary;
+                    &::before {
+                        -webkit-transform: translateX(30px);
+                        -ms-transform: translateX(30px);
+                        transform: translateX(30px);
+                    }
+                }
+            }
+        } 
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border: 1px solid $grey-1;
+            &::before {
+                position: absolute;
+                content: "";
+                height: 24px;
+                width: 24px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                box-shadow: 0px 3px 6px #00000029;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+            &.round {
+                border-radius: 34px;
+                &::before {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+  
+// file input
+.upload-box{
+    .browse-file{
+        border-right: 1px solid $grey-3;
+        overflow: hidden;
+        height: 100%;
+        width: 60px;
+        #filename{
+            float:left;
+            white-space: nowrap;
+            overflow:hidden;
+            background:$white;
+        }
+        #file-upload {
+            position: absolute;
+            left: -9999px;
+        }
+        label[for="file-upload"]{
+            padding:10px;  
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background: $white;
+            margin-bottom: 0;
+            cursor:pointer;
+            &:hover,
+            &:focus {
+                background-color: $grey-3;
+                color: $black;
+            }
+        }
+        #filename-2{
+            float:left;
+            white-space: nowrap;
+            overflow:hidden;
+            background:$white;
+        }
+        #file-upload-2 {
+            position: absolute;
+            left: -9999px;
+        }
+        label[for="file-upload-2"]{
+            padding:0;  
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+            font-size: $font-size-sm;
+            font-weight: $font-600;
+            cursor:pointer;
+            &:hover,
+            &:focus {
+                background-color: transparent;
+                color: $secondary;
+            }
+            
+        }
+        &.sign{
+            border-right: 0;
+            width:calc(100% - 60px);
+        }
+    }
+    a{
+        &.cancel-upload-btn{
+            span{
+                background-color: $red;
+            }
+            &:hover, &:active{
+                span{
+                    background-color: $secondary;
+                    color: $white;
+                }
+            }
+        }
+    }
+    &.id-upload{
+        .browse-file{
+            border-right: 0;
+            #filename-3{
+                float:left;
+                white-space: nowrap;
+                overflow:hidden;
+                background:$white;
+            }
+            #file-upload-3 {
+                position: absolute;
+                left: -9999px;
+            }
+            label[for="file-upload-3"]{
+                padding:0;  
+                &:hover,
+                &:focus {
+                    background-color: transparent;
+                    color: transparent;
+                }
+            }
+        }
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  

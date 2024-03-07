@@ -1,0 +1,28 @@
+.offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
+    --bs-offcanvas-width: 340px;
+    &.offcanvas-start{
+        top: 70px;
+        border-right: 0;
+    }
+    &#offcanvastickettitle{
+        width: 210px;
+        .offcanvas-body{
+            padding: 0;
+        }
+    }
+}
+.offcanvas-backdrop{
+    background-color: $black;
+    top: 70px;
+    &.show{
+        opacity: 70%;
+    }
+}
+.offcanvas-body{
+    position: relative; 
+}
+.backdrop-100{
+    .offcanvas-backdrop{
+        top: 0;
+    }
+}

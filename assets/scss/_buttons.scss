@@ -1,0 +1,45 @@
+.btn {
+    border-radius: 0;
+    border: none;
+    position: relative;
+    white-space: nowrap;
+    text-transform: uppercase;
+    &.with-icon{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    &.btn-primary{
+        background-color: $primary;
+        color: $white;
+        &:hover, &:active{
+            background-color: $grey-2;
+            color: $black;
+        }
+    }
+    &.btn-grey-5{
+        background-color: $grey-5;
+        color: $white;
+        &:hover, &:active{
+            background-color: $grey-2;
+            color: $black;
+        }
+    }
+    &.btn-md{
+        font-size: $font-size-md;
+        font-weight: $font-800;
+        line-height: $font-size-20;
+        &.fw-bold{
+            font-weight: $font-700;
+        }
+        &.text-normal{
+            text-transform: none;
+        }
+    }
+    &.btn-h40{
+        padding: 10px 20px;
+    }
+    &.btn-h70{
+        padding: 25px 20px;
+    }
+}
