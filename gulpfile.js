@@ -53,7 +53,7 @@ function compress() {
 function watch() {
     browserSync.init({
         server: {
-           baseDir: "../ISCRAP-RIGHT",
+           baseDir: "../iScrapRightDesktopUI",
            index: "/pages/index.html"
         }
     });

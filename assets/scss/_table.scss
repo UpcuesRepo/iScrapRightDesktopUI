@@ -1,0 +1,52 @@
+.table {
+    background-color: $white;
+    overflow: hidden;
+    thead {
+        box-shadow: $shadow-md;
+        tr{
+            th {
+                font-size:$font-size-13;
+                line-height:$line-height-18;
+                padding: 14px;
+                text-transform: $text-uppercase;
+                color: $grey-5;
+            }
+        }   
+    }
+    tbody,
+    thead,
+    tfoot {
+        th, td {
+            border: none;
+        }
+    }
+    &.ticket-table {
+        tbody{
+            tr{
+                td{
+                    font-size: $font-size-sm;
+                    font-weight: $font-600;
+                    color: $grey-8;
+                    vertical-align: bottom;
+                    position: relative;
+                    border-bottom: $border-grey;
+                    padding: 15px;
+                }   
+            }
+        }
+    }
+    &.bottom-strip-table{
+        background-color: $skyblue-3;
+        tbody{
+            tr{
+                td{
+                    font-size: $font-size-md;
+                    font-weight: $font-800;
+                    color: $primary;
+                    line-height: $line-height-18;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

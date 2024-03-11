@@ -43,3 +43,17 @@
         padding: 25px 20px;
     }
 }
+.action-btn{
+    background-color: $skyblue-3;
+    box-shadow: inset 5px 0px 10px #0000000A;
+    .btn-skyblue-3{
+        color: $grey-5;
+        border-bottom: 1px solid $skyblue-4;
+        font-size: $font-size-sm;
+        font-weight: $font-600;
+        &:hover, &:active{
+            background-color: $grey-2;
+            color: $black;
+        }
+    }
+}
