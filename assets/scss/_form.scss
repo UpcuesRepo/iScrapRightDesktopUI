@@ -1,5 +1,10 @@
 .form-group{
     position: relative;
+    .form-label{
+        &.label-lg{
+            font-size: $font-size-lg;
+        }
+    }
 }
 .form-control {
     border-radius: 0;
@@ -18,6 +23,15 @@
     &::placeholder{
         font-size: $font-size-sm;
         color: $grey-2;
+    }
+    &.style-2{
+        border: 1px solid $skyblue-5;
+        border-radius: $radius-xxl;
+        box-shadow: $shadow-lg;
+        font-size: $font-size-16;
+        &.h-46{
+            padding: 13px 20px;
+        }
     }
 }
 
@@ -167,6 +181,72 @@ input[type="date"] {
         }
     }
 }
+
+//CHECK BOX
+.form-check {
+    position: relative;
+    padding-left: 30px;
+    min-height: 20px;
+    &.form-inline{
+        display: inline-flex;
+    }
+
+    .form-check-input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+        border-radius: $radius-lg;
+        box-shadow: $shadow-lg;
+        border: 1px solid $skyblue-5;
+        background-color: $white;
+        margin-bottom: 0px;
+       
+        &:checked {
+            background-color: $skyblue-5;
+            border-color: $skyblue-5;
+            background-image: none;
+        }
+        &:focus {
+            box-shadow: $shadow-lg;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: $skyblue-5;
+        }
+        &.add-after {
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            min-height: 30px;
+            & + svg {
+                display: none;
+                pointer-events: none;
+                -webkit-pointer-events: none;
+                -moz-pointer-events: none;
+                & + .form-check-label {
+                    &.style-1 {
+                       font-size: $font-size-lg;
+                       font-weight: $font-600;
+                    }
+                }
+            }
+            &:checked {
+                & + svg {
+                    z-index: 2;
+                    display: block;
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                    color: $white;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+// END CHECKBOX
   
 // file input
 .upload-box{

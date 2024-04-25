@@ -24,11 +24,14 @@
             background-color: $grey-2;
             color: $black;
         }
+        &.radius-xxl{
+            border-radius: 30px;
+        }
     }
     &.btn-md{
         font-size: $font-size-md;
         font-weight: $font-800;
-        line-height: $font-size-20;
+        line-height: $line-height-20;
         &.fw-bold{
             font-weight: $font-700;
         }
@@ -36,8 +39,17 @@
             text-transform: none;
         }
     }
+    &.btn-lg{
+        font-size: $font-size-lg;
+        font-weight: $font-800;
+        line-height: $line-height-24;
+    }
     &.btn-h40{
         padding: 10px 20px;
+    }
+    &.btn-h50{
+        padding: 13px 20px;
+        width: 100%;
     }
     &.btn-h70{
         padding: 25px 20px;

@@ -1,0 +1,46 @@
+.footer{
+    &.main-footer{
+        background-color: $primary;
+        padding: 50px;
+        .left-part{
+            .copyright-link{
+                color: $white;
+                text-transform: uppercase;
+                font-size: $font-size-lg;
+                font-weight: $font-800;
+                letter-spacing: 3px;
+                &:hover{
+                    color: $secondary;
+                }
+            }
+        }
+        .right-part{
+            .title{
+                font-size: $font-size-22;
+                font-weight: $font-800;
+                color: $white;
+                letter-spacing: 3px;
+            }
+            .address, .number{
+                font-size: $font-size-16;
+                color: $white;
+                line-height: $line-height-26;
+            }
+        }
+        .social-icons{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            &:hover{
+                svg{
+                    g{
+                        opacity: 1;
+                    }
+                    path{
+                        fill: $secondary;
+                    }
+                }
+            }
+        }
+    }
+}

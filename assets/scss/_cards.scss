@@ -1,0 +1,21 @@
+.account-card{
+    .title{
+        font-size: $font-size-26;
+        font-weight: $font-900;
+        line-height: $line-height-36;
+        text-transform: $text-uppercase;
+        letter-spacing: 2px;
+        .border-green{
+            border-bottom: 6px solid $green-2;
+        }
+    }
+    .link-password{
+        font-size: $font-size-lg;
+        font-weight: $font-600;
+        line-height: $line-height-36;
+        color: $green-2;
+        &:hover,&:active{
+            color: $primary;
+        }
+    }
+}

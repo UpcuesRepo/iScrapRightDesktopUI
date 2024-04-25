@@ -1,13 +1,77 @@
 nav{
     &.navbar{
-        height: 70px;
-        padding: 0;
         &.main-navbar{
             background-color: $primary;
+            height: 70px;
+            padding: 0;
             .nav-link{
                 &:hover{
                     background-color: $secondary;
                     color: $white;
+                }
+            }
+        }
+        &.inner-navbar{
+            padding: 0;
+            background-color: $primary;
+            height: 90px;
+            .link-part{
+                .nav-link{
+                    font-size: $font-size-16;
+                    font-weight: $font-900;
+                    color: $white-rgba3;
+                    padding: 10px;
+                    &:hover,&:active{
+                        color: $white;
+                    }
+                }
+                .contact-link{
+                    background-color: $white-rgba1;
+                    padding: 0 20px;
+                    border-radius: 0 0 5px 5px;
+                    .nav-link{
+                        font-size: $font-size-md;
+                        font-weight: $font-700;
+                        padding: 10px 15px;
+                        &:hover,&:active{
+                            color: $green-2;
+                            svg{
+                                path{
+                                    stroke: $green;
+                                }
+                            }
+                        }
+                    }
+                    .dropdown{
+                        &.nav-dropdown{
+                            padding: 10px 15px;
+                            .dropdown-toggle{
+                                font-size: $font-size-md;
+                                font-weight: $font-700;
+                                color: $white;
+                                &::after{
+                                    border-top: 0;
+                                    border-left: 0;
+                                    border-right: 0;
+                                    height: 20px;
+                                    width: 20px;
+                                    position: absolute;
+                                    top: 10px;
+                                    background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 9.1665L10 11.6665L7.5 9.1665" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                                }
+                                &.show{
+                                    &::after{
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+                            .dropdown-menu{
+                                &[data-bs-popper]{
+                                    left: -55px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
