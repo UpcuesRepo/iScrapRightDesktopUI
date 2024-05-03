@@ -75,5 +75,38 @@ nav{
                 }
             }
         }
+        &.ticket-landing-navbar{
+            background-image: url("../../../images/backgrounds/bg-nav.png");
+            height: 60px;
+            padding: 0;
+            .logo{
+                height: 47px;
+                width: 50px;
+            }
+            .link-part{
+                border-right: 1px solid $white-rgba2;
+                .nav-link{
+                    padding: 20px 15px;
+                    font-size: $font-size-md;
+                    font-weight: $font-900;
+                    line-height: $line-height-20;
+                    color: $white;
+                    text-transform: $text-uppercase;
+                    &:hover{
+                        color: $secondary;
+                    }
+                }
+            }
+            .user-btn{
+                padding: 15px;
+                &:hover{
+                    svg{
+                        path{
+                            stroke: $secondary;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

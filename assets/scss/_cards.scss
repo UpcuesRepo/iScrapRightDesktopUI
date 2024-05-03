@@ -19,3 +19,25 @@
         }
     }
 }
+.add-note-card{
+    background-color: $dark-blue;
+    border-radius: $radius-lg;
+    .add-note-link{
+        color: $white;
+        font-size: $font-size-md;
+        font-weight: $font-600;
+        &:hover{
+            color: $secondary;
+            svg{
+                path{
+                    stroke: $secondary;
+                }
+            }
+        }
+    }
+    .btn-label{
+        color: $white;
+        font-size: $font-size-md;
+        font-weight: $font-600;   
+    }
+}

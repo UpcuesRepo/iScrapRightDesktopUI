@@ -43,4 +43,31 @@
             }
         }
     }
+    &.ticket-footer{
+        background-image: url("../../../images/backgrounds/bg-footer.png");
+        padding: 15px;
+        .copyright-text{
+            font-size: $font-size-sm;
+            font-weight: $font-800;
+            line-height: $line-height-18;
+            letter-spacing:$letter-spacing10;
+            color: $white;
+            text-transform: $text-uppercase;
+        }
+        .social-icons{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            &:hover{
+                svg{
+                    g{
+                        opacity: 1;
+                    }
+                    path{
+                        fill: $secondary;
+                    }
+                }
+            }
+        }
+    }
 }

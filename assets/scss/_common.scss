@@ -114,3 +114,33 @@ a{
     }
 }
 
+// PAGINATION TICKET LANDING PAGE NAVBAR
+.pagination-ticket-navbar{
+    .arrow{
+        &:hover{
+            svg{
+                g{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .pagination-title{
+        .ticket-number{
+            font-size: $font-size-20;
+            font-weight: $font-700;
+            line-height: $line-height-28;
+            color: $white;
+            .f-sm-secondary{
+                color: $secondary;
+                font-size: $font-size-sm;
+            }
+        }
+        .ticket-name{
+            font-size: $font-size-sm;
+            line-height: $line-height-18;
+            color: $white;
+        }
+    }
+}
+// END PAGINATION TICKET LANDING PAGE NAVBAR

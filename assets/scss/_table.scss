@@ -49,4 +49,48 @@
             }
         }
     }
+    &.bottom-strip-darkblue-table{
+        background-color: $dark-blue;
+        tbody{
+            tr{
+                td{
+                    font-size: $font-size-md;
+                    font-weight: $font-600;
+                    color: $white;
+                    line-height: $line-height-20;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    &.ticket-landing-table{
+        thead {
+            box-shadow: none;
+            tr{
+                th {
+                    font-size:$font-size-md;
+                    line-height:$line-height-20;
+                    padding: 12px 15px;
+                    text-transform: $text-uppercase;
+                    background-color: $skyblue-6;
+                }
+            }   
+        }    
+        tbody{
+            tr{
+                td{
+                    border-bottom: 1px solid $dark-bluergba1;
+                    font-size: $font-size-md;
+                    font-weight: $font-500;
+                    line-height: $line-height-20;
+                    vertical-align: middle;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+.ticket-table-container{
+    border-radius: $radius-lg;
+    overflow: hidden;
 }

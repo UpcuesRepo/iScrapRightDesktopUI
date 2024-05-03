@@ -60,6 +60,8 @@ $skyblue-2:   #3384D8;
 $skyblue-3:   #EDF4FC;
 $skyblue-4:   #B6CEF7;
 $skyblue-5:   #D5EAFF;
+$skyblue-6:   #D5E6F9;
+$dark-blue:   #0E3456;
 $dark   :     #000000;
 $grey-1 :     #E1E1E1;
 $grey-2 :     #898989;
@@ -76,7 +78,9 @@ $grey-9 :     #707070;
 // =====================
 $grey-5-rgba5: rgba(17, 17, 17, 0.05);
 $white-rgba1: rgba(255, 255, 255, 0.1);
+$white-rgba2: rgba(255, 255, 255, 0.2);
 $white-rgba3: rgba(255, 255, 255, 0.3);
+$dark-bluergba1: rgba(14, 52, 86, 0.1);
 
 //  =======================
 //  LETTER SPACING
@@ -85,7 +89,8 @@ $white-rgba3: rgba(255, 255, 255, 0.3);
 // $letter-spacing10:   0.1em;
 $letter-spacing-7:   0.7px;
 $letter-spacing-55:   0.55px;
-// $letter-spacing-09:  0.9px;
+$letter-spacing10: 0.1em;
+
 // $letter-spacing-1:   1.15px;
 // $letter-spacing-108: 1.8px;
 

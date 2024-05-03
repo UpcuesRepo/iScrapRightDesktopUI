@@ -33,6 +33,19 @@
             padding: 13px 20px;
         }
     }
+    &.style-3{
+        border: 0;
+        border-radius: $radius-lg;
+        box-shadow: none;
+        font-size: $font-size-sm;
+        line-height: $line-height-20;
+        font-style: italic;
+        color: white;
+        background-color: $white-rgba1;
+        &.h-32{
+            padding: 6px 20px;
+        }
+    }
 }
 
 .dropdown{

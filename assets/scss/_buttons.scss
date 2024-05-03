@@ -28,6 +28,55 @@
             border-radius: 30px;
         }
     }
+    &.btn-skyblue2{
+        background-color: $skyblue-2;
+        color:$white;
+        border-radius: $radius-lg;
+        &:hover, &:active{
+            background-color: $grey-2;
+            color: $black;
+            svg{
+                path{
+                    stroke: $black;
+                }
+                g{
+                    opacity: 1;
+                }
+            }
+        }
+        &.with-icon{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &.btn-green2{
+        background-color: $green-2;
+        color: $white;
+        &:hover, &:active{
+            background-color: $grey-2;
+            color: $black;
+        }
+        &.radius-xxl{
+            border-radius: 40px;
+        }
+    }
+    &.btn-white-10{
+        background-color: $white-rgba1;
+        color: $white;
+        text-transform: $text-uppercase;
+        &:hover, &:active{
+            color: $secondary;
+            svg{
+                path{
+                    stroke: $secondary;
+                }
+            }
+        }
+    }
+    &.btn-edit{
+        border-radius: $radius-lg;
+        padding: 4px 7px;
+    }
     &.btn-md{
         font-size: $font-size-md;
         font-weight: $font-800;
@@ -38,11 +87,25 @@
         &.text-normal{
             text-transform: none;
         }
+        &.fw-xxbold{
+            font-weight: $font-900;
+        }
+        &.fw-semibold{
+            font-weight: $font-600;
+        }
     }
     &.btn-lg{
         font-size: $font-size-lg;
         font-weight: $font-800;
         line-height: $line-height-24;
+    }
+    &.btn-16{
+        font-size: $font-size-16;
+        font-weight: $font-800;
+        line-height: $line-height-20;
+        &.h-70{
+            padding: 20px;
+        }
     }
     &.btn-h40{
         padding: 10px 20px;
@@ -51,8 +114,14 @@
         padding: 13px 20px;
         width: 100%;
     }
+    &.btn-h64{
+        padding: 17px 20px;
+    }
     &.btn-h70{
         padding: 25px 20px;
+    }
+    &.btn-h30{
+        padding: 5px 11px;
     }
 }
 .action-btn{
