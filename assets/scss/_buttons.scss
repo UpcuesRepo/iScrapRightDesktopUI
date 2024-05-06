@@ -48,6 +48,12 @@
             display: flex;
             justify-content: space-between;
         }
+        &.radius-0 {
+            border-radius: 0;
+        }
+        &.radius-top10{
+            border-radius: 10px 10px 0 0;
+        }
     }
     &.btn-green2{
         background-color: $green-2;
@@ -65,10 +71,11 @@
         color: $white;
         text-transform: $text-uppercase;
         &:hover, &:active{
-            color: $secondary;
+            color: $white;
+            background-color: $skyblue-2;
             svg{
                 path{
-                    stroke: $secondary;
+                    stroke: $white;
                 }
             }
         }
@@ -114,8 +121,11 @@
         padding: 13px 20px;
         width: 100%;
     }
+    &.btn-h-w-50{
+        padding: 13px 14px;
+    }
     &.btn-h64{
-        padding: 17px 20px;
+        padding: 16px 20px;
     }
     &.btn-h70{
         padding: 25px 20px;
