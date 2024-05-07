@@ -29,12 +29,29 @@
   </head>
   <body>
         <h1>OFF CANVAS</h1>
-        <h1>INBOUND TABBING OFF CANVAS</h1>
-
-        <button type="button" class="btn btn-grey-5 btn-md fw-bold btn-h70 with-icon text-normal" data-bs-toggle="offcanvas" data-bs-target="#offcanvastickettitle" aria-controls="offcanvastickettitle">
-          <span class="material-symbols-rounded fs-20 me-1">menu_open</span>
-          Open Tickets
-        </button>
+        <div class="row mt-5">
+          <div class="col-md-3">
+            <button type="button" class="btn btn-grey-5 btn-md fw-bold btn-h70 with-icon text-normal" data-bs-toggle="offcanvas" data-bs-target="#offcanvastickettitle" aria-controls="offcanvastickettitle">
+              <span class="material-symbols-rounded fs-20 me-1">menu_open</span>
+              Open Tickets
+            </button>
+          </div>
+          <!-- BUTTON  ADD MATERIAL - TICKET LANDING PAGE -->
+          <div class="col-md-3">
+            <button class="btn btn-skyblue2 btn-16 with-icon h-70" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddMaterial" aria-controls="offcanvasAddMaterial">
+              <svg class="me-2" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.625 9.09717L15 14.9999M15 14.9999L4.37496 9.09717M15 14.9999L15 26.875M17.5 26.1111L15.9713 26.9604C15.6168 27.1573 15.4395 27.2558 15.2518 27.2944C15.0857 27.3286 14.9143 27.3286 14.7482 27.2944C14.5605 27.2558 14.3832 27.1573 14.0287 26.9604L4.77872 21.8215C4.40432 21.6135 4.2171 21.5095 4.08079 21.3616C3.9602 21.2307 3.86893 21.0756 3.81311 20.9066C3.75 20.7156 3.75 20.5015 3.75 20.0732V9.92679C3.75 9.49849 3.75 9.28434 3.81311 9.09334C3.86893 8.92437 3.9602 8.76927 4.08079 8.6384C4.21711 8.49048 4.40431 8.38648 4.77871 8.17848L14.0287 3.03959C14.3832 2.84264 14.5605 2.74416 14.7482 2.70556C14.9143 2.67139 15.0857 2.67139 15.2518 2.70556C15.4395 2.74417 15.6168 2.84264 15.9713 3.03959L25.2213 8.17848C25.5957 8.38648 25.7829 8.49048 25.9192 8.6384C26.0398 8.76926 26.1311 8.92437 26.1869 9.09334C26.25 9.28433 26.25 9.49849 26.25 9.92679L26.25 15.625M9.375 5.62498L20.625 11.875M23.75 26.25V18.75M20 22.5H27.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              ADD Material
+              <svg class="ms-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                <path d="M17 18L12 13L7 18M17 11L12 6L7 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <!-- END BUTTON ADD MATERIAL - TICKET LANDING PAGE -->
+        </div>
 
         <div class="offcanvas offcanvas-start border-radius0" tabindex="-1" id="offcanvastickettitle" aria-labelledby="offcanvasWithBackdropLabel">
           <div class="offcanvas-body bg-grey-7 p-0">
@@ -120,6 +137,268 @@
             </div>
           </div>
         </div>
+
+        <!-- ADD MATERIAL - TICKET LANDING PAGE -->
+        <div class="offcanvas offcanvas-addMaterial offcanvas-bottom" tabindex="-1" id="offcanvasAddMaterial" aria-labelledby="offcanvasAddMaterialLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row h-100">
+              <div class="col-md-2 p-0">
+                <div class="left-part h-100">
+                  <div class="category-box style-2 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                    #1 PET PLASTIC
+                  </div>  
+                  <div class="category-box style-2 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                    Aluminum CRV                  
+                  </div>  
+                  <div class="category-box style-2 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                    Aluminum CRV .05 EA
+                  </div>  
+                </div>
+              </div>
+              <div class="col-md-10 p-0">
+                <div class="right-part">
+                  <div class="d-flex justify-content-between align-items-center p-4">
+                    <div class="title">
+                      Material categories
+                    </div>
+                    <a href="#" class="back-link d-flex align-items-center">
+                      <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      BACK
+                    </a>
+                  </div>
+                  <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="d-flex mb-4">
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AIRLINE MATERIALS
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              ALUMINUM
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AUTOMOBILE
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AIRLINE MATERIALS
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              ALUMINUM
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AUTOMOBILE
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AUTOMOBILE
+                            </div>
+                          </div>  
+                          <div class="d-flex mb-4">
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AIRLINE MATERIALS
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              ALUMINUM
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AUTOMOBILE
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AIRLINE MATERIALS
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              ALUMINUM
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AUTOMOBILE
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AUTOMOBILE
+                            </div>
+                          </div>  
+                          <div class="d-flex">
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AIRLINE MATERIALS
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              ALUMINUM
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AUTOMOBILE
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AIRLINE MATERIALS
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              ALUMINUM
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AUTOMOBILE
+                            </div>
+                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                              AUTOMOBILE
+                            </div>
+                          </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-flex mb-4">
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                        </div>  
+                        <div class="d-flex mb-4">
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                        </div>  
+                        <div class="d-flex">
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                        </div> 
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-flex mb-4">
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                        </div>  
+                        <div class="d-flex mb-4">
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                        </div>  
+                        <div class="d-flex">
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AIRLINE MATERIALS
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            ALUMINUM
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                          <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                            AUTOMOBILE
+                          </div>
+                        </div>   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END ADD MATERIAL - TICKET LANDING PAGE -->
 
     <script src="../assets/dist/js/all.min.js"></script>
   </body>

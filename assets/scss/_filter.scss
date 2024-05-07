@@ -10,10 +10,79 @@
             padding: 0;
         }
     }
+    &.offcanvas-addMaterial{
+        height: 460px;
+        .offcanvas-header{
+            padding: 0;
+        }
+        .offcanvas-body{
+            background-color: $skyblue-7;
+            padding: 0;
+            .left-part{
+                padding: 20px;
+                border-right: 1px solid $grey-10;
+                .category-box{
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .right-part{
+                padding: 20px 0;
+                .title{
+                    font-size: $font-size-lg;
+                    font-weight: $font-800;
+                    line-height: $line-height-24;
+                    text-transform: $text-uppercase;
+                }
+                .back-link{
+                    color: $skyblue-2;
+                    font-size: $font-size-16;
+                    font-weight: $font-800;
+                    line-height: $line-height-22;
+                    text-transform: $text-uppercase;
+                    &:hover,&:active{
+                        color: $secondary;
+                        svg{
+                            path{
+                                stroke: $secondary;
+                            }
+                        }
+                    }               
+                }
+                .carousel{
+                    .carousel-inner{
+                        .carousel-item{
+                            padding: 10px 20px;
+                            .category-box{
+                                width: 13%;
+                            }
+                        }
+                    }
+                    .carousel-indicators{
+                        bottom: -45px;
+                        [data-bs-target] {
+                            background-color: $grey-10;
+                            border: 1px solid $white;
+                            border-radius: 50%;
+                            border-bottom: 0;
+                            border-top: 0;
+                            height: 12px;
+                            width: 12px;
+                            opacity: 1;
+                        }
+                        .active{
+                            background-color: $skyblue-2;
+                            box-shadow: 0px 4px 4px 0px #00000040;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .offcanvas-backdrop{
-    background-color: $black;
-    top: 70px;
+    background-color: $primary;
     &.show{
         opacity: 70%;
     }
