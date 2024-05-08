@@ -80,6 +80,51 @@
             }
         }
     }
+    &.offcanvas-payTicket{
+        height: 515px;
+        .offcanvas-header{
+            padding: 0;
+        }
+        .offcanvas-body{
+            background-color: $dark-blue;
+            padding: 20px;
+            .title{
+                font-size: $font-size-28;
+                font-weight: $font-700;
+                line-height: $line-height-24;
+                color: $white;
+                text-transform: $text-uppercase;
+                letter-spacing: 0.38px;
+            }
+            .email{
+                background-color: $skyblue2-rgba2;
+                font-size: $font-size-16;
+                line-height: $line-height-20;
+                color: $white;
+                padding: 13px 10px;
+                .mail-link{
+                    font-weight: $font-600;
+                    font-style: italic;
+                    color: $skyblue-2;
+                    text-decoration: underline;
+                }
+            }
+            .dark-box{
+                background-color: $black;
+                position: relative;
+                .bottom-strip{
+                    background-color: $skyblue2-rgba2;
+                    color: $white;
+                    font-size: $font-size-16;
+                    line-height: $line-height-20;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 20px;
+                }
+            }
+        }
+    }
 }
 .offcanvas-backdrop{
     background-color: $primary;

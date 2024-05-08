@@ -56,3 +56,20 @@
         background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%),#DDDDDD;
     }
 }
+
+.amount-card{
+    box-shadow: 5px 5px 10px 0px #092742, -5px -5px 10px 0px #325574, 0px 4px 14px 0px #071E33 inset;
+    background: $dark-blue;
+    border-radius: $radius-lg;
+    border: 1px solid $white-rgba2;
+    font-size: $font-size-16;
+    font-weight: $font-700;
+    line-height: $line-height-22;
+    color: $white-rgba2;
+    text-transform: $text-uppercase;
+    .count{
+        font-size: $font-size-40;
+        font-weight: $font-700;
+        line-height: $line-height-50;
+    }
+}

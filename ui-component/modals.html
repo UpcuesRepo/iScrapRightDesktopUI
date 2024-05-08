@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <!-- FAVICON -->
+     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+     <link rel="manifest" href="../images/favicon/manifest.json">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">
+     
+    
+     <!-- CSS -->
+     <link href="../assets/dist/css/default.css" rel="stylesheet" />
+     <title>IScrapRight</title>
+  </head>
+  <body>
+        <h1>BUTTONS</h1>
+        <div class="row mb-5">
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-md btn-h40"  data-bs-toggle="modal" data-bs-target="#modalCancelTicket">SAVE CUSTOMER</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary btn-md btn-h40"  data-bs-toggle="modal" data-bs-target="#modaleditCheck">Edit Check</button>
+            </div>
+            </div>
+
+            <div class="modal fade" id="modalCancelTicket" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm modal-cancel-ticket overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="modalCancelTicketLabel">iScrapright</h1>
+                            <button type="button" class="btn btn-skyblue2 radius-top10 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="warning-text text-center">Are you sure you want to cancel this ticket?</div>   
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row w-100 m-0">
+                                <div class="col-md-6 p-0">
+                                    <button class="btn btn-skyblue2 radius-0 btn-lg bold btn-h60 letter-space7 w-100">
+                                        YES
+                                    </button>
+                                </div>
+                                <div class="col-md-6 p-0">
+                                    <button class="btn btn-skyblue-6 radius-0 btn-lg bold btn-h60 letter-space7 w-100">
+                                        NO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modaleditCheck" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md modal-edit-check overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-start p-0">
+                            <button type="button" class="btn btn-skyblue2 radius-top10 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="modal-title" id="modaleditCheckLabel">Edit Check</h1>
+                            <div class="row py-3">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label class="form-label label-md label-darkblue">Check Number</label>
+                                        <input type="email" class="form-control style-2 h-44" placeholder="" fdprocessedid="5wchj7">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label class="form-label label-md label-darkblue mb-3">Amount</label>
+                                        <div class="fs-16 fw-bold">$1338.29</div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="row pb-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label label-md label-darkblue">Name</label>
+                                        <input type="email" class="form-control style-2 h-44" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label label-md label-darkblue">Address</label>
+                                        <input type="email" class="form-control style-2 h-44" placeholder="">
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="row pb-3">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label class="form-label label-md label-darkblue">City</label>
+                                        <input type="email" class="form-control style-2 h-44" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="form-label label-md label-darkblue">State</label>
+                                        <input type="email" class="form-control style-2 h-44" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label label-md label-darkblue">ZIP</label>
+                                        <input type="email" class="form-control style-2 h-44" placeholder="">
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="warn-txt">
+                                NOTE: Entering a different check number will result in the current check number being voided.
+                            </div>
+                        </div>
+                        <div class="modal-footer p-0">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

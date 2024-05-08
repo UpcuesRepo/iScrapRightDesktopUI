@@ -1,0 +1,97 @@
+.modal {
+    
+ 
+    .modal-dialog {
+        .modal-content {
+                .modal-header {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: 1px solid $dark-bluergba1;
+                    text-transform: $text-uppercase;
+                    .modal-title{
+                        font-size: $font-size-20;
+                        font-weight: $font-700;
+                        line-height: $line-height-18;
+                    }
+                    .btn-skyblue2 {
+                        z-index: -1;
+                        position: absolute;
+                        right: 0;
+                        top: -50px;
+                    }
+                }
+                .modal-footer {
+                    border-top: 1px solid $dark-bluergba1;
+                    display: flex;
+                }
+        }
+ 
+        &.modal-sm {
+            max-width: 19.5%;
+        }
+        &.modal-md {
+            max-width: 38%;
+        }
+ 
+        &.modal-cancel-ticket {
+            .modal-content {
+                border-radius: 10px 0 10px 10px;
+                box-shadow: 0px 4px 10px 0px #00000040;
+                border: 0;
+                .modal-body{
+                    .warning-text{
+                        font-size: $font-size-16;
+                        line-height: $line-height-20;
+                    }
+                }
+                .modal-footer {
+                    display: flex;
+                    padding: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+        &.modal-edit-check {
+            .modal-content {
+                border-radius: 10px 0 10px 10px;
+                box-shadow: 0px 4px 10px 0px #00000040;
+                border: 0;
+                .modal-header{
+                    border-bottom: 0;    
+                }
+                .modal-body{
+                    padding: 15px;
+                    .modal-title{
+                        font-size: $font-size-20;
+                        font-weight: $font-700;
+                        line-height: $line-height-18;
+                        border-bottom: 1px solid $skyblue2-rgba5;
+                        text-transform: $text-uppercase;
+                        padding-bottom: 15px;
+                    }   
+                    .warn-txt{
+                        background-color: $light-yellow;
+                        border: 1px solid $yellow;
+                        color: $dark-yellow;
+                        font-size: $font-size-13;
+                        font-weight: $font-600;
+                        line-height: $line-height-24;
+                        letter-spacing: 0.38px;
+                        border-radius: $radius-xl;
+                        padding: 15px;
+                    }
+                }
+                .modal-footer{
+                    padding: 15px;
+                    background-color: $dark-blue;
+                }
+            }
+        }
+    }
+ }
+ 
+ .modal-backdrop.show {
+    background-color: $primary;
+    opacity: 70%;
+ }
