@@ -81,6 +81,19 @@
         &.radius-top10{
             border-radius: 10px 10px 0 0;
         }
+        &.check-btn{
+            border-radius: 50px;
+            font-size: $font-size-lg;
+            font-weight: $font-700;
+            font-size: $font-size-13;
+            text-transform: $text-uppercase;
+            width: 100%;
+            letter-spacing: 0.38px;
+            line-height: $line-height-24;
+            &.font-16{
+                font-size: $font-size-16;
+            }
+        }
     }
     &.btn-green2{
         background-color: $green-2;
@@ -97,6 +110,19 @@
             font-weight: $font-700;
             line-height: $line-height-24;
             width: 100%;
+        }
+        &.check-btn{
+            border-radius: 50px;
+            font-size: $font-size-lg;
+            font-weight: $font-700;
+            font-size: $font-size-13;
+            text-transform: $text-uppercase;
+            width: 100%;
+            letter-spacing: 0.38px;
+            line-height: $line-height-24;
+            &.font-16{
+                font-size: $font-size-16;
+            }
         }
     }
     &.btn-white-10{
@@ -119,6 +145,11 @@
             line-height: $line-height-24;
             text-transform: capitalize;
             width: 100%;
+            &.btn-modal-footer{
+                font-size: $font-size-13;
+                text-transform: $text-uppercase;
+                letter-spacing: 0.38px;
+            }
         }
     }
     &.btn-white{
@@ -195,6 +226,10 @@
     &.btn-h-w-50{
         padding: 13px 14px;
     }
+    &.btn-h-w-44{
+        padding: 7px;
+        border-radius: 50%;
+    }
     &.btn-h60{
         padding: 18px 20px;
     }
@@ -246,7 +281,7 @@
             }
         }
     }
-    .btn-skyblue2{
+    .btn-end{
         width: 50px;
         height: 50px;
         position: absolute;

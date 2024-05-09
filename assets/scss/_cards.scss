@@ -73,3 +73,18 @@
         line-height: $line-height-50;
     }
 }
+
+.dark-card{
+    background-color: $black;
+    &.search-card{
+        border-radius: $radius-xl;
+        padding: 20px;
+    }
+}
+
+.grey-box-search-table{
+    height: 42px;
+    width: 67px;
+    border-radius: $radius-lg;
+    background-color: $grey-10;
+}

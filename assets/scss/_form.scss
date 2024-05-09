@@ -6,6 +6,9 @@
         }
         &.label-md{
             font-size: $font-size-md;
+            &.color-white{
+                color: $white-rgba4
+            }
         }
         &.label-darkblue{
             color: $dark-blue;
@@ -54,6 +57,32 @@
         &.h-32{
             padding: 6px 20px;
         }
+    }
+    &.style-4{
+        border: 0;
+        border-radius: 50px;
+        box-shadow: none;
+        font-size: $font-size-16;
+        line-height: $line-height-20;
+        color: white;
+        background-color: $white-rgba1;
+        &.h-44{
+            padding: 12px 20px;
+        }
+        &.font-md{
+            font-size: $font-size-md;
+        }
+        &::placeholder{
+            font-size: $font-size-16;
+            color: $white;
+        }
+    }
+    &.search-icon {
+        background-image: url('data:image/svg+xml,<svg width="22" height="22" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+        background-position-x: 5%;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        padding-left: 50px !important;
     }
 }
 
@@ -201,6 +230,80 @@
         }
     }
 }
+.select-style-3{
+    .dropdown{
+        &.bootstrap-select{
+            width: 100% !important;
+            .btn{
+                border-radius: 34px;
+                &.btn-select{
+                    height:36px;
+                    font-weight: $font-600;
+                    border: 1px solid $border-color;
+                    color: $black-2;
+                    background: $white;
+                    text-transform: inherit;
+                    font-size: $font-size-md;
+                    line-height: $line-height-14;
+                    padding:10px 15px;
+                    width: auto;
+                    &:focus,&:hover{
+                        outline: none !important;
+                        color: $black-2;
+                        border: $border-grey;
+                    }
+                }
+                &.dropdown-toggle{
+                    &.show{
+                        &:after{
+                            transform: rotate(180deg);    
+                        }
+                    }
+                    &:after{
+                        background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.18414 5.7676C4.423 5.53792 4.80282 5.54537 5.0325 5.78423L8 8.93443L10.9675 5.78423C11.1972 5.54537 11.577 5.53792 11.8159 5.7676C12.0547 5.99727 12.0622 6.3771 11.8325 6.61596L8.4325 10.216C8.31938 10.3336 8.16321 10.4001 8 10.4001C7.83679 10.4001 7.68062 10.3336 7.5675 10.216L4.1675 6.61596C3.93782 6.3771 3.94527 5.99727 4.18414 5.7676Z" fill="%23626262"/></svg>');
+                        background-size: 100%;
+                        border: 0;
+                        width: 26px;
+                        height: 26px;
+                        content: '';
+                        margin-top: 0px;
+                        background-position: center;
+                        margin-right: -5px;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            
+            .bs-actionsbox, 
+            .bs-donebutton, 
+            .bs-searchbox{
+                margin-bottom: 10px;
+            }
+            .dropdown-menu{
+                font-weight: $font-600;
+                font-size: $font-size-sm;
+                .form-control{
+                    height: 30px;  
+                }
+                a{
+                    color: $black;
+                    &:hover, &:focus{
+                        background-color: #000;
+                        span{
+                            color: $white;
+                        }
+                    }
+                    &.active{
+                        background-color: #000;
+                        span{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 input[type="date"] {
     position: relative;
@@ -226,7 +329,14 @@ input[type="date"] {
             background-image: url("../../../images/icons/calendar-2.svg");
             opacity: 1;
             right: 15px;
-        }    
+        }
+    }
+    &.form-calender-white2{
+        &:before {
+            background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M17.5 8.33342H2.5M13.3333 1.66675V5.00008M6.66667 1.66675V5.00008M6.5 18.3334H13.5C14.9001 18.3334 15.6002 18.3334 16.135 18.0609C16.6054 17.8212 16.9878 17.4388 17.2275 16.9684C17.5 16.4336 17.5 15.7335 17.5 14.3334V7.33342C17.5 5.93328 17.5 5.23322 17.2275 4.69844C16.9878 4.22803 16.6054 3.84558 16.135 3.6059C15.6002 3.33341 14.9001 3.33341 13.5 3.33341H6.5C5.09987 3.33341 4.3998 3.33341 3.86502 3.6059C3.39462 3.84558 3.01217 4.22803 2.77248 4.69844C2.5 5.23322 2.5 5.93328 2.5 7.33341V14.3334C2.5 15.7335 2.5 16.4336 2.77248 16.9684C3.01217 17.4388 3.39462 17.8212 3.86502 18.0609C4.3998 18.3334 5.09987 18.3334 6.5 18.3334Z" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+            opacity: 1;
+            right: 15px;
+        }
     }
 }
 

@@ -1,0 +1,17 @@
+.badge{
+    font-size: $font-size-sm;
+    font-weight: $font-600;
+    line-height: $line-height-20;
+    border-radius: $radius-xl;
+    width: auto;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    &.badge-open{
+        background-color: $green-2;
+        color: $white;
+    }
+    &.badge-device-lock{
+        background-color: $dark-yellow-2;
+        color: $white;
+    }
+}

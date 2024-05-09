@@ -59,6 +59,18 @@
                     color: $white;
                     line-height: $line-height-20;
                     padding: 10px;
+                    &:last-child{
+                        text-align: end;
+                    }
+                }
+            }
+        }
+        &.bold{
+            tbody{
+                tr{
+                    td{
+                        font-weight: $font-800;
+                    }
                 }
             }
         }
@@ -73,6 +85,10 @@
                     padding: 12px 15px;
                     text-transform: $text-uppercase;
                     background-color: $skyblue-6;
+                    color: $dark-blue;
+                    &:last-child{
+                        text-align: end;
+                    }
                 }
             }   
         }    
@@ -85,12 +101,45 @@
                     line-height: $line-height-20;
                     vertical-align: middle;
                     padding: 15px;
+                    &:last-child{
+                        text-align: end;
+                    }
                 }
             }
+        }
+        &.tbody-font-sm{
+            tbody{
+                tr{
+                    td{
+                        font-size: $font-size-sm;
+                        font-weight: $font-600;
+                        line-height: $line-height-20;
+                    }
+                }
+            }    
+        }
+        &.thead-font-16{
+            thead {
+                tr{
+                    th {
+                        font-size:$font-size-16;
+                    }
+                }   
+        }  
+            tbody{
+                tr{
+                    td{
+                        font-size: $font-size-md;
+                        font-weight: $font-600;
+                        line-height: $line-height-20;
+                    }
+                }
+            }    
         }
     }
 }
 .ticket-table-container{
     border-radius: $radius-lg;
     overflow: hidden;
+    box-shadow: 0px 5px 10px 5px #0000000D;
 }
