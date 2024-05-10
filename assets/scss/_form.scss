@@ -304,6 +304,90 @@
         }
     }
 }
+.select-style-4{
+    .dropdown{
+        &.bootstrap-select{
+            width: 100% !important;
+            .btn{
+                border-radius: 34px;
+                &.btn-select{
+                    height:44px;
+                    font-weight: $font-400;
+                    border: 0;
+                    color: $white;
+                    background: $white-rgba1;
+                    text-transform: inherit;
+                    font-size: $font-size-sm;
+                    line-height: $line-height-24;
+                    padding:10px 15px;
+                    &:focus,&:hover{
+                        outline: none !important;
+                        color: $white;
+                        border: 0;
+                    }
+                }
+                &.dropdown-toggle{
+                    &.show{
+                        &:after{
+                            transform: rotate(180deg);    
+                        }
+                    }
+                    &:after{
+                        background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.18414 5.7676C4.423 5.53792 4.80282 5.54537 5.0325 5.78423L8 8.93443L10.9675 5.78423C11.1972 5.54537 11.577 5.53792 11.8159 5.7676C12.0547 5.99727 12.0622 6.3771 11.8325 6.61596L8.4325 10.216C8.31938 10.3336 8.16321 10.4001 8 10.4001C7.83679 10.4001 7.68062 10.3336 7.5675 10.216L4.1675 6.61596C3.93782 6.3771 3.94527 5.99727 4.18414 5.7676Z" fill="white"/></svg>');
+                        background-size: 100%;
+                        border: 0;
+                        width: 26px;
+                        height: 26px;
+                        content: '';
+                        margin-top: 0px;
+                        background-position: center;
+                        margin-right: -5px;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            
+            .bs-actionsbox, 
+            .bs-donebutton, 
+            .bs-searchbox{
+                margin-bottom: 10px;
+            }
+            .dropdown-menu{
+                font-weight: $font-600;
+                font-size: $font-size-sm;
+                .form-control{
+                    height: 30px;  
+                }
+                a{
+                    color: $black;
+                    &:hover, &:focus{
+                        background-color: #000;
+                        span{
+                            color: $white;
+                        }
+                    }
+                    &.active{
+                        background-color: #000;
+                        span{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.font-md{
+        .dropdown{
+            &.bootstrap-select{
+                .btn{
+                    &.btn-select{
+                        font-size: $font-size-md;
+                    }
+                }
+            }
+        }
+    }
+}
 
 input[type="date"] {
     position: relative;

@@ -78,6 +78,9 @@
         &.radius-0 {
             border-radius: 0;
         }
+        &.radius-xxl{
+            border-radius: $radius-xxl;
+        }
         &.radius-top10{
             border-radius: 10px 10px 0 0;
         }
@@ -244,6 +247,9 @@
     }
     &.btn-h30{
         padding: 5px 11px;
+    }
+    &.btn-h36{
+        padding: 8px 20px;
     }
 }
 .action-btn{
