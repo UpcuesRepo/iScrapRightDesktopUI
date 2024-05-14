@@ -54,6 +54,15 @@
             background-color: $grey-2;
             color: $black;
         }
+        &.radius-50{
+            border-radius: 50px;
+        }
+        &.line-height-24{
+            line-height: $line-height-24;
+        }
+        &.color-black{
+            color: $black;
+        }
     }
     &.btn-skyblue2{
         background-color: $skyblue-2;
@@ -95,6 +104,9 @@
             line-height: $line-height-24;
             &.font-16{
                 font-size: $font-size-16;
+                &.extrabold{
+                    font-weight: $font-800;
+                }
             }
         }
     }
@@ -153,6 +165,17 @@
                 text-transform: $text-uppercase;
                 letter-spacing: 0.38px;
             }
+            &.font-16{
+                font-size: $font-size-16;
+            }
+        }
+    }
+    &.btn-outline-grey{
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        text-transform: capitalize;
+        &.btn-h36{
+            padding: 7px 20px; 
         }
     }
     &.btn-white{

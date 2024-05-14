@@ -70,17 +70,6 @@
                         text-transform: $text-uppercase;
                         padding-bottom: 15px;
                     }   
-                    .warn-txt{
-                        background-color: $light-yellow;
-                        border: 1px solid $yellow;
-                        color: $dark-yellow;
-                        font-size: $font-size-13;
-                        font-weight: $font-600;
-                        line-height: $line-height-24;
-                        letter-spacing: 0.38px;
-                        border-radius: $radius-xl;
-                        padding: 15px;
-                    }
                 }
                 .modal-footer{
                     padding: 15px;

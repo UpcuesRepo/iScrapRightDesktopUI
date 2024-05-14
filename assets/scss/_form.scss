@@ -6,14 +6,17 @@
         }
         &.label-md{
             font-size: $font-size-md;
-            &.color-white{
-                color: $white-rgba4
-            }
         }
         &.label-darkblue{
             color: $dark-blue;
         }
+        &.color-white{
+            color: $white-rgba4
+        }
     }
+}
+textarea{
+    padding: 15px;
 }
 .form-control {
     border-radius: 0;
@@ -71,6 +74,9 @@
         }
         &.font-md{
             font-size: $font-size-md;
+            &::placeholder{
+                font-size: $font-size-md;    
+            }
         }
         &::placeholder{
             font-size: $font-size-16;
@@ -174,6 +180,7 @@
                     text-transform: inherit;
                     font-size: $font-size-13;
                     padding:10px 15px;
+                    line-height: 22px;
                     &:focus,&:hover{
                         outline: none !important;
                         color: $dark-blue;
@@ -190,7 +197,7 @@
                         background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5L10 12.5L15 7.5" stroke="%230E3456" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
                         background-size: 100%;
                         border: 0;
-                        width: 24px;
+                        width: 25px;
                         height: 24px;
                         content: '';
                         margin-top: 0px;
@@ -509,9 +516,10 @@ input[type="date"] {
 .form-check {
     position: relative;
     padding-left: 30px;
-    min-height: 20px;
+    min-height: 30px;
     &.form-inline{
         display: inline-flex;
+        align-items: center;
     }
 
     .form-check-input[type="checkbox"] {
@@ -547,12 +555,6 @@ input[type="date"] {
                 pointer-events: none;
                 -webkit-pointer-events: none;
                 -moz-pointer-events: none;
-                & + .form-check-label {
-                    &.style-1 {
-                       font-size: $font-size-lg;
-                       font-weight: $font-600;
-                    }
-                }
             }
             &:checked {
                 & + svg {
@@ -564,6 +566,52 @@ input[type="date"] {
                     color: $white;
                     width: 20px;
                     height: 20px;
+                }
+            }
+        }
+    }
+    .form-check-label {
+        &.style-1 {
+           font-size: $font-size-lg;
+           font-weight: $font-600;
+        }
+        &.style-2 {
+           font-size: $font-size-md;
+           font-weight: $font-600;
+           text-transform: capitalize;
+        }
+        &.style-3 {
+           font-size: $font-size-16;
+           font-weight: $font-600;
+           line-height: $line-height-28;
+        }
+    }
+    &.style-2{
+        .form-check-input[type="checkbox"] {
+            box-shadow: none;
+            border:none;
+            background-color: $white-rgba1;
+            &:checked {
+                background-color: $white;
+                border-color: none;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+            &:hover {
+                cursor: pointer;
+                background-color: $white;
+            }
+            &.add-after {
+                & + svg {
+                    & + svg{
+                        display: none;
+                    }
+                }
+                &:checked {
+                    & + svg {
+                        color: $black;
+                    }
                 }
             }
         }
