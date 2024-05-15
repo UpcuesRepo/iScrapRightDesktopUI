@@ -313,3 +313,25 @@
         }
     }
 }
+
+.skyblue-box{
+    border: 1px dotted $skyblue-2;
+    background-color: $skyblue6-rgba5;
+    padding: 10px;
+    border-radius: $radius-lg;
+    position: relative;
+    .inner-box{
+        border: 1px solid $skyblue-2;
+        border-radius: $radius-lg;
+    }
+    .btn-left{
+        position: absolute;
+        top: -15px;
+        left: 0;
+    }
+    .btn-right{
+        position: absolute;
+        top: -15px;
+        right: 0;
+    }
+}
