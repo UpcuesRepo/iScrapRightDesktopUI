@@ -20,7 +20,7 @@
     }
 }
 .add-note-card{
-    background-color: $dark-blue;
+    background-color: $primary;
     border-radius: $radius-lg;
     .add-note-link{
         color: $white;
@@ -48,7 +48,7 @@
     background-blend-mode: soft-light;
     box-shadow: 5px 5px 10px 0px #A6ABBD, -5px -5px 10px 0px #FAFBFF;
     border-radius: $radius-xl;
-    color: $dark-blue;
+    color: $primary;
     font-size: $font-size-16;
     font-weight: $font-800;
     line-height: $line-height-22;
@@ -59,7 +59,7 @@
 
 .amount-card{
     box-shadow: 5px 5px 10px 0px #092742, -5px -5px 10px 0px #325574, 0px 4px 14px 0px #071E33 inset;
-    background: $dark-blue;
+    background: $primary;
     border-radius: $radius-lg;
     border: 1px solid $white-rgba2;
     font-size: $font-size-16;
@@ -186,7 +186,7 @@
             font-size: $font-size-md;
             font-weight: $font-800;
             line-height: $line-height-18;
-            color: $dark-blue;
+            color: $primary;
             text-transform: $text-uppercase;
             span{
                 color: $green-2;
@@ -210,7 +210,7 @@
                     line-height: $line-height-24;
                     letter-spacing: 0.38px;
                     &.text-skyblue{
-                        color: $skyblue-2;
+                        color: $secondary;
                     }
                 }
             }
@@ -221,7 +221,7 @@
             font-size: $font-size-md;
             font-weight: $font-800;
             line-height: $line-height-18;
-            color: $dark-blue;
+            color: $primary;
             text-transform: $text-uppercase;
         }
         .black-strip{
@@ -250,7 +250,7 @@
                     font-weight: $font-800;
                     line-height: $line-height-24;
                     letter-spacing: 0.38px;
-                    color: $skyblue-2;
+                    color: $secondary;
                     .font-small{
                         font-size: $font-size-sm;
                     }
@@ -273,7 +273,7 @@
             font-size: $font-size-md;
             font-weight: $font-800;
             line-height: $line-height-18;
-            color: $dark-blue;
+            color: $primary;
             text-transform: $text-uppercase;
         }
         .card-body{
@@ -299,7 +299,7 @@
         .card-body{
             .grey-box{
                 background-color: $box-grey;
-                color: $skyblue-2;
+                color: $secondary;
                 font-size: $font-size-13;
                 font-weight: $font-700;
                 line-height: $line-height-18;
@@ -315,13 +315,13 @@
 }
 
 .skyblue-box{
-    border: 1px dotted $skyblue-2;
+    border: 1px dotted $secondary;
     background-color: $skyblue6-rgba5;
     padding: 10px;
     border-radius: $radius-lg;
     position: relative;
     .inner-box{
-        border: 1px solid $skyblue-2;
+        border: 1px solid $secondary;
         border-radius: $radius-lg;
     }
     .btn-left{

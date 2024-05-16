@@ -1,16 +1,5 @@
 nav{
     &.navbar{
-        &.main-navbar{
-            background-color: $primary;
-            height: 70px;
-            padding: 0;
-            .nav-link{
-                &:hover{
-                    background-color: $secondary;
-                    color: $white;
-                }
-            }
-        }
         &.inner-navbar{
             padding: 0;
             background-color: $primary;
@@ -37,7 +26,7 @@ nav{
                             color: $green-2;
                             svg{
                                 path{
-                                    stroke: $green;
+                                    stroke: $green-2;
                                 }
                             }
                         }

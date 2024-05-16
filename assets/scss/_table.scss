@@ -35,22 +35,8 @@
             }
         }
     }
-    &.bottom-strip-table{
-        background-color: $skyblue-3;
-        tbody{
-            tr{
-                td{
-                    font-size: $font-size-md;
-                    font-weight: $font-800;
-                    color: $primary;
-                    line-height: $line-height-18;
-                    padding: 10px;
-                }
-            }
-        }
-    }
     &.bottom-strip-darkblue-table{
-        background-color: $dark-blue;
+        background-color: $primary;
         tbody{
             tr{
                 td{
@@ -85,7 +71,7 @@
                     padding: 12px 15px;
                     text-transform: $text-uppercase;
                     background-color: $skyblue-6;
-                    color: $dark-blue;
+                    color: $primary;
                     &:last-child{
                         text-align: end;
                     }

@@ -8,7 +8,7 @@
             font-size: $font-size-md;
         }
         &.label-darkblue{
-            color: $dark-blue;
+            color: $primary;
         }
         &.color-white{
             color: $white-rgba4
@@ -19,45 +19,33 @@ textarea{
     padding: 15px;
 }
 .form-control {
-    border-radius: 0;
-    border: $border-grey;
     font-weight: $font-400;
-    font-size: $font-size-sm;
     padding: $padding-forminput;
-    color: $grey-2;
     margin-bottom: 0;
+    border: 1px solid $skyblue-5;
+    border-radius: $radius-xxl;
+    box-shadow: none;
+    font-size: $font-size-md;
+    color: $black;
     &:focus{
-        outline: none;
         box-shadow: none;
-        border: $border-grey;
-        color: $grey-2;
+        border: 1px solid $skyblue-5;
     }
     &::placeholder{
-        font-size: $font-size-sm;
-        color: $grey-2;
-    }
-    &.style-2{
-        border: 1px solid $skyblue-5;
-        border-radius: $radius-xxl;
-        box-shadow: none;
         font-size: $font-size-md;
+        font-weight: $font-400;
         color: $black;
-        &.h-46{
-            padding: 10px 20px;
-        }
-        &.h-44{
-            padding: 12px 20px;
-            font-size: $font-size-13;
-            color: $dark-blue;
-            &::placeholder{
-                font-size: $font-size-13;
-                color: $dark-blue;
-            }
-        }
+    }
+    &.h-46{
+        padding: 12px 20px;
+    }
+    &.h-44{
+        padding: 12px 20px;
+        font-size: $font-size-13;
+        color: $primary;
         &::placeholder{
-            font-size: $font-size-md;
-            font-weight: $font-400;
-            color: $black;
+            font-size: $font-size-13;
+            color: $primary;
         }
     }
     &.style-3{
@@ -103,74 +91,38 @@ textarea{
         padding-left: 50px !important;
     }
 }
-
-.dropdown{
-    &.bootstrap-select{
-        width: 100% !important;
-        .btn{
-            border-radius: 0;
-            &.btn-select{
-                height: $form-height40;
-                font-weight: $font-400;
-                border: $border-grey;
-                color: $grey-2;
-                letter-spacing: inherit;
-                background: $white;
-                width: 100%;
-                text-transform: inherit;
-                font-size: $font-size-sm;
-                padding: 10px;
-                &:focus,&:hover{
-                    outline: none !important;
-                    color: $grey-2;
-                    border: $border-grey;
-                }
-            }
-            &.dropdown-toggle{
-                &.show{
-                    &:after{
-                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='10' fill='%23D5D5D5' viewBox='0 96 960 960' width='6'%3E%3Cpath d='m283 711-43-43 240-240 240 239-43 43-197-197-197 198Z'/%3E%3C/svg%3E%0A");
-                    }
-                }
-                &:after{
-                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='10' viewBox='0 96 960 960' width='6' fill='%23D5D5D5'%3E%3Cpath d='M480 711 240 471l43-43 197 198 197-197 43 43-240 239Z'/%3E%3C/svg%3E%0A");
-                    background-size: 100%;
-                    border: 0;
-                    width: 24px;
-                    height: 24px;
-                    content: '';
-                    margin-top: 0px;
-                    background-position: center;
-                    margin-right: -10px;
-                }
+.form-floating{
+    >label{
+        background: $white;
+        width: auto;
+        height: auto;
+    }
+    .form-control{
+        height: auto;
+        line-height: 1.5;
+        &:focus{
+            ~label{
+                opacity: 1;
             }
         }
-        
-        .bs-actionsbox, 
-        .bs-donebutton, 
-        .bs-searchbox{
-            margin-bottom: 10px;
+    }
+    &.h-46{
+        >label{
+            transform-origin: 0 -110px;
+            padding: 0 10px;
+            left: 30px;
+            line-height: 15px;
+            top: 35%;
         }
-        .dropdown-menu{
-            font-weight: $font-600;
-            font-size: $font-size-sm;
-            .form-control{
-                height: 30px;  
+        .form-control{
+            padding: 12px 20px;
+            &:not(:placeholder-shown){
+                padding-top: 12px;
+                padding-bottom: 12px;
             }
-            a{
-                color: $black;
-                &:hover, &:focus{
-                    background-color: #000;
-                    span{
-                        color: $black;
-                    }
-                }
-                &.active{
-                    background-color: #000;
-                    span{
-                        color: $white;
-                    }
-                }
+            &:focus{
+                padding-top: 12px;
+                padding-bottom: 12px;    
             }
         }
     }
@@ -185,7 +137,7 @@ textarea{
                     height:44px;
                     font-weight: $font-400;
                     border: 1px solid $skyblue-6;
-                    color: $dark-blue;
+                    color: $primary;
                     letter-spacing: inherit;
                     background: $white;
                     width: 100%;
@@ -195,7 +147,7 @@ textarea{
                     line-height: 22px;
                     &:focus,&:hover{
                         outline: none !important;
-                        color: $dark-blue;
+                        color: $primary;
                         border: $border-grey;
                     }
                 }
@@ -448,7 +400,7 @@ input[type="date"] {
     .switch-label{
         font-size: $font-size-13;
         line-height: $line-height-18;
-        color: $dark-blue;
+        color: $primary;
     }
     .custom-switch{
         &.switch {
@@ -523,7 +475,7 @@ input[type="date"] {
                     &::before {
                         left: 7px;
                         bottom: 11%;
-                        background-color: $skyblue-2;
+                        background-color: $secondary;
                         box-shadow: 0px 4px 4px 0px #00000040;
                     }
                 }
@@ -552,8 +504,8 @@ input[type="date"] {
         margin-bottom: 0px;
        
         &:checked {
-            background-color: $skyblue-5;
-            border-color: $skyblue-5;
+            background-color: $secondary;
+            border-color: $secondary;
             background-image: none;
         }
         &:focus {
@@ -561,7 +513,7 @@ input[type="date"] {
         }
         &:hover {
             cursor: pointer;
-            background-color: $skyblue-5;
+            background-color: $secondary;
         }
         &.add-after {
             z-index: 1;
@@ -646,62 +598,6 @@ input[type="date"] {
         overflow: hidden;
         height: 100%;
         width: 60px;
-        #filename{
-            float:left;
-            white-space: nowrap;
-            overflow:hidden;
-            background:$white;
-        }
-        #file-upload {
-            position: absolute;
-            left: -9999px;
-            cursor: pointer;
-        }
-        label[for="file-upload"]{
-            padding:10px;  
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            background: $white;
-            margin-bottom: 0;
-            cursor:pointer;
-            &:hover,
-            &:focus {
-                background-color: $grey-3;
-                color: $black;
-            }
-        }
-        #filename-2{
-            float:left;
-            white-space: nowrap;
-            overflow:hidden;
-            background:$white;
-        }
-        #file-upload-2 {
-            position: absolute;
-            left: -9999px;
-            cursor: pointer;
-        }
-        label[for="file-upload-2"]{
-            padding:0;  
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 0;
-            font-size: $font-size-sm;
-            font-weight: $font-600;
-            cursor:pointer;
-            &:hover,
-            &:focus {
-                background-color: transparent;
-                color: $secondary;
-            }
-            
-        }
-        &.sign{
-            border-right: 0;
-            width:calc(100% - 60px);
-        }
     }
     a{
         &.cancel-upload-btn{
@@ -718,7 +614,6 @@ input[type="date"] {
     }
     &.id-upload{
         .browse-file{
-            border-right: 0;
             #filename-3,#filename-4,#filename-5, #filename-6, #filename-7{
                 float:left;
                 white-space: nowrap;
@@ -741,12 +636,12 @@ input[type="date"] {
             label[for="file-upload-5"],label[for="file-upload-6"]{
                 height: 60px;
                 width: 60px;
-                border: 1px dashed $skyblue-2;
+                border: 1px dashed $secondary;
                 border-radius: 10px;
                 padding: 5px;
             }
             label[for="file-upload-7"]{
-                border: 1px dashed $skyblue-2;
+                border: 1px dashed $secondary;
                 border-radius: 10px;
                 padding: 19px;   
                 width: 100%;
@@ -757,15 +652,17 @@ input[type="date"] {
                 font-size: $font-size-sm;
                 font-weight: $font-700;
                 line-height: $line-height-18;
-                color: $skyblue-2;
+                color: $secondary;
                 &:hover{
-                    color: $skyblue-2;
+                    color: $secondary;
                 }
             }
         }
     }
 }
   
+
+
   
   
   

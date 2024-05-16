@@ -1,27 +1,4 @@
-button{
-    background-color: transparent;
-    border: 0;
-    &:hover, &:active{
-        color: $secondary;
-        &.icon-tag{
-            .bg-icon-black{
-                background-color: $secondary;
-            }
-            .bg-icon-white{
-                background-color: $secondary;
-                color: $white;
-            }
-        }
-    }
-    &.icon-tag{
-        .bg-icon-black{
-            background-color: $black;
-        }
-        .bg-icon-white{
-            background-color: $white;
-        }
-    }
-}
+
 a{
     text-decoration: none;
     &:hover{
@@ -32,87 +9,6 @@ a{
     }
 }
 
-.pagination-navbar{
-    a{
-        &.bg-icon{
-            border: 1px solid $white;
-            border-radius: $radius-50;
-            width: 25px;
-            height: 25px;
-            &.disabled{
-                opacity: 0.2;       
-                span{
-                    width: 12px;
-                }
-                &:hover{
-                    span{
-                        color: $white;
-                    }
-                }
-            }
-        }
-        &.clickable{
-            &:hover{
-                &.bg-icon{
-                    border: 1px solid $secondary;
-                }
-            }
-        }
-    }
-}
-
-.carousel{
-    &.custom-carousel{
-        padding: 15px;
-        .carousel-inner{
-            padding: 20px 50px;
-        }
-        .carousel-control-prev{
-            width: 20px;
-            height: 20px;
-            background-color: $primary;
-            border-radius: 50%;
-            opacity: 1;
-            top: 50%;
-            left: 15px;
-            .carousel-control-prev-icon{
-                background-image: (url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="18" fill="white" viewBox="0 -960 960 960" width="15"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>'));
-                height: 18px;
-                width: 15px;
-                position: absolute;
-                left: 5px;
-            }
-        }
-        .carousel-control-next{
-            width: 20px;
-            height: 20px;
-            background-color: $primary;
-            border-radius: 50%;
-            opacity: 1;
-            top: 50%;
-            right: 15px;
-            .carousel-control-next-icon{
-                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" height="18" fill="white" width="15"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>');
-                height: 18px;
-                width: 15px;
-                position: absolute;
-            }
-        }
-        .carousel-indicators [data-bs-target]{
-            opacity: 1;
-            border: 1px solid $grey-9;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            opacity: 0.3;
-            &.active{
-                background-color: $primary;
-                opacity: 1;
-                border: 1px solid $primary;
-            }
-        }
-    }
-}
 
 // PAGINATION TICKET LANDING PAGE NAVBAR
 .pagination-ticket-navbar{

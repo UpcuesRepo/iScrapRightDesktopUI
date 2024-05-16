@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <!-- FAVICON -->
+     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+     <link rel="manifest" href="../images/favicon/manifest.json">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">
+     
+    
+     <!-- CSS -->
+     <link href="../assets/dist/css/default.css" rel="stylesheet" />
+     <title>IScrapRight</title>
+  </head>
+  <body>
+    <div class="layout-1 style-1 height-100">
+        <!-- LANDING PAGE NAVBAR -->
+        <nav class="navbar ticket-landing-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <div class="d-flex align-items-center ms-3">
+                <img src="../images/logo/iSR-logo.svg" class="logo me-3" alt="">
+                <div class="pagination-ticket-navbar d-flex align-items-center">
+                  <a href="#" class="arrow me-4">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.2">
+                        <path d="M16.9999 11.3335L11.3333 17.0002M11.3333 17.0002L16.9999 22.6668M11.3333 17.0002H22.6666M31.1666 17.0002C31.1666 24.8242 24.824 31.1668 16.9999 31.1668C9.17588 31.1668 2.83325 24.8242 2.83325 17.0002C2.83325 9.17613 9.17588 2.8335 16.9999 2.8335C24.824 2.8335 31.1666 9.17613 31.1666 17.0002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                  </a>
+                  <div class="pagination-title">
+                    <div class="ticket-number">
+                      Ticket #4717 <span class="f-sm-secondary">(Inbound)</span>
+                    </div>
+                    <div class="ticket-name text-center">
+                      CODY SCOTT BROWN
+                    </div>
+                  </div>
+                  <a href="#" class="arrow ms-4">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.2">
+                        <path d="M17.0001 11.3335L22.6667 17.0002M22.6667 17.0002L17.0001 22.6668M22.6667 17.0002H11.3334M2.83342 17.0002C2.83342 24.8242 9.17605 31.1668 17.0001 31.1668C24.8241 31.1668 31.1667 24.8242 31.1667 17.0002C31.1667 9.17613 24.8241 2.8335 17.0001 2.8335C9.17605 2.8335 2.83342 9.17613 2.83342 17.0002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="d-flex align-items-center">
+                <button class="btn with-icon btn-white-10 btn-h64 btn-md fw-xxbold me-1">
+                  <svg class="me-2" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 10V20M10 15H20M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Add New Ticket
+                </button>
+                <button class="btn with-icon btn-white-10 btn-h64 btn-md fw-xxbold">
+                  <svg class="me-2" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Search tikets
+                </button>
+                <div class="link-part d-flex align-items-center">
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      TRANSACTION
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Ticketing Screen</a></li>
+                      <li><a class="dropdown-item" href="#">AP Screen</a></li>
+                      <li><a class="dropdown-item" href="#">Check Register</a></li>
+                      <li><a class="dropdown-item" href="#">Admin Ticket Review</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ADMIN
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">My Account</a></li>
+                      <li><a class="dropdown-item" href="#">Customers</a></li>
+                      <li><a class="dropdown-item" href="#">Users</a></li>
+                      <li><a class="dropdown-item" href="#">Materials</a></li>
+                      <li><a class="dropdown-item" href="#">Contamination</a></li>
+                      <li><a class="dropdown-item" href="#">QBO Config</a></li>
+                      <li><a class="dropdown-item" href="#">QBO Manual Upload</a></li>
+                      <li><a class="dropdown-item" href="#">QBO Transactions</a></li>
+                      <li><a class="dropdown-item" href="#">Compliance & Pay</a></li>
+                      <li><a class="dropdown-item" href="#">Uploads</a></li>
+                      <li><a class="dropdown-item" href="#">Ticket Builder</a></li>
+                      <li><a class="dropdown-item" href="#">Training Videos</a></li>
+                      <li><a class="dropdown-item" href="#">Workstations</a></li>
+                      <li><a class="dropdown-item" href="#">My IoT Devices</a></li>
+                      <li><a class="dropdown-item" href="#">Subscriptions</a></li>
+                      <li><a class="dropdown-item" href="#">PITCH DECK</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      REPORTS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Purchase Summary</a></li>
+                      <li><a class="dropdown-item" href="#">Cashier Reconciliation</a></li>
+                      <li><a class="dropdown-item" href="#">Non-Compliant Tickets</a></li>
+                      <li><a class="dropdown-item" href="#">Transaction Detail</a></li>
+                      <li><a class="dropdown-item" href="#">Material/Price</a></li>
+                      <li><a class="dropdown-item" href="#">VIN</a></li>
+                      <li><a class="dropdown-item" href="#">POS</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CASH DRAWER
+                    </a>
+                    <ul class="dropdown-menu cash-drawer-dropdown dropdown-menu-lg-end">
+                      <li>  
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Startup Amount</div>
+                          <div class="total">$0.00</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Cash Paid</div>
+                          <div class="total">$0.00</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Addition</div>
+                          <div class="total">$0.00</div>
+                        </a> 
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Deduction</div>
+                          <div class="total">$0.00</div>
+                        </a>  
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Balance Total</div>
+                          <div class="total green">$0.00</div>
+                        </a>  
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">OPEN</div>
+                          <button class="btn btn-skyblue2 radius-xxl btn-md btn-h36">MAKE ENTRY</button>
+                        </a>  
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <button type="button" class="nav-link">TRANSACTION</button>
+                  <button type="button" class="nav-link">ADMIN</button>
+                  <button type="button" class="nav-link">REPORTS</button>
+                  <button type="button" class="nav-link">CASH DRAWER</button> -->
+                </div>
+                <!-- <button class="user-btn">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.08823 25.9177C7.89933 24.0068 9.79307 22.6665 11.9998 22.6665H19.9998C22.2066 22.6665 24.1003 24.0068 24.9114 25.9177M21.3332 12.6665C21.3332 15.612 18.9454 17.9998 15.9998 17.9998C13.0543 17.9998 10.6665 15.612 10.6665 12.6665C10.6665 9.72099 13.0543 7.33317 15.9998 7.33317C18.9454 7.33317 21.3332 9.72099 21.3332 12.6665ZM29.3332 15.9998C29.3332 23.3636 23.3636 29.3332 15.9998 29.3332C8.63604 29.3332 2.6665 23.3636 2.6665 15.9998C2.6665 8.63604 8.63604 2.6665 15.9998 2.6665C23.3636 2.6665 29.3332 8.63604 29.3332 15.9998Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button> -->
+                <div class="dropdown user-menu">
+                  <button class="user-btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.08823 25.9177C7.89933 24.0068 9.79307 22.6665 11.9998 22.6665H19.9998C22.2066 22.6665 24.1003 24.0068 24.9114 25.9177M21.3332 12.6665C21.3332 15.612 18.9454 17.9998 15.9998 17.9998C13.0543 17.9998 10.6665 15.612 10.6665 12.6665C10.6665 9.72099 13.0543 7.33317 15.9998 7.33317C18.9454 7.33317 21.3332 9.72099 21.3332 12.6665ZM29.3332 15.9998C29.3332 23.3636 23.3636 29.3332 15.9998 29.3332C8.63604 29.3332 2.6665 23.3636 2.6665 15.9998C2.6665 8.63604 8.63604 2.6665 15.9998 2.6665C23.3636 2.6665 29.3332 8.63604 29.3332 15.9998Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu user-dropdown dropdown-menu-lg-end">
+                    <li>
+                      <div class="dropdown-link pb-0">Nick Carter</div>
+                      <div class="dropdown-link">nick19@scrapright.com</div>
+                    </li>
+                    <li>
+                      <div class="dropdown-link" >Workstation:</div>
+                      <div class="form-group select-style-4 d-flex w-100 mb-3">
+                        <select class="selectpicker" data-live-search="true">
+                          <option data-tokens="ketchup mustard">1</option>
+                          <option data-tokens="mustard">2</option>
+                          <option data-tokens="frosting">3</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-link d-flex justify-content-between">
+                          <div class="inner-content">Company Name: </div> 
+                          <div class="inner-content">Admin Account</div> 
+                        </div>
+                        <button class="btn btn-skyblue2 btn-md btn-h36 w-100">LOGOUT</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>  
+        </nav>
+        <!-- END LANDING PAGE NAVBAR -->
+        <!-- CONTENT PART -->
+        <div class="row content-part">
+            <div class="col-md-8">
+                <div class="left-part">
+                <!-- TABLE -->
+                    <div class="ticket-table-container bg-white d-flex flex-column justify-content-between mb-3">
+                        <table class="table ticket-landing-table mb-0">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="fw-extrabold">gross</th>
+                                <th scope="col" class="fw-extrabold">TARE</th>
+                                <th scope="col" class="fw-extrabold">NET</th>
+                                <th scope="col" class="fw-extrabold">PRICE</th>
+                                <th scope="col" class="fw-extrabold">TOTAL</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span class="fs-lg fw-extrabold color-secondary">Al Extrusion</span><br>200 Test<br><span class="fw-regular">20 lb deducted for Wood</span></td>
+                                <td>0</td>
+                                <td>200</td>
+                                <td>$0.80/lb</td>
+                                <td>$144.00</td>
+                            </tr>
+                            <tr>
+                                <td><span class="fs-lg fw-extrabold color-secondary">Al Extrusion</span><br>200 Test<br><span class="fw-regular">20 lb deducted for Wood</span></td>
+                                <td>0</td>
+                                <td>200</td>
+                                <td>$0.80/lb</td>
+                                <td>$144.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group w-50">
+                                        <input type="email" class="form-control style-2 h-46" placeholder="Add an Item">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="bottom-strip">
+                            <table class="w-100 table bottom-strip-darkblue-table mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td>Materials: 3</td>
+                                        <td>Net Wt : 170 lb</td>
+                                        <td>Avg Price : $70.61/lb</td>
+                                        <td>$12,002.85</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                <!-- END TABLE -->
+                
+                <!-- TICKET LANDING PAGE ADD CARD -->
+                    <div class="add-note-card d-flex justify-content-between align-items-center p-0">
+                        <a href="#" class="ms-3 d-flex align-items-center add-note-link">
+                            <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 10.5V6.8C20 5.11984 20 4.27976 19.673 3.63803C19.3854 3.07354 18.9265 2.6146 18.362 2.32698C17.7202 2 16.8802 2 15.2 2H8.8C7.11984 2 6.27976 2 5.63803 2.32698C5.07354 2.6146 4.6146 3.07354 4.32698 3.63803C4 4.27976 4 5.11984 4 6.8V17.2C4 18.8802 4 19.7202 4.32698 20.362C4.6146 20.9265 5.07354 21.3854 5.63803 21.673C6.27976 22 7.11984 22 8.8 22H12M14 11H8M10 15H8M16 7H8M18 21V15M15 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Add Note
+                        </a>
+                        <div class="col-md-4 d-flex">
+                            <div class="form-group w-100 me-3">
+                            <input type="email" class="form-control style-3 h-32" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit... ">
+                            </div>
+                            <button class="btn btn-white-10 btn-edit">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_240_5645)">
+                                <path d="M2.15703 13.5867C2.19149 13.2766 2.20872 13.1215 2.25564 12.9766C2.29726 12.848 2.35607 12.7256 2.43048 12.6128C2.51434 12.4856 2.62466 12.3753 2.8453 12.1547L12.75 2.24998C13.5784 1.42156 14.9216 1.42156 15.75 2.24998C16.5784 3.07841 16.5784 4.42156 15.75 5.24998L5.84529 15.1547C5.62466 15.3753 5.51434 15.4856 5.38717 15.5695C5.27434 15.6439 5.15197 15.7027 5.02338 15.7443C4.87845 15.7913 4.72339 15.8085 4.41328 15.843L1.875 16.125L2.15703 13.5867Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_240_5645">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="btn-label me-2">Status</div>
+                            <div class="btn btn-green2 btn-md fw-semibold radius-xxl btn-h30">
+                            Open
+                            </div>
+                        </div>
+                        <button class="btn btn-skyblue2 btn-16 with-icon h-70" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddMaterial" aria-controls="offcanvasAddMaterial">
+                            <svg class="me-2" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.625 9.09717L15 14.9999M15 14.9999L4.37496 9.09717M15 14.9999L15 26.875M17.5 26.1111L15.9713 26.9604C15.6168 27.1573 15.4395 27.2558 15.2518 27.2944C15.0857 27.3286 14.9143 27.3286 14.7482 27.2944C14.5605 27.2558 14.3832 27.1573 14.0287 26.9604L4.77872 21.8215C4.40432 21.6135 4.2171 21.5095 4.08079 21.3616C3.9602 21.2307 3.86893 21.0756 3.81311 20.9066C3.75 20.7156 3.75 20.5015 3.75 20.0732V9.92679C3.75 9.49849 3.75 9.28434 3.81311 9.09334C3.86893 8.92437 3.9602 8.76927 4.08079 8.6384C4.21711 8.49048 4.40431 8.38648 4.77871 8.17848L14.0287 3.03959C14.3832 2.84264 14.5605 2.74416 14.7482 2.70556C14.9143 2.67139 15.0857 2.67139 15.2518 2.70556C15.4395 2.74417 15.6168 2.84264 15.9713 3.03959L25.2213 8.17848C25.5957 8.38648 25.7829 8.49048 25.9192 8.6384C26.0398 8.76926 26.1311 8.92437 26.1869 9.09334C26.25 9.28433 26.25 9.49849 26.25 9.92679L26.25 15.625M9.375 5.62498L20.625 11.875M23.75 26.25V18.75M20 22.5H27.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            ADD Material
+                            <svg class="ms-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                            <path d="M17 18L12 13L7 18M17 11L12 6L7 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            </svg>
+                        </button>
+                        <!-- ADD MATERIAL OFFCANVAS - TICKET LANDING PAGE -->
+                            <div class="offcanvas offcanvas-addMaterial offcanvas-bottom" tabindex="-1" id="offcanvasAddMaterial" aria-labelledby="offcanvasAddMaterialLabel">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="row h-100">
+                                <div class="col-md-2 p-0">
+                                    <div class="left-part h-100">
+                                    <div class="category-box style-2 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                        #1 PET PLASTIC
+                                    </div>  
+                                    <div class="category-box style-2 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                        Aluminum CRV                  
+                                    </div>  
+                                    <div class="category-box style-2 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                        Aluminum CRV .05 EA
+                                    </div>  
+                                    </div>
+                                </div>
+                                <div class="col-md-10 p-0">
+                                    <div class="right-part">
+                                    <div class="d-flex justify-content-between align-items-center p-4">
+                                        <div class="title">
+                                        Material categories
+                                        </div>
+                                        <a href="#" class="back-link d-flex align-items-center">
+                                        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        BACK
+                                        </a>
+                                    </div>
+                                    <div id="carouselExampleIndicators" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="d-flex mb-4">
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                                </div>
+                                            </div>  
+                                            <div class="d-flex mb-4">
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                                </div>
+                                            </div>  
+                                            <div class="d-flex">
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                                </div>
+                                                <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="d-flex mb-4">
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            </div>  
+                                            <div class="d-flex mb-4">
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            </div>  
+                                            <div class="d-flex">
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            </div> 
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="d-flex mb-4">
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            </div>  
+                                            <div class="d-flex mb-4">
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            </div>  
+                                            <div class="d-flex">
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AIRLINE MATERIALS
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                ALUMINUM
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            <div class="category-box me-3 d-flex align-items-center justify-content-center flex-wrap p-3 text-center">
+                                                AUTOMOBILE
+                                            </div>
+                                            </div>   
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        <!-- END ADD MATERIAL - TICKET LANDING PAGE -->
+                    </div>
+                <!-- END TICKET LANDING PAGE ADD CARD -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="right-part">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- END CONTENT PART -->
+    </div>
+    <script src="../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

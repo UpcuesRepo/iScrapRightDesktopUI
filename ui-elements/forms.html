@@ -30,72 +30,6 @@
   <body>
     <div class="container">
       <h1>Forms</h1>
-      <div class="row mb-5 mt-5">
-         <!--form input h-36  -->
-        <div class="col-md-3 mb-3">
-          <div class="form-group">
-            <label class="form-label">ID / Registration #:</label>
-            <input type="email" class="form-control h-36" placeholder="">
-          </div>
-        </div>
-        <!-- form input h-40 -->
-        <div class="col-md-3 mb-3">
-          <div class="form-group">
-            <label class="form-label">ID / Registration #:</label>
-            <input type="email" class="form-control h-40" placeholder="Driver’s License/ID#">
-          </div>
-        </div>
-        <!-- drop down -->
-        <div class="col-md-3 mb-3">
-          <div class="form-group mb-3">
-            <label class="form-label">Floating Select</label>
-            <select class="selectpicker" data-live-search="true">
-              <option data-tokens="ketchup mustard">1</option>
-              <option data-tokens="mustard">2</option>
-              <option data-tokens="frosting">3</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- calender -->
-        <div class="col-md-3 mb-3">
-          <div class="form-group">
-            <label class="form-label">Pickup Date:</label>
-            <input type="date" class="form-control h-40" placeholder="ID Expiration">
-          </div>
-        </div>
-
-        <!-- toggle switch -->
-        <div class="col-md-3 mb-3">
-          <label class="switch custom-switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-
-
-        <!-- image and signature upload -->
-        <div class="col-md-6 mb-3">
-            <div class="upload-box border-grey d-flex align-items-center h-60">
-              <form method="post" class="browse-file" enctype="multipart/form-data" action="">
-                <span id="filename" class="filename"></span>
-                <div class="button-part w-100 h-100">
-                  <label for="file-upload"><img src="../images/backgrounds/a2.jpg" class="h-40 w-40" alt=""><input type="file" id="file-upload" class="file-upload"></label>
-                </div>
-              </form>
-              <form method="post" class="browse-file sign" enctype="multipart/form-data" action="">
-                <span id="filename-2" class="filename"></span>
-                <div class="button-part d-flex justify-content-center h-100">
-                  <label for="file-upload-2">UPLOAD SIGNATURE<input type="file" id="file-upload-2" class="file-upload"></label>
-                </div>
-              </form>
-              <a href="#" class="cancel-upload-btn">
-                <span class="material-symbols-rounded me-2 color-white radius-50 h-20 w-20 fs-20">close</span>
-              </a>
-            </div>
-        </div>
-      
-      </div>
 
       <div class="row mb-5">
 
@@ -166,19 +100,24 @@
         <div class="col-md-4 mb-3">
           <div class="form-group">
             <label class="form-label label-lg">Email address</label>
-            <input type="email" class="form-control style-2 h-46" placeholder="Add an Item">
+            <input type="email" class="form-control h-46" placeholder="Add an Item">
           </div>
         </div>
         <!-- form input h-44 style-2 -->
         <div class="col-md-4 mb-3">
           <div class="form-group">
             <label class="form-label label-lg">ID / Registration #:</label>
-            <input type="email" class="form-control style-2 h-44" placeholder="Driver’s License / ID#">
+            <input type="email" class="form-control h-44" placeholder="Driver’s License / ID#">
           </div>
+        </div>
+        <!-- FLOATING FORM INPUT H-46  -->
+        <div class="form-floating h-46 mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
         </div>
         <!-- form input h-135 style-2 -->
         <div class="col-md-4 mb-3">
-          <textarea id="w3review" class="form-control style-2" name="w3review" rows="4" cols="50">
+          <textarea id="w3review" class="form-control" name="w3review" rows="4" cols="50">
             Disclaimer
           </textarea>
         </div>
@@ -186,9 +125,9 @@
       <div class="row mb-5">
         <!--calender form input h-44 style-2 -->
         <div class="col-md-4 mb-5">
-          <div class="form-group">
-            <label class="form-label label-lg">date:</label>
-            <input type="date" class="form-control form-calender style-2 h-44" placeholder="">
+          <div class="form-floating">
+            <input type="date" class="form-control form-calender" placeholder="">
+            <label class="floatingInput">date:</label>
           </div>
         </div>
       </div>

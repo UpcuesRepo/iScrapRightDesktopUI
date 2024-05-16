@@ -6,3 +6,22 @@ body{
     background-color: $body-bg;
     height: 100%;
 }
+.height-100{
+    height: 100vh;
+}
+.layout-1{
+    &.style-1{
+        .content-part{
+            display: flex;
+            height: calc(100% - 64px);
+            align-items: stretch;
+            .left-part{
+                padding: 15px;
+                border-right: 1px solid $dark-bluergba2;
+            }
+            .right-part{
+                
+            }
+        }
+    }   
+}

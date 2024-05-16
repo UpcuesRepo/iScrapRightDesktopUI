@@ -28,14 +28,6 @@
             }
         }
     }
-    &.btn-primary{
-        background-color: $primary;
-        color: $white;
-        &:hover, &:active{
-            background-color: $grey-2;
-            color: $black;
-        }
-    }
     &.btn-grey-5{
         background-color: $grey-5;
         color: $white;
@@ -49,7 +41,7 @@
     }
     &.btn-skyblue-6{
         background-color: $skyblue-6;
-        color: $skyblue-2;
+        color: $secondary;
         &:hover, &:active{
             background-color: $grey-2;
             color: $black;
@@ -65,7 +57,7 @@
         }
     }
     &.btn-skyblue2{
-        background-color: $skyblue-2;
+        background-color: $secondary;
         color:$white;
         border-radius: $radius-lg;
         &:hover, &:active{
@@ -146,7 +138,7 @@
         text-transform: $text-uppercase;
         &:hover, &:active{
             color: $white;
-            background-color: $skyblue-2;
+            background-color: $secondary;
             svg{
                 path{
                     stroke: $white;
@@ -180,7 +172,7 @@
     }
     &.btn-white{
         background-color: $white;
-        color: $dark-blue;
+        color: $primary;
         border-radius: 50px;
         font-size: $font-size-lg;
         font-weight: $font-700;
@@ -189,7 +181,7 @@
         width: 100%;
         &:hover, &:active{
             color: $white;
-            background-color: $skyblue-2;
+            background-color: $secondary;
             svg{
                 path{
                     stroke: $white;
@@ -294,7 +286,7 @@
     }
 }
 .ticket-action-btn{
-    background-color: $dark-blue;
+    background-color: $primary;
     box-shadow: 10px 0px 10px 0px #03030326 inset;
     position: relative;
     .btn-darkblue{
@@ -326,7 +318,7 @@
     &.offcanvas-addMaterial,&.offcanvas-payTicket{
         .btn-close{
             background: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-            background-color: $skyblue-2;
+            background-color: $secondary;
             background-repeat: no-repeat;
             opacity: 1;
             padding: 18px;
