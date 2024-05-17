@@ -96,6 +96,11 @@ textarea{
         background: $white;
         width: auto;
         height: auto;
+        color: $primary;
+        &.label-13{
+            font-size: $font-size-13;
+            font-weight: $font-400;
+        }
     }
     .form-control{
         height: auto;
@@ -105,14 +110,26 @@ textarea{
                 opacity: 1;
             }
         }
+        &:not(:placeholder-shown){
+            ~label{
+                opacity: 1;
+            }    
+        } 
+        >{
+            .form-select{
+                ~label{
+                    opacity: 1;
+                }
+            }
+        }
     }
     &.h-46{
         >label{
-            transform-origin: 0 -110px;
-            padding: 0 10px;
-            left: 30px;
-            line-height: 15px;
+            left: 13px;
+            line-height: 13px;
+            padding: 0 7px;
             top: 35%;
+            transform-origin: 0 -110px;
         }
         .form-control{
             padding: 12px 20px;
@@ -123,6 +140,26 @@ textarea{
             &:focus{
                 padding-top: 12px;
                 padding-bottom: 12px;    
+            }
+        }
+    }
+    &.h-44{
+        >label{
+            transform-origin: 0 -110px;
+            padding: 0 7px;
+            left: 10px;
+            line-height: 14px;
+            top: 35%;
+        }
+        .form-control{
+            padding: 11px 20px;
+            &:not(:placeholder-shown){
+                padding-top: 11px;
+                padding-bottom: 11px;
+            }
+            &:focus{
+                padding-top: 11px;
+                padding-bottom: 11px;    
             }
         }
     }
@@ -662,9 +699,10 @@ input[type="date"] {
 }
   
 
-
-  
-  
+.datepicker_input + label {
+    padding-left: 3.5rem;
+    z-index: 9;
+  }
   
   
   

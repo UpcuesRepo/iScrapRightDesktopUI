@@ -10,6 +10,8 @@ nav{
                     font-weight: $font-900;
                     color: $white-rgba3;
                     padding: 10px;
+                    background: transparent;
+                    border: 0;
                     &:hover,&:active{
                         color: $white;
                     }
@@ -38,6 +40,8 @@ nav{
                                 font-size: $font-size-md;
                                 font-weight: $font-700;
                                 color: $white;
+                                background: transparent;
+                                border: 0;
                                 &::after{
                                     border-top: 0;
                                     border-left: 0;
@@ -149,6 +153,8 @@ nav{
                 &.dropdown{
                     .user-btn{
                         padding: 15px;
+                        background: transparent;
+                        border: 0;
                         &:hover{
                             svg{
                                 path{

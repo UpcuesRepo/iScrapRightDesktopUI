@@ -47,3 +47,24 @@ $('#file-upload-7').change(function() {
 $(".form-check .add-after").after('<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.33366 2.5L3.75033 7.08333L1.66699 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 $(".form-check.style-2 .add-after").after('<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.33366 2.5L3.75033 7.08333L1.66699 5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 // END CHECKBOX
+
+
+const getDatePickerTitle = elem => {
+    // From the label or the aria-label
+    const label = elem.nextElementSibling;
+    let titleText = '';
+    if (label && label.tagName === 'LABEL') {
+      titleText = label.textContent;
+    } else {
+      titleText = elem.getAttribute('aria-label') || '';
+    }
+    return titleText;
+  }
+  
+  const elems = document.querySelectorAll('.datepicker_input');
+  for (const elem of elems) {
+    const datepicker = new Datepicker(elem, {
+      'format': 'dd/mm/yyyy', // UK format
+      title: getDatePickerTitle(elem)
+    });
+  }
