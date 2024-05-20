@@ -39,6 +39,12 @@
             <div class="col-md-2">
                 <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modaleditCust">Edit Customer</button>
             </div>
+            <div class="col-md-2">
+                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalAddCash">Edit Customer</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalEditUser">Edit USER</button>
+            </div>
         </div>
 
             <div class="modal fade" id="modalCancelTicket" tabindex="-1" aria-labelledby="" aria-hidden="true">
@@ -442,6 +448,203 @@
                                         <label for="floatingInput" class="label-13">Employer Phone Number</label>
                                     </div>  
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalAddCash" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md modal-add-cash overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header p-0">
+                            <button type="button" class="btn btn-skyblue2 radius-top10 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="modal-title" id="modalAddCashLabel">Add Cash Drawer</h1>
+                            <div class="row py-3">
+                                <div class="col-md-12">
+                                    <div class="form-floating h-44 mb-5">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Title</label>
+                                    </div>  
+                                </div>  
+                            </div>  
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="btn btn-white-10 check-btn btn-modal-footer btn-h44 w-auto">close</button> 
+                                <button class="btn btn-skyblue2 check-btn btn-h44 w-auto">SAVE CASH DRAWER</button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalEditUser" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-39 modal-edit-user overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header p-0">
+                            <button type="button" class="btn btn-skyblue2 radius-top10 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="modal-title" id="modalAddCashLabel">Edit USER</h1>
+                            <div class="row py-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">First Name</label>
+                                    </div>  
+                                </div>  
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Last Name</label>
+                                    </div>  
+                                </div>  
+                            </div>  
+                            <div class="row pb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Username (Email Address)</label>
+                                    </div>  
+                                </div>  
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Password</label>
+                                    </div>  
+                                </div>  
+                            </div>  
+                            <div class="row pb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Passcode</label>
+                                    </div>  
+                                </div>  
+                                <div class="col-md-6">
+                                    <div class="form-group floating-group floating-diff">
+                                        <label class="floating-label">Permission</label>
+                                        <select id="country" name="country" class="form-control floating-control">
+                                          <option value="">Permission</option>   
+                                          <option value="Afganistan">Admin</option>
+                                          <option value="Albania">Albania</option>
+                                          <option value="India">India</option>
+                                          <option value="American Samoa">American Samoa</option>
+                                          <option value="Andorra">Andorra</option>
+                                          <option value="Angola">Angola</option>
+                                        </select>
+                                    </div>
+                                </div>  
+                            </div>  
+                            <div class="row pb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">iOS Device</label>
+                                    </div>  
+                                </div>  
+                                <div class="col-md-6">
+                                    <div class="form-group floating-group floating-diff">
+                                        <label class="floating-label">No. of Copies</label>
+                                        <select id="country" name="country" class="form-control floating-control">
+                                          <option value="">No. of Copies</option>   
+                                          <option value="Afganistan">1</option>
+                                          <option value="Albania">Albania</option>
+                                          <option value="India">India</option>
+                                          <option value="American Samoa">American Samoa</option>
+                                          <option value="Andorra">Andorra</option>
+                                          <option value="Angola">Angola</option>
+                                        </select>
+                                    </div>  
+                                </div>  
+                            </div>  
+                            <div class="row pb-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Weight Master</label>
+                                    </div>  
+                                </div>  
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Printer IP</label>
+                                    </div>  
+                                </div>  
+                            </div>  
+                            <div class="row pb-3">
+                                <div class="col-md-6">
+                                    <div class="form-group floating-group floating-diff">
+                                        <label class="floating-label">Cash Drawer</label>
+                                        <select id="country" name="country" class="form-control floating-control">
+                                          <option value="">Cash Drawer</option>   
+                                          <option value="Afganistan">Default</option>
+                                          <option value="Albania">Albania</option>
+                                          <option value="India">India</option>
+                                          <option value="American Samoa">American Samoa</option>
+                                          <option value="Andorra">Andorra</option>
+                                          <option value="Angola">Angola</option>
+                                        </select>
+                                    </div>  
+                                </div>  
+                                <div class="col-md-6">
+                                    <div class="form-group floating-group floating-diff">
+                                        <label class="floating-label">Workstation</label>
+                                        <select id="country" name="country" class="form-control floating-control">
+                                          <option value="">Workstation</option>   
+                                          <option value="Afganistan">RD3 Office IOT</option>
+                                          <option value="Albania">Albania</option>
+                                          <option value="India">India</option>
+                                          <option value="American Samoa">American Samoa</option>
+                                          <option value="Andorra">Andorra</option>
+                                          <option value="Angola">Angola</option>
+                                        </select>
+                                    </div>    
+                                </div>  
+                            </div>
+                            <table class="w-100">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-inline">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                <label class="form-check-label style-2 ms-2" for="check1">
+                                                    Override Price Range
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                <label class="form-check-label style-2 ms-2" for="check1">
+                                                    Pay By Cash
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline">
+                                                <label class="form-check-label style-2 ms-2" for="check1">
+                                                    Start Ticket by
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>  
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="btn btn-white-10 check-btn btn-modal-footer btn-h44 w-auto">close</button> 
+                                <button class="btn btn-skyblue2 check-btn btn-h44 w-auto">SAVE</button>   
                             </div>
                         </div>
                     </div>

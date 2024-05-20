@@ -697,14 +697,94 @@ input[type="date"] {
         }
     }
 }
-  
 
-.datepicker_input + label {
-    padding-left: 3.5rem;
-    z-index: 9;
-  }
-  
-  
+.floating-group{
+    &.floating-diff{
+        &.focused{
+            .floating-label{
+                opacity: 1;
+            }
+        }
+    } 
+    &.form-group{
+        position: relative;
+        &.focused{
+            .floating-label {
+                color: $primary;
+                font-size: $font-size-13;
+                left: 15px;
+                opacity: 1;
+                top: -9px;
+                background: white;
+                padding: 0 5px;
+            }
+            select{
+                &.form-control{
+                    padding-top: 11px;
+                    line-height: 14px;
+                }
+            }
+            &::after{
+                transform: rotate(180deg);
+            }
+        }
+        &::after{
+            content: "";
+            background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 7.5L10 12.5L15 7.5" stroke="%230E3456" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+            height: 20px;
+            position: absolute;
+            width: 20px;
+            top: 25%;
+            right: 5%;
+        }
+    } 
+    .floating-label {
+        font-size: $font-size-13;
+        font-weight: $font-600;
+        color: $primary;
+        top: 16px;
+        left: 20px;
+        pointer-events: none;
+        position: absolute;
+        transition: 240ms;
+        margin-bottom: 0;
+        z-index: 1;
+        opacity: 0;
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &.form-control {
+            display: block;
+            -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            transition: 0.15s;
+            height:auto;
+            min-height: 44px;
+            font-weight: $font-400;
+            border: 1px solid $skyblue-6;
+            color: $primary;
+            letter-spacing: inherit;
+            background-color: $white;
+            width: 100%;
+            text-transform: inherit;
+            font-size: $font-size-13;
+            padding: 10px 20px;
+            line-height: 22px;
+            &:focus {
+                color: $primary;
+                background-color: #FFF;
+                border:1px solid $skyblue-6 ;
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+
   
   
   

@@ -1,8 +1,9 @@
 .modal {
-    
- 
     .modal-dialog {
         .modal-content {
+                border-radius: 10px 0 10px 10px;
+                box-shadow: 0px 4px 10px 0px #00000040;
+                border: 0;
                 .modal-header {
                     display: flex;
                     justify-content: center;
@@ -33,15 +34,15 @@
         &.modal-md {
             max-width: 38%;
         }
+        &.modal-39 {
+            max-width: 39%;
+        }
         &.modal-lg {
             max-width: 57.3%;
         }
  
         &.modal-cancel-ticket {
             .modal-content {
-                border-radius: 10px 0 10px 10px;
-                box-shadow: 0px 4px 10px 0px #00000040;
-                border: 0;
                 .modal-body{
                     .warning-text{
                         font-size: $font-size-16;
@@ -57,18 +58,12 @@
         }
         &.modal-edit-check {
             .modal-content {
-                border-radius: 10px 0 10px 10px;
-                box-shadow: 0px 4px 10px 0px #00000040;
-                border: 0;
                 .modal-header{
                     border-bottom: 0;    
                 }
                 .modal-body{
                     padding: 15px;
                     .modal-title{
-                        font-size: $font-size-20;
-                        font-weight: $font-700;
-                        line-height: $line-height-18;
                         border-bottom: 1px solid $skyblue2-rgba5;
                         text-transform: $text-uppercase;
                         padding-bottom: 15px;
@@ -82,9 +77,6 @@
         }
         &.modal-edit-cust {
             .modal-content {
-                border-radius: 10px 0 10px 10px;
-                box-shadow: 0px 4px 10px 0px #00000040;
-                border: 0;
                 .modal-header{
                     border-bottom: 0;    
                     .btn-skyblue2{
@@ -97,9 +89,6 @@
                 .modal-body{
                     padding: 15px;
                     .modal-title{
-                        font-size: $font-size-20;
-                        font-weight: $font-700;
-                        line-height: $line-height-18;
                         border-bottom: 1px solid $skyblue2-rgba5;
                         text-transform: $text-uppercase;
                         padding-bottom: 15px;
@@ -120,6 +109,38 @@
                     }
                 }
             }
+        }
+        &.modal-add-cash{
+            .modal-content{
+                .modal-body{
+                    padding: 15px;
+                    .modal-title{
+                        border-bottom: 1px solid $skyblue2-rgba5;
+                        text-transform: $text-uppercase;
+                        padding-bottom: 15px;
+                    }   
+                }
+                .modal-footer{
+                    padding: 15px;
+                    background-color: $primary;
+                }
+            }   
+        }
+        &.modal-edit-user{
+            .modal-content{
+                .modal-body{
+                    padding: 15px;
+                    .modal-title{
+                        border-bottom: 1px solid $skyblue2-rgba5;
+                        text-transform: $text-uppercase;
+                        padding-bottom: 15px;
+                    }   
+                }
+                .modal-footer{
+                    padding: 15px;
+                    background-color: $primary;
+                }
+            }   
         }
     }
  }
