@@ -163,6 +163,51 @@ textarea{
             }
         }
     }
+    &.floating-textarea{
+        >label{
+            padding: 0 5px;
+            top: 10px;
+            left: 10px;
+        }
+        .form-control{
+            &:focus{
+                padding-top: 10px;
+                ~label{
+                    top: -3px;
+                }    
+            }
+            &:not(:placeholder-shown){
+                padding-top: 10px;
+                ~label{
+                    top: -3px;
+                }    
+            } 
+        }
+    }
+    &.font-15{
+        >label{
+            &.label-15{
+                font-size: $font-size-15;
+                font-weight: $font-700;
+            }
+        }    
+        .form-control{
+            font-size: $font-size-15;
+            font-weight: $font-700;  
+            &:not(:placeholder-shown){
+                ~label{
+                    font-size: $font-size-13;  
+                    font-weight: $font-400;  
+                }
+            }
+            &:focus{
+                ~label{
+                    font-size: $font-size-13;  
+                    font-weight: $font-400;  
+                } 
+            }  
+        }
+    }
 }
 .select-style-2{
     .dropdown{
@@ -627,6 +672,67 @@ input[type="date"] {
     }
 }
 // END CHECKBOX
+
+// RADIO BUTTON
+.form-check-input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: none;
+    border: 1px solid $skyblue-5;
+    background-color: $white;
+    margin-bottom: 0px;
+
+    &:checked {
+        background-color: $white;
+        border: 1px solid $skyblue-5;
+        background-image: none;
+    }
+
+    &:focus {
+        box-shadow: 0px 10px 20px 10px #0000000D;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $secondary;
+    }
+
+    &.add-after2 {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        margin: 0;
+        min-height: 30px;
+
+        &+svg {
+            display: none;
+
+            &+.form-check-label {
+                font-size: $font-size-md;
+                color: $black;
+                font-weight: $font-600;
+                line-height: $line-height-26;
+            }
+        }
+
+        &:checked {
+            &+svg {
+                z-index: 2;
+                display: block;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                color: #fff;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+// END RADIO BUTTON
   
 // file input
 .upload-box{
@@ -651,17 +757,18 @@ input[type="date"] {
     }
     &.id-upload{
         .browse-file{
-            #filename-3,#filename-4,#filename-5, #filename-6, #filename-7{
+            #filename-3,#filename-4,#filename-5, #filename-6, #filename-7, #filename-8{
                 float:left;
                 white-space: nowrap;
                 overflow:hidden;
                 background:$white;
             }
-            #file-upload-3,#file-upload-4,#file-upload-5, #file-upload-6, #file-upload-7 {
+            #file-upload-3,#file-upload-4,#file-upload-5, #file-upload-6, #file-upload-7, #file-upload-8 {
                 position: absolute;
                 left: -9999px;
             }
-            label[for="file-upload-3"], label[for="file-upload-4"], label[for="file-upload-5"], label[for="file-upload-6"], label[for="file-upload-7"]{
+            label[for="file-upload-3"], label[for="file-upload-4"], label[for="file-upload-5"], label[for="file-upload-6"], 
+            label[for="file-upload-7"],label[for="file-upload-8"]{
                 padding:0;  
                 cursor: pointer;
                 &:hover,
@@ -694,10 +801,26 @@ input[type="date"] {
                     color: $secondary;
                 }
             }
+            label[for="file-upload-8"]{
+                border: 1px dashed $secondary;
+                background-color: $skyblue6-rgba5;
+                border-radius: 10px;
+                padding: 19px;   
+                width: 100%;
+                font-size: $font-size-15;
+                font-weight: $font-700;
+                line-height: $line-height-20;
+                color: $primary;
+                &:hover{
+                    color: $secondary;
+                    background-color: $skyblue6-rgba5;
+                }
+            }
         }
     }
 }
 
+// FLOATING SELECT
 .floating-group{
     &.floating-diff{
         &.focused{
@@ -740,7 +863,7 @@ input[type="date"] {
     } 
     .floating-label {
         font-size: $font-size-13;
-        font-weight: $font-600;
+        font-weight: $font-400;
         color: $primary;
         top: 16px;
         left: 20px;
@@ -778,6 +901,16 @@ input[type="date"] {
                 border:1px solid $skyblue-6 ;
                 outline: 0;
                 box-shadow: none;
+            }
+        }
+    }
+    &.font-15{
+        &.floating-group{
+            select{
+                &.form-control{
+                    font-size: $font-size-15;
+                    font-weight: $font-700;
+                }
             }
         }
     }

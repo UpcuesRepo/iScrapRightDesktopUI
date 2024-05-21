@@ -22,6 +22,13 @@
                         top: -50px;
                     }
                 }
+                .modal-body{
+                    .modal-title{
+                        font-size: $font-size-20;
+                        font-weight: $font-700;
+                        line-height: $line-height-18;    
+                    }
+                }
                 .modal-footer {
                     border-top: 1px solid $dark-bluergba1;
                     display: flex;
@@ -36,6 +43,9 @@
         }
         &.modal-39 {
             max-width: 39%;
+        }
+        &.modal-52 {
+            max-width: 52.7%;
         }
         &.modal-lg {
             max-width: 57.3%;

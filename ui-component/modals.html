@@ -40,10 +40,21 @@
                 <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modaleditCust">Edit Customer</button>
             </div>
             <div class="col-md-2">
-                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalAddCash">Edit Customer</button>
+                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalAddCash">add cash drawer</button>
             </div>
             <div class="col-md-2">
                 <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalEditUser">Edit USER</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalAddMaterial">add material</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalSetQBO">Set QBO account for all materials</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalEditMaterial">Edit MATERIAL</button>
             </div>
         </div>
 
@@ -615,7 +626,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <div class="form-check form-inline">
+                                            <div class="form-check form-inline mb-3">
                                                 <input class="form-check-input add-after" type="checkbox" value="" id="check1">
                                                 <label class="form-check-label style-2 ms-2" for="check1">
                                                     Override Price Range
@@ -623,7 +634,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="form-check form-inline">
+                                            <div class="form-check form-inline mb-3">
                                                 <input class="form-check-input add-after" type="checkbox" value="" id="check1">
                                                 <label class="form-check-label style-2 ms-2" for="check1">
                                                     Pay By Cash
@@ -631,15 +642,408 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="form-check form-inline">
+                                            <div class="form-check form-inline mb-3">
                                                 <label class="form-check-label style-2 ms-2" for="check1">
                                                     Start Ticket by
                                                 </label>
                                             </div>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-inline mb-3">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                <label class="form-check-label style-2 ms-2" for="check1">
+                                                    Display OSK
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-3">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                <label class="form-check-label style-2 ms-2" for="check1">
+                                                    Pay By Check
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-3">
+                                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                <label class="form-check-label ms-2" for="">Adding Ticket Item</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-inline mb-3">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                <label class="form-check-label style-2 ms-2" for="check1">
+                                                    Void Ticket
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-3">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                <label class="form-check-label style-2 ms-2" for="check1">
+                                                    Pay By AP
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check form-inline mb-3">
+                                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                                <label class="form-check-label ms-2" for="">Adding Customer</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check form-inline">
+                                                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                                <label class="form-check-label style-2 ms-2" for="check1">
+                                                    Hide Cash Drawer
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>  
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="btn btn-white-10 check-btn btn-modal-footer btn-h44 w-auto">close</button> 
+                                <button class="btn btn-skyblue2 check-btn btn-h44 w-auto">SAVE</button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalAddMaterial" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-39 modal-edit-user overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header p-0">
+                            <button type="button" class="btn btn-skyblue2 radius-top10 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="modal-title" id="modalAddMaterial">Add Material Group</h1>
+                            <div class="row py-3 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Code <span class="color-red">*</span></label>
+                                    </div>  
+                                </div>  
+                                <div class="col-md-6">
+                                    <div class="form-check form-inline">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-2 ms-2" for="check1">
+                                            CAT
+                                        </label>
+                                    </div>  
+                                </div>  
+                            </div>  
+                            <div class="row pb-3">
+                                <div class="col-md-12">
+                                    <div class="form-floating floating-textarea">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">Description <span class="color-red">*</span></label>
+                                    </div>  
+                                </div>   
+                            </div>  
+                            <div class="row pb-3">
+                                <div class="col-md-12">
+                                    <div class="form-group floating-group floating-diff font-15">
+                                        <label class="floating-label">Taxes Mapping</label>
+                                        <select id="country" name="country" class="form-control floating-control">
+                                          <option value="">Taxes Mapping</option>   
+                                          <option value="Afganistan">Admin</option>
+                                          <option value="Albania">Albania</option>
+                                          <option value="India">India</option>
+                                          <option value="American Samoa">American Samoa</option>
+                                          <option value="Andorra">Andorra</option>
+                                          <option value="Angola">Angola</option>
+                                        </select>
+                                    </div>
+                                </div>   
+                            </div>  
+                            <div class="d-flex align-items-center">
+                                <div class="form-check form-inline me-3">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        Min Weight Compliance
+                                    </label>
+                                </div>  
+                                <div class="form-floating h-44">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput" class="label-13"> <span class="color-red"></span></label>
+                                </div>  
+                            </div>    
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="btn btn-white-10 check-btn btn-modal-footer btn-h44 w-auto">close</button> 
+                                <button class="btn btn-skyblue2 check-btn btn-h44 w-auto">SAVE GROUP</button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalSetQBO" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-39 modal-edit-user overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header p-0">
+                            <button type="button" class="btn btn-skyblue2 radius-top10 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="modal-title" id="modalSetQBO">Set QBO account for all materials</h1> 
+                            <div class="form-floating h-44 w-100 my-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput" class="label-13">Income Account</label>
+                            </div>  
+                            <div class="form-floating h-44 w-100 mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput" class="label-13">Assets Account</label>
+                            </div>  
+                            <div class="form-floating h-44 w-100">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput" class="label-13">COGS Account</label>
+                            </div>  
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="btn btn-white-10 check-btn btn-modal-footer btn-h44 w-auto">close</button> 
+                                <button class="btn btn-skyblue2 check-btn btn-h44 w-auto">SAVE</button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalEditMaterial" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-52 modal-edit-user overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header p-0">
+                            <button type="button" class="btn btn-skyblue2 radius-top10 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="modal-title" id="modalSetQBO">Edit MATERIAL</h1> 
+                            <div class="row py-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating font-15 h-44 w-100 mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-15">Code</label>
+                                    </div>    
+                                    <div class="form-floating font-15 h-44 w-100 mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-15">Description</label>
+                                    </div>    
+                                    <div class="form-floating font-15 h-44 w-100 mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-15">Customize Button Text</label>
+                                    </div>    
+                                    <div class="form-group floating-group floating-diff font-15 mb-3">
+                                        <label class="floating-label">Material Group</label>
+                                        <select id="country" name="country" class="form-control floating-control">
+                                          <option value="">Material Group</option>   
+                                          <option value="Afganistan">Admin</option>
+                                          <option value="Albania">Albania</option>
+                                          <option value="India">India</option>
+                                          <option value="American Samoa">American Samoa</option>
+                                          <option value="Andorra">Andorra</option>
+                                          <option value="Angola">Angola</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-floating font-15 h-44 w-100 mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-15">Note</label>
+                                    </div>  
+                                    <div class="form-floating h-44 mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Income Account</label>
+                                    </div>  
+                                    <div class="form-floating h-44 mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Assets Account</label>
+                                    </div>  
+                                    <div class="form-floating h-44 mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">COGS Account</label>
+                                    </div>  
+                                    <div class="form-group floating-group floating-diff font-15">
+                                        <label class="floating-label">Taxes Mapping</label>
+                                        <select id="country" name="country" class="form-control floating-control">
+                                          <option value="">Taxes Mapping</option>   
+                                          <option value="Afganistan">Admin</option>
+                                          <option value="Albania">Albania</option>
+                                          <option value="India">India</option>
+                                          <option value="American Samoa">American Samoa</option>
+                                          <option value="Andorra">Andorra</option>
+                                          <option value="Angola">Angola</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="fs-15 fw-bold color-primary mb-3">Compliance</div>
+                                    <div class="form-check d-flex align-items-center mb-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-2 ms-2" for="check1">
+                                            Require a picture of material being purchased.
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mb-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-2 ms-2" for="check1">
+                                            Require a picture of the person selling material.
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mb-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-2 ms-2" for="check1">
+                                            Require a state driver's license.
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mb-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-2 ms-2" for="check1">
+                                            Require a thumb print.
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mb-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-2 ms-2" for="check1">
+                                            Require a signature.
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mb-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-2 ms-2" for="check1">
+                                            Delay payment.
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center mb-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-2 ms-2" for="check1">
+                                            Require license plate #.
+                                        </label>
+                                    </div>
+                                    <div class="fs-13 color-primary">Material Image:</div>
+                                    <div class="upload-box id-upload d-flex align-items-center w-100 mt-3">
+                                        <form method="post" class="browse-file w-100" enctype="multipart/form-data" action="">
+                                          <span id="filename-8" class="filename"></span>
+                                          <div class="button-part w-100 h-100">
+                                            <label for="file-upload-8">Drop file here or</br>
+                                              <div class="color-secondary">choose file from your computer</div>
+                                              <input type="file" id="file-upload-8" class="file-upload"></label>
+                                          </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="d-flex mb-3">
+                                <div class="form-check form-inline me-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        CRV
+                                    </label>
+                                </div>
+                                <div class="form-check form-inline me-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        VIN
+                                    </label>
+                                </div>
+                                <div class="form-check form-inline me-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        CAT
+                                    </label>
+                                </div>
+                                <div class="form-check form-inline me-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        Video Required
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="form-check form-inline me-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        Paid By Check
+                                    </label>
+                                </div>
+                                <div class="form-check form-inline me-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        Is Sell Item
+                                    </label>
+                                </div>
+                                <div class="form-check form-inline me-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        CRV Plan
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="form-check form-inline me-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        Skip Camera
+                                    </label>
+                                </div>
+                                <div class="form-check form-inline me-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-2 ms-2" for="check1">
+                                        Hot Key
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-label label-md fw-bold">Pricing ($)</div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <div class="form-group d-flex align-items-center">
+                                        <label class="form-label label-md fw-bold me-2">L:</label>
+                                        <input type="email" class="form-control h-44" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group d-flex align-items-center">
+                                        <label class="form-label label-md fw-bold me-2">B:</label>
+                                        <input type="email" class="form-control h-44" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group d-flex align-items-center">
+                                        <label class="form-label label-md fw-bold me-2">H:</label>
+                                        <input type="email" class="form-control h-44" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2 p-0">
+                                    <div class="form-group select-style-2 d-flex align-items-center w-100">
+                                        <label class="form-label label-md me-2">/</label>
+                                        <select class="selectpicker" data-live-search="true">
+                                          <option data-tokens="ketchup mustard">1</option>
+                                          <option data-tokens="mustard">2</option>
+                                          <option data-tokens="frosting">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <div class="d-flex justify-content-between w-100">

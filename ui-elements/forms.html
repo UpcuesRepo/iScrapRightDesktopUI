@@ -94,6 +94,18 @@
             </form>
           </div>
         </div>
+        <div class="col-md-4 mb-3">
+          <div class="upload-box id-upload d-flex align-items-center w-100">
+            <form method="post" class="browse-file w-100" enctype="multipart/form-data" action="">
+              <span id="filename-8" class="filename"></span>
+              <div class="button-part w-100 h-100">
+                <label for="file-upload-8">Drop file here or</br>
+                  <div class="color-secondary">choose file from your computer</div>
+                  <input type="file" id="file-upload-8" class="file-upload"></label>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="row mb-5">  
         <!-- form input h-46 style-2 -->
@@ -117,6 +129,7 @@
       <div class="row mb-5">
         <!-- FLOATING FORM INPUT H-46  -->
         <div class="col-md-4">
+          <h6 class="mb-3">FLOATING FORM INPUT H-46 font-13 </h6>
           <div class="form-floating h-46 mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput" class="label-13">Email address</label>
@@ -124,9 +137,18 @@
         </div>
         <!-- FLOATING FORM INPUT H-44  -->
         <div class="col-md-4">
+          <h6 class="mb-3">FLOATING FORM INPUT H-44 font-13 </h6>
           <div class="form-floating h-44 mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput" class="label-13">Email address</label>
+          </div>
+        </div>
+        <!-- FLOATING FORM INPUT H-44 font-15  -->
+        <div class="col-md-4">
+          <h6 class="mb-3">FLOATING FORM INPUT H-44 font-15 </h6>
+          <div class="form-floating font-15 h-44 mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" class="label-15">Email address</label>
           </div>
         </div>
         <!-- form input h-135 style-2 -->
@@ -134,6 +156,13 @@
           <textarea id="w3review" class="form-control" name="w3review" rows="4" cols="50">
             Disclaimer
           </textarea>
+        </div>
+        <!-- form floating textarea h-135 style-2 -->
+        <div class="col-md-4 mb-3">
+          <div class="form-floating floating-textarea">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comments</label>
+          </div>
         </div>
 
       </div>
@@ -170,9 +199,31 @@
           </div>
          </div>
          <!-- end drop down result per page-->
+      </div>
+      <div class="row mb-5">
+        
          <!-- FLOATING SELECT -->
          <div class="col-md-4">
+          <h6 class="mb-2">FLOATING SELECT FONT 13</h6>
           <div class="form-group floating-group floating-diff mb-5">
+            <label class="floating-label">Select Country</label>
+            <select id="country" name="country" class="form-control floating-control">
+              <option value="">Select Country</option>   
+              <option value="Afganistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+              <option value="India">India</option>
+              <option value="American Samoa">American Samoa</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Angola">Angola</option>
+            </select>
+          </div>
+         </div>
+         <!-- END FLOATING SELECT -->
+
+         <!-- FLOATING SELECT font-15 -->
+         <div class="col-md-4">
+          <h6 class="mb-2">FLOATING SELECT FONT 15</h6>
+          <div class="form-group floating-group floating-diff font-15 mb-5">
             <label class="floating-label">Select Country</label>
             <select id="country" name="country" class="form-control floating-control">
               <option value="">Select Country</option>   
@@ -256,6 +307,15 @@
           </div>
         </div>
         <!-- END CHECKBOX -->
+
+        <!-- RADIO BUTTON -->
+        <div class="col-md-3 mb-3">
+          <div class="form-check form-inline me-3">
+            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+            <label class="form-check-label ms-2" for="">Default radio</label>
+          </div>
+        </div>
+        <!-- END RADIO BUTTON -->
         
         <!-- toggle switch style-2 -->
         <div class="col-md-3 mb-3">
