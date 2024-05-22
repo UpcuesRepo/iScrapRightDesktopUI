@@ -177,6 +177,11 @@
     .card-head{
         padding: 13px 15px;
         background-color: $skyblue-6;
+        font-size: $font-size-md;
+        font-weight: $font-800;
+        line-height: $line-height-18;
+        color: $primary;
+        text-transform: $text-uppercase;
     }
     .card-body{
         padding: 15px;
@@ -310,6 +315,31 @@
                 position: absolute;
                 right: 50%;
             }
+        }
+    }
+}
+.head-grey-card{
+    border-radius: $radius-lg;
+    background-color: $white;
+    box-shadow: 0px 5px 10px 5px #0000000D;
+    position: relative;
+    .card-head{
+        padding: 13px 15px;
+        background-color: $grey-head;
+        font-size: $font-size-sm;
+        font-weight: $font-800;
+        line-height: $line-height-18;
+        color: $primary;
+        text-transform: $text-uppercase;
+    }
+    .card-body{
+        padding: 15px;
+    }
+    &.qbo-card{
+        .btn-bottom{
+            position: absolute;
+            left: 45%;
+            top:95%;
         }
     }
 }

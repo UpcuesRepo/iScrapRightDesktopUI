@@ -152,13 +152,14 @@
           </div>
         </div>
         <!-- form input h-135 style-2 -->
-        <div class="col-md-4 mb-3">
+        <!-- <div class="col-md-4 mb-3">
           <textarea id="w3review" class="form-control" name="w3review" rows="4" cols="50">
             Disclaimer
           </textarea>
-        </div>
+        </div> -->
         <!-- form floating textarea h-135 style-2 -->
         <div class="col-md-4 mb-3">
+          <h6>FLOATING TEXTAREA</h6>
           <div class="form-floating floating-textarea">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea">Comments</label>
@@ -177,7 +178,7 @@
       </div>
       <div class="row mb-5">
          <!-- drop down -->
-         <div class="col-md-3 mb-3">
+         <!-- <div class="col-md-3 mb-3">
           <div class="form-group select-style-2 mb-3">
             <label class="form-label">Floating Select</label>
             <select class="selectpicker" data-live-search="true">
@@ -186,7 +187,7 @@
               <option data-tokens="frosting">3</option>
             </select>
           </div>
-         </div>
+         </div> -->
          <!-- drop down result per page-->
          <div class="col-md-4 mb-3">
           <div class="form-group select-style-3 d-flex w-100 mb-3">
@@ -246,56 +247,112 @@
             <input type="email" class="form-control style-3 h-32" placeholder="">
           </div>
         </div>
-        <!-- search input h-44 -->
-        <div class="col-md-4">
-          <div class="form-group">
-            <label class="form-label label-lg">ID / Registration #:</label>
-            <input type="email" class="form-control style-4 search-icon h-44" placeholder="Search" fdprocessedid="9clplt">
+          <div class="row">
+            <!-- search input h-44 -->
+            <!-- <div class="col-md-4">
+              <div class="form-group">
+                <input type="email" class="form-control style-4 search-icon h-44" placeholder="Search" fdprocessedid="9clplt">
+              </div>
+            </div> -->
+            <!-- search floating input h-44 -->
+            <div class="col-md-4">
+              <h6 class="color-white">search floating input h-44</h6>
+              <div class="form-floating bg-rgba-white search-icon h-44 mb-3">
+                <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-13">Search</label>
+              </div>
+            </div>
+            <!-- white rgba floating input h-44 -->
+            <div class="col-md-4">
+              <h6 class="color-white">rgba floating input h-44</h6>
+              <div class="form-floating bg-rgba-white font-md h-44 mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-md">Search</label>
+              </div>
+            </div>
+          
+            <!-- date -->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="form-label">Pickup Date:</label>
+                <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+              </div>
+            </div>
           </div>
         </div>
         
-        <!-- date -->
-        <div class="col-md-4">
-          <div class="form-group">
-            <label class="form-label">Pickup Date:</label>
-            <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
-          </div>
-        </div>
       </div>
       <div class="row mb-5 bg-black p-5">
-        <div class="col-md-4 mb-3">
-          <h6 class="color-white">select with font size-12</h6>
-          <div class="form-group select-style-4 d-flex w-100 mb-3">
-            <label class="form-label label-md color-white">Results per page</label>
-            <select class="selectpicker" data-live-search="true">
-              <option data-tokens="ketchup mustard">1</option>
-              <option data-tokens="mustard">2</option>
-              <option data-tokens="frosting">3</option>
-            </select>
+          <!-- <div class="col-md-4 mb-3">
+            <h6 class="color-white">select with font size-12</h6>
+            <div class="form-group select-style-4 d-flex w-100 mb-3">
+              <label class="form-label label-md color-white">Results per page</label>
+              <select class="selectpicker" data-live-search="true">
+                <option data-tokens="ketchup mustard">1</option>
+                <option data-tokens="mustard">2</option>
+                <option data-tokens="frosting">3</option>
+              </select>
+            </div>
+          </div>  
+          <div class="col-md-4 mb-3">
+            <h6 class="color-white">select with font size 14</h6>
+            <div class="form-group select-style-4 font-md d-flex w-100 mb-3">
+              <label class="form-label label-md color-white">Results per page</label>
+              <select class="selectpicker" data-live-search="true">
+                <option data-tokens="ketchup mustard">1</option>
+                <option data-tokens="mustard">2</option>
+                <option data-tokens="frosting">3</option>
+              </select>
+            </div>
+          </div>   -->
+          <div class="row">
+            <!-- FLOATING SELECT font 12 -->
+            <div class="col-md-4">
+              <h6 class="mb-2 color-white mb-3">FLOATING SELECT FONT 12</h6>
+              <div class="form-group floating-group floating-diff bg-rgba-white mb-5">
+                <label class="floating-label">Select Country</label>
+                <select id="country" name="country" class="form-control floating-control">
+                  <option value="">Select Country</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                </select>
+              </div>
+            </div>
+            <!-- END FLOATING SELECT -->  
+            <!-- FLOATING SELECT font 14 -->
+            <div class="col-md-4">
+              <h6 class="mb-2 color-white mb-3">FLOATING SELECT FONT 14</h6>
+              <div class="form-group floating-group floating-diff bg-rgba-white font-md mb-5">
+                <label class="floating-label">Select Country</label>
+                <select id="country" name="country" class="form-control floating-control">
+                  <option value="">Select Country</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                </select>
+              </div>
+            </div>
+            <!-- END FLOATING SELECT -->  
           </div>
-         </div>    
-        <div class="col-md-4 mb-3">
-          <h6 class="color-white">select with font size 14</h6>
-          <div class="form-group select-style-4 font-md d-flex w-100 mb-3">
-            <label class="form-label label-md color-white">Results per page</label>
-            <select class="selectpicker" data-live-search="true">
-              <option data-tokens="ketchup mustard">1</option>
-              <option data-tokens="mustard">2</option>
-              <option data-tokens="frosting">3</option>
-            </select>
-          </div>
-         </div>    
          <!-- CHECKBOX RGBA -->
-        <div class="col-md-3 mb-3">
-          <div class="form-check form-inline style-2">
-            <input class="form-check-input add-after" type="checkbox" value="" id="check2">
-            <label class="form-check-label style-2 color-white ms-2" for="check2">
-              Default checkbox
-            </label>
+          <div class="col-md-3 mb-3">
+            <div class="form-check form-inline style-2">
+              <input class="form-check-input add-after" type="checkbox" value="" id="check2">
+              <label class="form-check-label style-2 color-white ms-2" for="check2">
+                Default checkbox
+              </label>
+            </div>
           </div>
-        </div>
-        <!-- END CHECKBOX RGBA -->
+          <!-- END CHECKBOX RGBA -->
       </div>
+      
       <div class="row mb-5">
         <!-- CHECKBOX -->
         <div class="col-md-3 mb-3">

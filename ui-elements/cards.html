@@ -388,8 +388,9 @@
 
         <!-- DARK CARD -->
         <div class="dark-card search-card d-flex justify-content-between align-items-center mb-5">
-          <div class="form-group">
-            <input type="email" class="form-control style-4 search-icon h-44" placeholder="Search" fdprocessedid="9clplt">
+          <div class="form-floating bg-rgba-white search-icon h-44">
+            <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" class="label-13">Search</label>
           </div>
           <div class="form-group d-flex align-items-center">
             <label class="form-label mb-0 label-md color-white me-3">From</label>
@@ -412,17 +413,23 @@
           <div class="title">Choose your filter </div>
           <div class="row justify-content-between">
             <div class="col-md-5">
-              <div class="form-group select-style-4 font-md d-flex w-100 mb-3">
-                <select class="selectpicker" data-live-search="true">
-                  <option data-tokens="ketchup mustard">Customer/License/TicketNo</option>
-                  <option data-tokens="mustard">2</option>
-                  <option data-tokens="frosting">3</option>
+              <div class="form-group floating-group floating-diff bg-rgba-white font-md mb-3">
+                <label class="floating-label">Customer/License/TicketNo</label>
+                <select id="country" name="country" class="form-control floating-control">
+                  <option value="">Customer/License/TicketNo</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
                 </select>
               </div>
             </div>
             <div class="col-md-5">
-              <div class="form-group">
-                <input type="email" class="form-control style-4 font-md h-44" placeholder="Customer/License/TicketNo" fdprocessedid="9clplt">
+              <div class="form-floating bg-rgba-white font-md h-44 mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-md">Customer/License/TicketNo</label>
               </div>
             </div>
             <div class="col-md-1">
@@ -517,6 +524,13 @@
           <div class="card-body"></div>
         </div>
         <!-- END HEAD SKYBLUE CARD -->
+
+        <!-- HEAD GREY CARD -->
+        <div class="head-grey-card mb-5">
+          <div class="card-head"></div>
+          <div class="card-body"></div>
+        </div>
+        <!-- END HEAD GREY CARD -->
 
         <!-- ACCOUNT SUMMARY CARD -->
         <div class="head-skyblue-card account-summary mb-5">
@@ -736,20 +750,30 @@
             </div>   
             <div class="row mb-3">
               <div class="col-md-4">
-                <div class="form-group select-style-2">
-                  <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="ketchup mustard">City</option>
-                    <option data-tokens="mustard">2</option>
-                    <option data-tokens="frosting">3</option>
+                <div class="form-group floating-group floating-diff">
+                  <label class="floating-label">City</label>
+                  <select id="city" name="City" class="form-control floating-control">
+                  <option value=""> City</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="form-group select-style-2">
-                  <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="ketchup mustard">State</option>
-                    <option data-tokens="mustard">2</option>
-                    <option data-tokens="frosting">3</option>
+                <div class="form-group floating-group floating-diff">
+                  <label class="floating-label">State</label>
+                  <select id="state" name="state" class="form-control floating-control">
+                  <option value="">State</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
                   </select>
                 </div>
               </div>
@@ -762,11 +786,16 @@
             </div>
             <div class="row mb-3 align-items-center">
               <div class="col-md-5">
-                <div class="form-group select-style-2">
-                  <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="ketchup mustard">Time Zone</option>
-                    <option data-tokens="mustard">2</option>
-                    <option data-tokens="frosting">3</option>
+                <div class="form-group floating-group floating-diff">
+                  <label class="floating-label">Time Zone</label>
+                  <select id="tzone" name="tzone" class="form-control floating-control">
+                  <option value="">Time Zone</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
                   </select>
                 </div>
               </div>  
@@ -775,10 +804,11 @@
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col-md-12">
-                <textarea id="" class="form-control style-2" name="" rows="4" cols="50">
-                  Disclaimer
-                </textarea>
+              <div class="col-md-12"> 
+                <div class="form-floating floating-textarea">
+                  <textarea class="form-control" placeholder="Leave a comment here" rows="4" cols="50" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Disclaimer</label>
+                </div>
               </div>
             </div>
             <div class="form-check form-inline mb-3">
@@ -803,29 +833,44 @@
             </div>
             <div class="row mb-5">
               <div class="col-md-4">
-                <div class="form-group select-style-2">
-                  <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="ketchup mustard">Input UOM</option>
-                    <option data-tokens="mustard">2</option>
-                    <option data-tokens="frosting">3</option>
+                <div class="form-group floating-group floating-diff">
+                  <label class="floating-label">Input UOM</label>
+                  <select id="uom" name="uom" class="form-control floating-control">
+                  <option value="">Input UOM</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="form-group select-style-2">
-                  <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="ketchup mustard">Currency</option>
-                    <option data-tokens="mustard">2</option>
-                    <option data-tokens="frosting">3</option>
+                <div class="form-group floating-group floating-diff">
+                  <label class="floating-label">Currency</label>
+                  <select id="currency" name="currency" class="form-control floating-control">
+                  <option value="">Currency</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="form-group select-style-2">
-                  <select class="selectpicker" data-live-search="true">
-                    <option data-tokens="ketchup mustard">Sales Tax</option>
-                    <option data-tokens="mustard">2</option>
-                    <option data-tokens="frosting">3</option>
+                <div class="form-group floating-group floating-diff">
+                  <label class="floating-label">Sales Tax</label>
+                  <select id="tax" name="tax" class="form-control floating-control">
+                  <option value="">Sales Tax</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
                   </select>
                 </div>
               </div>
@@ -838,7 +883,7 @@
         <!-- END COMPANY INFORMATION CARD -->
 
         <!-- EDIT CUSTOMER MODAL CARD -->
-        <div class="row">
+        <div class="row mb-5">
           <div class="col-md-4">
             <div class="skyblue-box h-100">
               <div class="inner-box h-100"></div>  
@@ -863,6 +908,288 @@
           </div>
         </div>
         <!-- END EDIT CUSTOMER MODAL CARD -->
+
+        <!-- CONTAMINATION TYPE BUTTON CARD -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="head-skyblue-card mb-5">
+              <div class="card-head">Create Contamination Type Buttons</div>
+              <div class="card-body">
+                <div class="row align-items-center mb-3">
+                  <div class="col-md-9">
+                    <div class="form-floating font-15 h-44 w-100 me-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-15">Water</label>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-md-9">
+                    <div class="form-floating font-15 h-44 w-100 me-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-15">Dirt</label>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-md-9">
+                    <div class="form-floating font-15 h-44 w-100 me-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-15">Concrete</label>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-md-9">
+                    <div class="form-floating font-15 h-44 w-100 me-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-15">Debris</label>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-md-9">
+                    <div class="form-floating font-15 h-44 w-100 me-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-15">Debris</label>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#" class="me-2">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10V20M10 15H20M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END CONTAMINATION TYPE BUTTON CARD -->
+
+        <!-- CONTAMINATION PERCENTAGE BUTTON CARD -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="head-skyblue-card mb-5">
+              <div class="card-head">Create Contamination Percentage Buttons</div>
+              <div class="card-body">
+                <div class="row align-items-center mb-3">
+                  <div class="col-md-9">
+                    <div class="form-floating font-15 h-44 w-100 me-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-15">10</label>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-md-9">
+                    <div class="form-floating font-15 h-44 w-100 me-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-15">20</label>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="row align-items-center mb-3">
+                  <div class="col-md-9">
+                    <div class="form-floating font-15 h-44 w-100 me-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-15">30</label>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END CONTAMINATION PERCENTAGE BUTTON CARD -->
+
+        <!-- QBO CARD -->
+        <div class="head-grey-card qbo-card mb-5">
+          <div class="card-head">Note : Account name must be an exact match in Quickbooks.</div>
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Accounts Payable Account</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Bank Account (Check)</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Bank Account (Cash)</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Bank Account (ATM)</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Cash Customer</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Customer Name PostFix</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-check form-inline mb-4">
+              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+              <label class="form-check-label style-2 ms-2" for="check1">
+                Sync Material as Non - Inventory Item
+              </label>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="fs-15 fw-bold color-primary mb-3">Sync Invoices during:</div>
+                    <div class="form-check form-inline me-3 mb-3">
+                      <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                      <label class="form-check-label ms-2" for="">Adding Ticket Item</label>
+                    </div>
+                    <div class="form-check form-inline me-3">
+                      <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                      <label class="form-check-label ms-2" for="">Adding Customer</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="fs-15 fw-bold color-primary mb-3">AP Bills should use:</div>
+                    <div class="form-check form-inline me-3 mb-3">
+                      <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                      <label class="form-check-label ms-2" for="">Ticket Paid Date</label>
+                    </div>
+                    <div class="form-check form-inline me-3">
+                      <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                      <label class="form-check-label ms-2" for="">Ticket Start Date</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto btn-bottom" fdprocessedid="tjkm7b">
+              Save QuickBooks Configuration
+            </button>
+          </div>
+        </div>
+        <!-- END QBO CARD -->
+        <!-- QBO CARD -->
+        <div class="head-grey-card qbo-card mb-5">
+          <div class="card-head">Note : Connect to QuickBooks after saving configuration.</div>
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Client ID</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Client Secret</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Callback Url</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Environment</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">AP Account</label>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto btn-bottom" fdprocessedid="tjkm7b">
+              Connect QuickBooks
+            </button>
+          </div>
+        </div>
+        <!-- END QBO CARD -->
 
     </div>
     <script src="../assets/dist/js/all.min.js"></script>
