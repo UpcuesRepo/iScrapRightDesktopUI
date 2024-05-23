@@ -1,4 +1,8 @@
-// ----floatin input label in input and select
+
+
+
+$(document).ready(function() {
+    // ----floatin input label in input and select
 
 $('.form-group').find('.floating-control').each(function (index, ele) {
 	var $ele = $(ele);
@@ -27,8 +31,21 @@ $('.floating-control').on('change', function (e) {
 		}
 	}
 })
-
-
+	//---- select2 single----
+	$('.customSelect').each(function() {
+		var dropdownParents = $(this).parents('.select2Part')
+		$(this).select2({
+			dropdownParent: dropdownParents,
+			minimumResultsForSearch: -1
+		}).on("select2:open", function (e) { 
+			$(this).parents('.floating-group').addClass('focused');
+		}).on("select2:close", function (e) {
+			if($(this).find(':selected').val() === ''){
+				$(this).parents('.floating-group').removeClass('focused');
+			}
+		});
+});
+});
 
 
 

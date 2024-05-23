@@ -446,6 +446,35 @@
         </div>
         <!-- END choose filter DARK CARD -->
 
+        <!-- MATERIAL DARK CARD -->
+        <div class="dark-card material-strip mb-5">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <div class="form-group floating-group floating-diff bg-rgba-white font-16">
+                <label class="floating-label">Material Group</label>
+                <select id="country" name="country" class="form-control floating-control">
+                  <option value="">All Groups</option>   
+                  <option value="Afganistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="India">India</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-check form-inline style-2">
+                <input class="form-check-input add-after" type="checkbox" value="" id="check2">
+                <label class="form-check-label style-3 color-white ms-2" for="check2">
+                  My Materials
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MATERIAL DARK CARD -->
+
         <!-- DOWNLOAD RECEIPT -->
         <div class="download-receipt-card mb-5">
           <div class="title mb-2">Ticket# 4821</div>
@@ -513,8 +542,23 @@
         <div class="txt-msg mb-5">
             NOTE: Entering a different check number will result in the current check number being voided.
         </div>
+        <!-- END WARN STRIP -->
+
+        <!-- RED STRIP -->
         <div class="txt-msg red-strip mb-5">
           **Attention: Depending on your region, taxes may apply. If you are a US business and tax appears please contact the payment processor at <a href="#" class="red-link">orders@fastspring.com</a>  and it will be credited from your bill and removed from subsequent payments.
+        </div>
+        <!-- END RED STRIP -->
+
+        <!-- SECONDARY STRIP -->
+        <div class="txt-msg secondary-strip mb-5">
+          Choose the compliance rules that will apply to your business. Please note that compliance rules will still need to be activated for each material.
+        </div>
+        <!-- END SECONDARY STRIP -->
+
+        <!-- EXTRA BOLD WARN STRIP (TICKET BUILDER) -->
+        <div class="txt-msg darkyellow-strip extrabold text-caps mb-5">
+          NOTE: Entering a different check number will result in the current check number being voided.
         </div>
         <!-- END WARN STRIP -->
 
@@ -1144,6 +1188,7 @@
           </div>
         </div>
         <!-- END QBO CARD -->
+
         <!-- QBO CARD -->
         <div class="head-grey-card qbo-card mb-5">
           <div class="card-head">Note : Connect to QuickBooks after saving configuration.</div>
@@ -1190,6 +1235,185 @@
           </div>
         </div>
         <!-- END QBO CARD -->
+
+        <!-- NO RECORD CARD -->
+        <div class="no-record d-flex align-items-center justify-content-center mb-5">
+          NO RECORDS
+        </div>
+        <!-- END NO RECORD CARD -->
+
+        <!-- COMPLIANCE CARD -->
+        <div class="head-grey-card mb-5">
+          <div class="card-head">Choose rules which will be enforced to maintain compliance</div>
+          <div class="card-body">
+            <div class="form-check d-flex align-items-center mb-3">
+              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+              <label class="form-check-label style-2 ms-2" for="check1">
+                Delay payment.
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-3">
+              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+              <label class="form-check-label style-2 ms-2" for="check1">
+                Require license plate #.
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-3">
+              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+              <label class="form-check-label style-2 ms-2" for="check1">
+                Exclude All Compliance Rules on a Ticket for Business Customers
+              </label>
+            </div>
+            <div class="form-check d-flex align-items-center mb-3">
+              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+              <label class="form-check-label style-2 ms-2" for="check1">
+                Require License or I.D. to be current
+              </label>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <div class="form-check d-flex align-items-center me-3">
+                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                <label class="form-check-label style-2 ms-2" for="check1">
+                  Require Customer's Minimum Age to Be
+                </label>
+              </div>
+              <div class="form-floating h-44">
+                <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-13">AP Account</label>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <div class="form-check d-flex align-items-center me-3">
+                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                <label class="form-check-label style-2 ms-2" for="check1">
+                  Exclude All Compliance Rules for Ticket amount <= 
+                </label>
+              </div>
+              <div class="form-floating h-44">
+                <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-13">AP Account</label>
+              </div>
+            </div>
+            <div class="form-check d-flex align-items-center mb-3">
+              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+              <label class="form-check-label style-2 ms-2" for="check1">
+                Apply daily load limit
+              </label>
+            </div>
+            <div class="fs-sm">* This is a system wide override that can be used to enable or disable compliance rules which have been configured for individual materials. Compliance rules still need to be activated for each material.</div>
+          </div>
+        </div>
+        <!-- END COMPLIANCE CARD -->
+
+        <!-- COMPLIANCE PAY PREFERENCES CARD -->
+        <div class="head-grey-card mb-5">
+          <div class="card-head">Pay Preferences</div>
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="form-check d-flex align-items-center me-3">
+                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                <label class="form-check-label style-2 ms-2" for="check1">
+                   Require Check Payment if Ticket Total is Greater than or Equal to $
+                </label>
+              </div>
+              <div class="form-floating h-44">
+                <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-13">0.00</label>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <div class="form-check d-flex align-items-center me-3">
+                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                <label class="form-check-label style-2 ms-2" for="check1">
+                  Require Check Payment For Restricted Materials when Amount is Greater than or Equal to $
+                </label>
+              </div>
+              <div class="form-floating h-44">
+                <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-13">0.00</label>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <div class="form-check d-flex align-items-center me-3">
+                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                <label class="form-check-label style-2 ms-2" for="check1">
+                  Require Check Payment if CRV Amount is Greater than or Equal to $
+                </label>
+              </div>
+              <div class="form-floating h-44">
+                <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-13">0.00</label>
+              </div>
+            </div>
+            <div class="form-check d-flex align-items-center">
+              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+              <label class="form-check-label style-2 ms-2" for="check1">
+                Allow Overriding of Check Payment Rules for Business Customers
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- END COMPLIANCE PAY PREFERENCES CARD -->
+
+        <!-- MANUALLY UOLOAD CARD -->
+        <div class="head-grey-card qbo-card mb-5">
+          <div class="card-head">Manually Upload Ticket Information</div>
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <div class="form-group floating-group floating-diff">
+                  <label class="floating-label">Agency</label>
+                  <select id="country" name="country" class="form-control floating-control">
+                    <option value="">Agency</option>   
+                    <option value="Afganistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="India">India</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center mb-3">
+              <div class="fs-13 col-md-1">Date Range</div>
+              <div class="col-md-4">
+                <div class="form-group d-flex align-items-center">
+                  <input type="date" class="form-control form-calender h-44" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group d-flex align-items-center">
+                  <input type="date" class="form-control form-calender h-44" placeholder="">
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center mb-5">
+              <div class="fs-13 col-md-1">Ticket Range</div>
+              <div class="col-md-4">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13"></label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-floating h-44">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13"></label>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex btn-bottom-left">
+              <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto me-2" fdprocessedid="tjkm7b">
+                Upload Ticket Information
+              </button>
+              <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto" fdprocessedid="tjkm7b">
+                Download File
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- END MANUALLY UOLOAD CARD -->
 
     </div>
     <script src="../assets/dist/js/all.min.js"></script>

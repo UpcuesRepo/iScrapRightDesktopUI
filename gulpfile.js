@@ -39,6 +39,7 @@ function compress() {
             .src([
                 'assets/plugins/jquery/jquery-3.6.0.min.js',
                 'assets/plugins/bootstrap/dist/js/bootstrap.bundle.js',
+                'assets/plugins/select2/dist/js/select2.js',
                 'assets/plugins/bootstrap-select/dist/js/bootstrap-select.js',
                 'assets/js/scripts.js',
             ])

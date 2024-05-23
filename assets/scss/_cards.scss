@@ -98,6 +98,10 @@
             right: 2%;
         }
     }
+    &.material-strip{
+        box-shadow: 10px 0px 10px 0px #03030326 inset;
+        padding: 11px 15px;
+    }
 }
 
 .download-receipt-card{
@@ -166,6 +170,26 @@
             color: $red;
             text-decoration: underline;
         }
+    }
+    &.secondary-strip{
+        font-size: $font-size-sm;
+        font-weight: $font-800;
+        text-transform: $text-uppercase;
+        background-color: $skyblue-6;
+        border-color: $secondary;
+        color: $secondary;
+    }
+    &.darkyellow-strip{
+        font-size: $font-size-sm;
+        font-weight: $font-800;
+        text-transform: $text-uppercase;
+        background-color: $dark-yellow-rgba1;
+        border:1px solid $dark-yellow-2;
+        color: $dark-yellow-2;
+    }
+    &.extrabold{
+        font-size: $font-size-sm;
+        font-weight: $font-800;
     }
 }
 
@@ -341,6 +365,11 @@
             left: 45%;
             top:95%;
         }
+        .btn-bottom-left{
+            position: absolute;
+            left: 2%;
+            top:95%;
+        }
     }
 }
 
@@ -364,4 +393,13 @@
         top: -15px;
         right: 0;
     }
+}
+
+.no-record{
+    background-color: $grey-rgba5;
+    border-radius: $radius-lg;
+    font-size: $font-size-16;
+    font-weight: $font-700;
+    text-transform: $text-uppercase;
+    padding: 17px;
 }
