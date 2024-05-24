@@ -76,14 +76,22 @@
             display: flex;
             justify-content: space-between;
         }
+        &.bg-none{
+            background-color: $white;
+            color: $secondary;
+            border: 1px solid $secondary;
+        }
         &.radius-0 {
             border-radius: 0;
         }
         &.radius-xxl{
             border-radius: $radius-xxl;
         }
+        &.radius-top0{
+            border-radius: 0 0 10px 10px;
+        }
         &.radius-top10{
-            border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 0 0 ;
         }
         &.check-btn{
             border-radius: 50px;
@@ -189,6 +197,13 @@
             }
         }
     }
+    &.btn-primary{
+        background-color: $primary;
+        &:hover{
+            color: $white;
+            background-color: $secondary;
+        }
+    }
     &.btn-edit{
         border-radius: $radius-lg;
         padding: 4px 7px;
@@ -269,6 +284,14 @@
     }
     &.btn-h36{
         padding: 8px 20px;
+    }
+    &.btn-30{
+        height: 30px;
+        width: 30px;
+        padding: 2px 5px;
+        &.radius-50{
+            border-radius: 50%;
+        }
     }
 }
 .action-btn{

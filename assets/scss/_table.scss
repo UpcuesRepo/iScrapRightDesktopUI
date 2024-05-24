@@ -129,3 +129,68 @@
     overflow: hidden;
     box-shadow: 0px 5px 10px 5px #0000000D;
 }
+
+
+.collapsible-table {
+    box-shadow: 0px 5px 10px 5px #0000000D;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    thead {
+        box-shadow: none;
+        tr {
+            th {
+                font-weight: $font-700;
+                font-size: $font-size-16;
+                color: $primary;
+                text-transform: $text-uppercase;
+                background-color: $skyblue-6;
+                padding: 13px 10px;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                font-size: $font-size-md;
+                font-weight: $font-600;
+                padding: 15px 10px;
+                vertical-align: middle;
+                .d-btn-skyblue{
+                    display: none;
+                }
+                .d-btn-primary{
+                    display: inline-block;
+                }
+            }
+            &.collapse{
+                background: $white;
+                border-bottom: 1px solid $dark-bluergba1;
+                td{
+                    .table-inner{
+                        background: $grey-head;
+                        tr{
+                            &:not(:last-child){
+                                border-bottom: 1px solid $table-border;
+                            } 
+                            td{
+                                &:not(:last-child){
+                                    border-right: 1px solid $table-border;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.collapsed{
+                td{
+                    .d-btn-primary{
+                        display: none;
+                    }
+                    .d-btn-skyblue{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

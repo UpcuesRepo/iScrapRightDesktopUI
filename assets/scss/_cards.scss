@@ -371,6 +371,38 @@
             top:95%;
         }
     }
+    &.training-video{
+        img{
+            border-radius: $radius-lg;
+            box-shadow: 0px 5px 10px 5px #0000000D;
+        }
+    }
+    &.iot-device{
+        .red-dot{
+            background-color: $red-2;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+        }
+        .card-body{
+            img{
+                height: 125px;
+                width: 110px;
+            }
+            .device-title{
+                font-size: $font-size-md;
+                font-weight: $font-800;
+                line-height: $line-height-20;
+                text-transform: $text-uppercase;
+            }
+            .workstation{
+                font-size: $font-size-md;
+                font-weight: $font-400;
+                line-height: $line-height-20;
+                color: $secondary;
+            }
+        }
+    }
 }
 
 .skyblue-box{

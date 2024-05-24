@@ -16,10 +16,10 @@
                         line-height: $line-height-18;
                     }
                     .btn-skyblue2 {
-                        z-index: -1;
+                        z-index: 1;
                         position: absolute;
-                        right: 0;
-                        top: -50px;
+                        right: 20px;
+                        top: 0;
                     }
                 }
                 .modal-body{
@@ -44,6 +44,9 @@
         &.modal-39 {
             max-width: 39%;
         }
+        &.modal-35 {
+            max-width: 35.5%;
+        }
         &.modal-52 {
             max-width: 52.7%;
         }
@@ -53,6 +56,9 @@
  
         &.modal-cancel-ticket {
             .modal-content {
+                .modal-header{
+                    padding: 20px;
+                }
                 .modal-body{
                     .warning-text{
                         font-size: $font-size-16;
@@ -72,11 +78,11 @@
                     border-bottom: 0;    
                 }
                 .modal-body{
-                    padding: 15px;
+                    padding: 0 15px;
                     .modal-title{
                         border-bottom: 1px solid $skyblue2-rgba5;
                         text-transform: $text-uppercase;
-                        padding-bottom: 15px;
+                        padding: 20px 0;
                     }   
                 }
                 .modal-footer{
@@ -92,16 +98,16 @@
                     .btn-skyblue2{
                         border-radius: 0 0 10px 10px;
                         position: absolute;
-                        right: 0;
+                        right: 20px;
                         top: 0;
                     }
                 }
                 .modal-body{
-                    padding: 15px;
+                    padding: 0 15px;
                     .modal-title{
                         border-bottom: 1px solid $skyblue2-rgba5;
                         text-transform: $text-uppercase;
-                        padding-bottom: 15px;
+                        padding: 20px 0;
                     }  
                     .skyblue-strip{
                         background-color: $skyblue2-rgba2;
@@ -123,11 +129,11 @@
         &.modal-add-cash{
             .modal-content{
                 .modal-body{
-                    padding: 15px;
+                    padding: 0 15px;
                     .modal-title{
                         border-bottom: 1px solid $skyblue2-rgba5;
                         text-transform: $text-uppercase;
-                        padding-bottom: 15px;
+                        padding: 20px 0;
                     }   
                 }
                 .modal-footer{
@@ -139,11 +145,27 @@
         &.modal-edit-user{
             .modal-content{
                 .modal-body{
-                    padding: 15px;
+                    padding: 0 15px;
                     .modal-title{
                         border-bottom: 1px solid $skyblue2-rgba5;
                         text-transform: $text-uppercase;
-                        padding-bottom: 15px;
+                        padding: 20px 0;
+                    }   
+                }
+                .modal-footer{
+                    padding: 15px;
+                    background-color: $primary;
+                }
+            }   
+        }
+        &.modal-add-workstation{
+            .modal-content{
+                .modal-body{
+                    padding: 0 15px;
+                    .modal-title{
+                        border-bottom: 1px solid $skyblue2-rgba5;
+                        text-transform: $text-uppercase;
+                        padding: 20px 0;
                     }   
                 }
                 .modal-footer{
