@@ -178,9 +178,18 @@
       <div class="row mb-5">
         <!--calender form input h-44 style-2 -->
         <div class="col-md-4 mb-5">
+          <h6 class="color-black">calender input h-44</h6>
           <div class="form-group d-flex align-items-center">
             <label class="form-label label-13 me-3">date:</label>
             <input type="date" class="form-control form-calender h-44" placeholder="">
+          </div>
+        </div>
+        <!-- search floating input border secondary h-44 -->
+        <div class="col-md-4">
+          <h6 class="color-black">search floating input h-44</h6>
+          <div class="form-floating border-secondary search-icon h-44 mb-3">
+            <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" class="label-13">Search</label>
           </div>
         </div>
       </div>
@@ -197,15 +206,17 @@
           </div>
          </div>
          <!-- drop down result per page-->
-         <div class="col-md-4 mb-3">
-          <div class="form-group select-style-3 d-flex w-100 mb-3">
-            <label class="form-label label-md">Results per page</label>
-            <select class="selectpicker" data-live-search="true">
-              <option data-tokens="ketchup mustard">1</option>
-              <option data-tokens="mustard">2</option>
-              <option data-tokens="frosting">3</option>
-            </select>
-          </div>
+          <div class="col-md-3 d-flex align-items-center mb-3">
+            <div class="form-group">
+              <label class="form-label label-md mb-0 me-2">Results per page</label>
+            </div>
+            <div class="form-group select-style-3">
+                <select class="selectpicker" data-live-search="true">
+                  <option data-tokens="ketchup mustard">1</option>
+                  <option data-tokens="mustard">2</option>
+                  <option data-tokens="frosting">3</option>
+                </select>
+            </div>  
          </div>
          <!-- end drop down result per page-->
       </div>
@@ -281,7 +292,7 @@
                 <input type="email" class="form-control style-4 search-icon h-44" placeholder="Search" fdprocessedid="9clplt">
               </div>
             </div> -->
-            <!-- search floating input h-44 -->
+            <!-- search floating input bg rgba white h-44 -->
             <div class="col-md-4">
               <h6 class="color-white">search floating input h-44</h6>
               <div class="form-floating bg-rgba-white search-icon h-44 mb-3">

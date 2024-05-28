@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <!-- FAVICON -->
+     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+     <link rel="manifest" href="../images/favicon/manifest.json">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">
+     
+    
+     <!-- CSS -->
+     <link href="../assets/dist/css/default.css" rel="stylesheet" />
+     <title>IScrapRight</title>
+  </head>
+  <body>
+    <div class="layout-2">
+        <!-- LANDING PAGE NAVBAR -->
+        <nav class="navbar ticket-landing-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between align-items-center w-100">
+              <div class="d-flex align-items-center ms-3">
+                <img src="../images/logo/iSR-logo.svg" class="logo me-3" alt="">
+                <div class="pagination-ticket-navbar d-flex align-items-center">
+                  <a href="#" class="arrow me-4">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.2">
+                        <path d="M16.9999 11.3335L11.3333 17.0002M11.3333 17.0002L16.9999 22.6668M11.3333 17.0002H22.6666M31.1666 17.0002C31.1666 24.8242 24.824 31.1668 16.9999 31.1668C9.17588 31.1668 2.83325 24.8242 2.83325 17.0002C2.83325 9.17613 9.17588 2.8335 16.9999 2.8335C24.824 2.8335 31.1666 9.17613 31.1666 17.0002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                  </a>
+                  <div class="pagination-title">
+                    <div class="ticket-number">
+                      Ticket #4717 <span class="f-sm-secondary">(Inbound)</span>
+                    </div>
+                    <div class="ticket-name text-center">
+                      CODY SCOTT BROWN
+                    </div>
+                  </div>
+                  <a href="#" class="arrow ms-4">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.2">
+                        <path d="M17.0001 11.3335L22.6667 17.0002M22.6667 17.0002L17.0001 22.6668M22.6667 17.0002H11.3334M2.83342 17.0002C2.83342 24.8242 9.17605 31.1668 17.0001 31.1668C24.8241 31.1668 31.1667 24.8242 31.1667 17.0002C31.1667 9.17613 24.8241 2.8335 17.0001 2.8335C9.17605 2.8335 2.83342 9.17613 2.83342 17.0002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="d-flex align-items-center">
+                <button class="btn with-icon btn-white-10 btn-h64 btn-md fw-xxbold me-1">
+                  <svg class="me-2" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 10V20M10 15H20M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Add New Ticket
+                </button>
+                <button class="btn with-icon btn-white-10 btn-h64 btn-md fw-xxbold">
+                  <svg class="me-2" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Search tikets
+                </button>
+                <div class="link-part d-flex align-items-center">
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      TRANSACTION
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Ticketing Screen</a></li>
+                      <li><a class="dropdown-item" href="#">AP Screen</a></li>
+                      <li><a class="dropdown-item" href="#">Check Register</a></li>
+                      <li><a class="dropdown-item" href="#">Admin Ticket Review</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ADMIN
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">My Account</a></li>
+                      <li><a class="dropdown-item" href="#">Customers</a></li>
+                      <li><a class="dropdown-item" href="#">Users</a></li>
+                      <li><a class="dropdown-item" href="#">Materials</a></li>
+                      <li><a class="dropdown-item" href="#">Contamination</a></li>
+                      <li><a class="dropdown-item" href="#">QBO Config</a></li>
+                      <li><a class="dropdown-item" href="#">QBO Manual Upload</a></li>
+                      <li><a class="dropdown-item" href="#">QBO Transactions</a></li>
+                      <li><a class="dropdown-item" href="#">Compliance & Pay</a></li>
+                      <li><a class="dropdown-item" href="#">Uploads</a></li>
+                      <li><a class="dropdown-item" href="#">Ticket Builder</a></li>
+                      <li><a class="dropdown-item" href="#">Training Videos</a></li>
+                      <li><a class="dropdown-item" href="#">Workstations</a></li>
+                      <li><a class="dropdown-item" href="#">My IoT Devices</a></li>
+                      <li><a class="dropdown-item" href="#">Subscriptions</a></li>
+                      <li><a class="dropdown-item" href="#">PITCH DECK</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      REPORTS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Purchase Summary</a></li>
+                      <li><a class="dropdown-item" href="#">Cashier Reconciliation</a></li>
+                      <li><a class="dropdown-item" href="#">Non-Compliant Tickets</a></li>
+                      <li><a class="dropdown-item" href="#">Transaction Detail</a></li>
+                      <li><a class="dropdown-item" href="#">Material/Price</a></li>
+                      <li><a class="dropdown-item" href="#">VIN</a></li>
+                      <li><a class="dropdown-item" href="#">POS</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      CASH DRAWER
+                    </a>
+                    <ul class="dropdown-menu cash-drawer-dropdown dropdown-menu-lg-end">
+                      <li>  
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Startup Amount</div>
+                          <div class="total">$0.00</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Cash Paid</div>
+                          <div class="total">$0.00</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Addition</div>
+                          <div class="total">$0.00</div>
+                        </a> 
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Deduction</div>
+                          <div class="total">$0.00</div>
+                        </a>  
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">Balance Total</div>
+                          <div class="total green">$0.00</div>
+                        </a>  
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                          <div class="inner-content">OPEN</div>
+                          <button class="btn btn-skyblue2 radius-xxl btn-md btn-h36">MAKE ENTRY</button>
+                        </a>  
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <button type="button" class="nav-link">TRANSACTION</button>
+                  <button type="button" class="nav-link">ADMIN</button>
+                  <button type="button" class="nav-link">REPORTS</button>
+                  <button type="button" class="nav-link">CASH DRAWER</button> -->
+                </div>
+                <!-- <button class="user-btn">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.08823 25.9177C7.89933 24.0068 9.79307 22.6665 11.9998 22.6665H19.9998C22.2066 22.6665 24.1003 24.0068 24.9114 25.9177M21.3332 12.6665C21.3332 15.612 18.9454 17.9998 15.9998 17.9998C13.0543 17.9998 10.6665 15.612 10.6665 12.6665C10.6665 9.72099 13.0543 7.33317 15.9998 7.33317C18.9454 7.33317 21.3332 9.72099 21.3332 12.6665ZM29.3332 15.9998C29.3332 23.3636 23.3636 29.3332 15.9998 29.3332C8.63604 29.3332 2.6665 23.3636 2.6665 15.9998C2.6665 8.63604 8.63604 2.6665 15.9998 2.6665C23.3636 2.6665 29.3332 8.63604 29.3332 15.9998Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button> -->
+                <div class="dropdown user-menu">
+                  <button class="user-btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.08823 25.9177C7.89933 24.0068 9.79307 22.6665 11.9998 22.6665H19.9998C22.2066 22.6665 24.1003 24.0068 24.9114 25.9177M21.3332 12.6665C21.3332 15.612 18.9454 17.9998 15.9998 17.9998C13.0543 17.9998 10.6665 15.612 10.6665 12.6665C10.6665 9.72099 13.0543 7.33317 15.9998 7.33317C18.9454 7.33317 21.3332 9.72099 21.3332 12.6665ZM29.3332 15.9998C29.3332 23.3636 23.3636 29.3332 15.9998 29.3332C8.63604 29.3332 2.6665 23.3636 2.6665 15.9998C2.6665 8.63604 8.63604 2.6665 15.9998 2.6665C23.3636 2.6665 29.3332 8.63604 29.3332 15.9998Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu user-dropdown dropdown-menu-lg-end">
+                    <li>
+                      <div class="dropdown-link pb-0">Nick Carter</div>
+                      <div class="dropdown-link">nick19@scrapright.com</div>
+                    </li>
+                    <li>
+                      <div class="dropdown-link" >Workstation:</div>
+                      <div class="form-group floating-group floating-diff bg-rgba-white mb-3">
+                        <label class="floating-label"></label>
+                        <select id="workstation" name="workstation" class="form-control floating-control">
+                          <option value="">Nick</option>   
+                          <option value="Afganistan">Afghanistan</option>
+                          <option value="Albania">Albania</option>
+                          <option value="India">India</option>
+                          <option value="American Samoa">American Samoa</option>
+                          <option value="Andorra">Andorra</option>
+                          <option value="Angola">Angola</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-link d-flex justify-content-between">
+                          <div class="inner-content">Company Name: </div> 
+                          <div class="inner-content">Admin Account</div> 
+                        </div>
+                        <button class="btn btn-skyblue2 btn-md btn-h36 w-100">LOGOUT</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>  
+        </nav>
+        <!-- END LANDING PAGE NAVBAR -->
+        <!-- CONTENT PART -->
+        <div class="content-part">
+          <div class="d-flex justify-content-between mb-3">
+            <div class="title">Users & Devices</div>
+            <div class="d-flex">
+              <button class="btn btn-skyblue2 with-icon check-btn font-16 extrabold btn-h44 w-auto me-2">
+                <svg class="me-2" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 15.5H7.5C6.10444 15.5 5.40665 15.5 4.83886 15.6722C3.56045 16.06 2.56004 17.0605 2.17224 18.3389C2 18.9067 2 19.6044 2 21M19 21V15M16 18H22M14.5 7.5C14.5 9.98528 12.4853 12 10 12C7.51472 12 5.5 9.98528 5.5 7.5C5.5 5.01472 7.51472 3 10 3C12.4853 3 14.5 5.01472 14.5 7.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Add USER
+              </button>
+              <button class="btn btn-skyblue2 with-icon check-btn font-16 extrabold btn-h44 w-auto me-2">
+                <svg class="me-2" width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8335 8.24992H10.5418C9.78244 8.24992 9.16683 8.86553 9.16683 9.62492C9.16683 10.3843 9.78244 10.9999 10.5418 10.9999H11.4585C12.2179 10.9999 12.8335 11.6155 12.8335 12.3749C12.8335 13.1343 12.2179 13.7499 11.4585 13.7499H9.16683M11.0002 7.33325V8.24992M11.0002 13.7499V14.6666M16.5002 10.9999H16.5093M5.50016 10.9999H5.50933M1.8335 7.51658L1.8335 14.4832C1.8335 15.51 1.8335 16.0234 2.03332 16.4156C2.20909 16.7605 2.48955 17.041 2.83451 17.2168C3.22668 17.4166 3.74007 17.4166 4.76683 17.4166L17.2335 17.4166C18.2603 17.4166 18.7736 17.4166 19.1658 17.2168C19.5108 17.041 19.7912 16.7605 19.967 16.4156C20.1668 16.0234 20.1668 15.51 20.1668 14.4833V7.51659C20.1668 6.48982 20.1668 5.97644 19.967 5.58427C19.7912 5.23931 19.5108 4.95884 19.1658 4.78307C18.7736 4.58325 18.2603 4.58325 17.2335 4.58325L4.76683 4.58325C3.74007 4.58325 3.22669 4.58325 2.83451 4.78307C2.48955 4.95884 2.20909 5.23931 2.03332 5.58427C1.8335 5.97644 1.8335 6.48982 1.8335 7.51658ZM16.9585 10.9999C16.9585 11.253 16.7533 11.4583 16.5002 11.4583C16.247 11.4583 16.0418 11.253 16.0418 10.9999C16.0418 10.7468 16.247 10.5416 16.5002 10.5416C16.7533 10.5416 16.9585 10.7468 16.9585 10.9999ZM5.9585 10.9999C5.9585 11.253 5.75329 11.4583 5.50016 11.4583C5.24703 11.4583 5.04183 11.253 5.04183 10.9999C5.04183 10.7468 5.24703 10.5416 5.50016 10.5416C5.75329 10.5416 5.9585 10.7468 5.9585 10.9999Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Add CASH DRAWER
+              </button>
+            </div>
+          </div>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="form-group">
+                    <label class="form-label label-md mb-0 me-2">Results per page</label>
+                </div>
+                <div class="form-group select-style-3">
+                    <select class="selectpicker" data-live-search="true">
+                      <option data-tokens="ketchup mustard">1</option>
+                      <option data-tokens="mustard">2</option>
+                      <option data-tokens="frosting">3</option>
+                    </select>
+                </div>    
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+              <div class="col-md-6">
+                <div class="form-floating border-secondary search-icon h-44 me-2">
+                  <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" class="label-13">Search</label>
+                </div>
+              </div>
+              <button class="btn btn-grey-5 btn-h44 btn-lg letter-space7 radius-xxl">
+                SEARCH
+              </button>
+            </div>
+          </div>
+          <div class="ticket-table-container bg-white d-flex flex-column justify-content-between mt-3 mb-4">
+            <table class="table ticket-landing-table thead-font-16 mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-bold">Name</th>
+                        <th scope="col" class="fw-bold">USERNAME</th>
+                        <th scope="col" class="fw-bold">PERMISSION LEVEL</th>
+                        <th scope="col" class="fw-bold"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">Cody Brown</td>
+                        <td>cody.brown@scrapright.com</td>
+                        <td>Admin</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">Michelle Domaruk</td>
+                        <td>michelle.domaruk@scrapright.com</td>
+                        <td>Admin</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">Mike Revano</td>
+                        <td>michael.revano@scrapright.com</td>
+                        <td>Admin</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">Nick Carter</td>
+                        <td>nick19@scrapright.com</td>
+                        <td>Admin</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">RD3 Davis</td>
+                        <td>nick19@scrapright.com</td>
+                        <td>Admin</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">Sally Sample</td>
+                        <td>michael.revano@scrapright.com</td>
+                        <td>Cashier</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">Sally Sample</td>
+                        <td>michelle.domaruk@scrapright.com</td>
+                        <td>Cashier</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">Sally Sample</td>
+                        <td>cody.brown@scrapright.com</td>
+                        <td>Cashier</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">Sally Sample</td>
+                        <td>cody.brown@scrapright.com</td>
+                        <td>Cashier</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="color-secondary fw-bold">Sally Sample</td>
+                        <td>cody.brown@scrapright.com</td>
+                        <td>Cashier</td>
+                        <td>
+                            <a href="#" class="me-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_478_10492)">
+                                    <path d="M9.16699 3.33344H5.66699C4.26686 3.33344 3.5668 3.33344 3.03202 3.60593C2.56161 3.84561 2.17916 4.22806 1.93948 4.69847C1.66699 5.23324 1.66699 5.93331 1.66699 7.33344V14.3334C1.66699 15.7336 1.66699 16.4336 1.93948 16.9684C2.17916 17.4388 2.56161 17.8213 3.03202 18.061C3.5668 18.3334 4.26686 18.3334 5.66699 18.3334H12.667C14.0671 18.3334 14.7672 18.3334 15.302 18.061C15.7724 17.8213 16.1548 17.4388 16.3945 16.9684C16.667 16.4336 16.667 15.7336 16.667 14.3334V10.8334M6.66697 13.3334H8.06242C8.47007 13.3334 8.6739 13.3334 8.86571 13.2874C9.03577 13.2466 9.19835 13.1792 9.34747 13.0878C9.51566 12.9848 9.65979 12.8406 9.94804 12.5524L17.917 4.58344C18.6073 3.89309 18.6073 2.7738 17.917 2.08344C17.2266 1.39309 16.1073 1.39308 15.417 2.08344L7.44802 10.0524C7.15977 10.3406 7.01564 10.4848 6.91257 10.653C6.82119 10.8021 6.75385 10.9647 6.71302 11.1347C6.66697 11.3265 6.66697 11.5304 6.66697 11.938V13.3334Z" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_478_10492">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3333 4.99984V4.33317C13.3333 3.39975 13.3333 2.93304 13.1517 2.57652C12.9919 2.26292 12.7369 2.00795 12.4233 1.84816C12.0668 1.6665 11.6001 1.6665 10.6667 1.6665H9.33333C8.39991 1.6665 7.9332 1.6665 7.57668 1.84816C7.26308 2.00795 7.00811 2.26292 6.84832 2.57652C6.66667 2.93304 6.66667 3.39975 6.66667 4.33317V4.99984M8.33333 9.58317V13.7498M11.6667 9.58317V13.7498M2.5 4.99984H17.5M15.8333 4.99984V14.3332C15.8333 15.7333 15.8333 16.4334 15.5608 16.9681C15.3212 17.4385 14.9387 17.821 14.4683 18.0607C13.9335 18.3332 13.2335 18.3332 11.8333 18.3332H8.16667C6.76654 18.3332 6.06647 18.3332 5.53169 18.0607C5.06129 17.821 4.67883 17.4385 4.43915 16.9681C4.16667 16.4334 4.16667 15.7333 4.16667 14.3332V4.99984" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="entry-txt">Showing 1 to 10 of 21 entries</div>
+            <div class="d-flex">
+                <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"></path>
+                  </svg>
+                  First
+                </button>
+                <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2329 4.18414C10.4626 4.423 10.4551 4.80282 10.2163 5.0325L7.06605 8L10.2163 10.9675C10.4551 11.1972 10.4626 11.577 10.2329 11.8159C10.0032 12.0547 9.62339 12.0622 9.38452 11.8325L5.78452 8.4325C5.66688 8.31938 5.60039 8.16321 5.60039 8C5.60039 7.83679 5.66688 7.68062 5.78452 7.5675L9.38452 4.1675C9.62339 3.93782 10.0032 3.94527 10.2329 4.18414Z" fill="#626262"></path>
+                  </svg>
+                  Back
+                </button>
+                <button class="btn btn-pagination btn-xs h-36 me-2">1</button>
+                <button class="btn btn-pagination btn-xs h-36 me-2">2</button>
+                <button class="btn btn-pagination btn-xs h-36 me-2">3</button>
+                <button class="btn btn-pagination btn-xs h-36 me-2">4</button>
+                <button class="btn btn-pagination btn-xs h-36 me-2">...</button>
+                <button class="btn btn-pagination btn-xs h-36 me-2">25</button>
+                <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                  Next
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76711 11.8159C5.53743 11.577 5.54488 11.1972 5.78374 10.9675L8.93395 8L5.78374 5.0325C5.54488 4.80282 5.53743 4.423 5.76711 4.18413C5.99679 3.94527 6.37661 3.93782 6.61548 4.1675L10.2155 7.5675C10.3331 7.68062 10.3996 7.83679 10.3996 8C10.3996 8.16321 10.3331 8.31938 10.2155 8.4325L6.61548 11.8325C6.37661 12.0622 5.99679 12.0547 5.76711 11.8159Z" fill="#626262"></path>
+                  </svg>
+                </button>
+                <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                  Last
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.38433 10.9675C3.14547 11.1972 3.13802 11.577 3.3677 11.8159C3.59737 12.0547 3.9772 12.0622 4.21606 11.8325L7.81606 8.4325C7.93371 8.31938 8.0002 8.16321 8.0002 8C8.0002 7.83679 7.93371 7.68062 7.81606 7.5675L4.21606 4.1675C3.9772 3.93782 3.59737 3.94527 3.3677 4.18414C3.13802 4.423 3.14547 4.80282 3.38433 5.0325L6.53453 8L3.38433 10.9675Z" fill="#626262"></path>
+                    <path d="M8.18433 10.9675C7.94547 11.1972 7.93802 11.577 8.1677 11.8159C8.39737 12.0547 8.7772 12.0622 9.01606 11.8325L12.6161 8.4325C12.7337 8.31938 12.8002 8.16321 12.8002 8C12.8002 7.83679 12.7337 7.68062 12.6161 7.5675L9.01606 4.1675C8.7772 3.93782 8.39737 3.94527 8.1677 4.18414C7.93802 4.423 7.94547 4.80282 8.18433 5.0325L11.3345 8L8.18433 10.9675Z" fill="#626262"></path>
+                  </svg>
+                </button>
+            </div>
+          </div>
+        </div>
+        <!-- END CONTENT PART -->
+        <!-- FOOTER -->
+        <div class="footer ticket-footer">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="copyright-text">Copyright © iScrapright</div>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="copyright-text fw-bold me-3">CONTACT US +91 877-897-6422</a>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="social-icons">
+                            <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.2">
+                                <path d="M14 0C6.26808 0 0 6.26808 0 14C0 20.5654 4.52032 26.0747 10.6182 27.5878V18.2784H7.73136V14H10.6182V12.1565C10.6182 7.39144 12.7747 5.1828 17.453 5.1828C18.34 5.1828 19.8705 5.35696 20.4966 5.53056V9.40856C20.1662 9.37384 19.5922 9.35648 18.8793 9.35648C16.5838 9.35648 15.6968 10.2262 15.6968 12.4869V14H20.2698L19.4841 18.2784H15.6968V27.8975C22.629 27.0603 28.0006 21.1579 28.0006 14C28 6.26808 21.7319 0 14 0Z" fill="white"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icons">
+                            <svg width="20" height="20" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.2" clip-path="url(#clip0_143_2853)">
+                                <path d="M14.4707 2.52109C18.2113 2.52109 18.6543 2.5375 20.1254 2.60312C21.4926 2.66328 22.2309 2.89297 22.723 3.08438C23.3738 3.33594 23.8441 3.64219 24.3309 4.12891C24.823 4.62109 25.1238 5.08594 25.3754 5.73672C25.5668 6.22891 25.7965 6.97266 25.8566 8.33437C25.9223 9.81094 25.9387 10.2539 25.9387 13.9891C25.9387 17.7297 25.9223 18.1727 25.8566 19.6438C25.7965 21.0109 25.5668 21.7492 25.3754 22.2414C25.1238 22.8922 24.8176 23.3625 24.3309 23.8492C23.8387 24.3414 23.3738 24.6422 22.723 24.8938C22.2309 25.0852 21.4871 25.3148 20.1254 25.375C18.6488 25.4406 18.2059 25.457 14.4707 25.457C10.7301 25.457 10.2871 25.4406 8.81602 25.375C7.44883 25.3148 6.71055 25.0852 6.21836 24.8938C5.56758 24.6422 5.09727 24.3359 4.61055 23.8492C4.11836 23.357 3.81758 22.8922 3.56602 22.2414C3.37461 21.7492 3.14492 21.0055 3.08477 19.6438C3.01914 18.1672 3.00273 17.7242 3.00273 13.9891C3.00273 10.2484 3.01914 9.80547 3.08477 8.33437C3.14492 6.96719 3.37461 6.22891 3.56602 5.73672C3.81758 5.08594 4.12383 4.61562 4.61055 4.12891C5.10273 3.63672 5.56758 3.33594 6.21836 3.08438C6.71055 2.89297 7.4543 2.66328 8.81602 2.60312C10.2871 2.5375 10.7301 2.52109 14.4707 2.52109ZM14.4707 0C10.6699 0 10.1941 0.0164062 8.70117 0.0820312C7.21367 0.147656 6.19102 0.388281 5.30508 0.732812C4.38086 1.09375 3.59883 1.56953 2.82227 2.35156C2.04023 3.12812 1.56445 3.91016 1.20352 4.82891C0.858984 5.72031 0.618359 6.7375 0.552734 8.225C0.487109 9.72344 0.470703 10.1992 0.470703 14C0.470703 17.8008 0.487109 18.2766 0.552734 19.7695C0.618359 21.257 0.858984 22.2797 1.20352 23.1656C1.56445 24.0898 2.04023 24.8719 2.82227 25.6484C3.59883 26.425 4.38086 26.9062 5.29961 27.2617C6.19102 27.6062 7.2082 27.8469 8.6957 27.9125C10.1887 27.9781 10.6645 27.9945 14.4652 27.9945C18.266 27.9945 18.7418 27.9781 20.2348 27.9125C21.7223 27.8469 22.7449 27.6062 23.6309 27.2617C24.5496 26.9062 25.3316 26.425 26.1082 25.6484C26.8848 24.8719 27.366 24.0898 27.7215 23.1711C28.066 22.2797 28.3066 21.2625 28.3723 19.775C28.4379 18.282 28.4543 17.8062 28.4543 14.0055C28.4543 10.2047 28.4379 9.72891 28.3723 8.23594C28.3066 6.74844 28.066 5.72578 27.7215 4.83984C27.377 3.91016 26.9012 3.12812 26.1191 2.35156C25.3426 1.575 24.5605 1.09375 23.6418 0.738281C22.7504 0.39375 21.7332 0.153125 20.2457 0.0875C18.7473 0.0164063 18.2715 0 14.4707 0Z" fill="white"/>
+                                <path d="M14.4707 6.80859C10.5004 6.80859 7.2793 10.0297 7.2793 14C7.2793 17.9703 10.5004 21.1914 14.4707 21.1914C18.441 21.1914 21.6621 17.9703 21.6621 14C21.6621 10.0297 18.441 6.80859 14.4707 6.80859ZM14.4707 18.6648C11.8949 18.6648 9.80586 16.5758 9.80586 14C9.80586 11.4242 11.8949 9.33516 14.4707 9.33516C17.0465 9.33516 19.1355 11.4242 19.1355 14C19.1355 16.5758 17.0465 18.6648 14.4707 18.6648Z" fill="white"/>
+                                <path d="M23.6254 6.52412C23.6254 7.45381 22.8707 8.20303 21.9465 8.20303C21.0168 8.20303 20.2676 7.44834 20.2676 6.52412C20.2676 5.59443 21.0223 4.84521 21.9465 4.84521C22.8707 4.84521 23.6254 5.5999 23.6254 6.52412Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_143_2853">
+                                <rect width="28" height="28" fill="white" transform="translate(0.470703)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icons">
+                            <svg width="20" height="20" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.2">
+                                <path d="M26.8685 0H3.00835C1.86538 0 0.941162 0.902344 0.941162 2.01797V25.9766C0.941162 27.0922 1.86538 28 3.00835 28H26.8685C28.0115 28 28.9412 27.0922 28.9412 25.982V2.01797C28.9412 0.902344 28.0115 0 26.8685 0ZM9.24819 23.8602H5.09194V10.4945H9.24819V23.8602ZM7.17007 8.67344C5.83569 8.67344 4.75835 7.59609 4.75835 6.26719C4.75835 4.93828 5.83569 3.86094 7.17007 3.86094C8.49897 3.86094 9.57632 4.93828 9.57632 6.26719C9.57632 7.59062 8.49897 8.67344 7.17007 8.67344ZM24.8013 23.8602H20.6505V17.3633C20.6505 15.8156 20.6232 13.8195 18.4904 13.8195C16.3302 13.8195 16.0021 15.5094 16.0021 17.2539V23.8602H11.8568V10.4945H15.838V12.3211H15.8927C16.4451 11.2711 17.8013 10.1609 19.8193 10.1609C24.0248 10.1609 24.8013 12.9281 24.8013 16.5266V23.8602Z" fill="white"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icons">
+                            <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.2">
+                                <path d="M14.4114 11.4546V16.8764H21.9459C21.615 18.6201 20.6222 20.0965 19.1331 21.0892L23.6767 24.6147C26.324 22.1711 27.8513 18.582 27.8513 14.3184C27.8513 13.3257 27.7622 12.371 27.5967 11.4547L14.4114 11.4546Z" fill="white"/>
+                                <path d="M6.56542 16.6648L5.54066 17.4492L1.91333 20.2746C4.21696 24.8437 8.93843 28.0001 14.4111 28.0001C18.191 28.0001 21.3601 26.7528 23.6765 24.6147L19.1329 21.0892C17.8856 21.9292 16.2947 22.4383 14.4111 22.4383C10.7711 22.4383 7.6785 19.982 6.57114 16.6729L6.56542 16.6648Z" fill="white"/>
+                                <path d="M1.91333 7.72534C0.958837 9.6089 0.411621 11.7344 0.411621 13.9998C0.411621 16.2652 0.958837 18.3907 1.91333 20.2743C1.91333 20.2869 6.57159 16.6597 6.57159 16.6597C6.29159 15.8197 6.12609 14.9289 6.12609 13.9997C6.12609 13.0704 6.29159 12.1796 6.57159 11.3396L1.91333 7.72534Z" fill="white"/>
+                                <path d="M14.4114 5.57454C16.4732 5.57454 18.3059 6.28725 19.7696 7.66181L23.7786 3.65277C21.3477 1.38736 18.1915 0 14.4114 0C8.93872 0 4.21696 3.14363 1.91333 7.72546L6.57145 11.34C7.67865 8.03089 10.7714 5.57454 14.4114 5.57454Z" fill="white"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icons">
+                            <svg width="20" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.2">
+                                <path d="M27.7799 4.4001C27.7799 4.4001 27.5065 2.46963 26.6643 1.62197C25.5979 0.506348 24.4057 0.500879 23.8588 0.435254C19.9432 0.150879 14.0643 0.150879 14.0643 0.150879H14.0534C14.0534 0.150879 8.17446 0.150879 4.25884 0.435254C3.71196 0.500879 2.51978 0.506348 1.45337 1.62197C0.611182 2.46963 0.343213 4.4001 0.343213 4.4001C0.343213 4.4001 0.0588379 6.66963 0.0588379 8.93369V11.0556C0.0588379 13.3196 0.337744 15.5892 0.337744 15.5892C0.337744 15.5892 0.611182 17.5196 1.4479 18.3673C2.51431 19.4829 3.91431 19.4446 4.53774 19.5649C6.77993 19.7782 14.0588 19.8438 14.0588 19.8438C14.0588 19.8438 19.9432 19.8329 23.8588 19.554C24.4057 19.4884 25.5979 19.4829 26.6643 18.3673C27.5065 17.5196 27.7799 15.5892 27.7799 15.5892C27.7799 15.5892 28.0588 13.3251 28.0588 11.0556V8.93369C28.0588 6.66963 27.7799 4.4001 27.7799 4.4001ZM11.1659 13.6313V5.76182L18.7291 9.71025L11.1659 13.6313Z" fill="white"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+    </div>
+    <script src="../assets/dist/js/all.min.js"></script>
+  </body>
+</html>
