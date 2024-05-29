@@ -216,132 +216,217 @@
         <!-- END LANDING PAGE NAVBAR -->
         <!-- CONTENT PART -->
         <div class="content-part">
-            <div class="main-title mb-3">Compliance</div>
-            <div class="txt-msg secondary-strip mb-3">
-              Choose the compliance rules that will apply to your business. Please note that compliance rules will still need to be activated for each material.
-            </div>
-            <div class="row align-items-stretch">
-              <div class="col-md-6">
-                <!-- COMPLIANCE CARD -->
-                <div class="head-grey-card">
-                  <div class="card-head">Choose rules which will be enforced to maintain compliance</div>
-                  <div class="card-body">
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Delay payment.
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Require license plate #.
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Exclude All Compliance Rules on a Ticket for Business Customers
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Require License or I.D. to be current
-                      </label>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Customer's Minimum Age to Be
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">AP Account</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Exclude All Compliance Rules for Ticket amount <= 
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">AP Account</label>
-                      </div>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Apply daily load limit
-                      </label>
-                    </div>
-                    <div class="fs-sm">* This is a system wide override that can be used to enable or disable compliance rules which have been configured for individual materials. Compliance rules still need to be activated for each material.</div>
-                  </div>
-                </div>
-                <!-- END COMPLIANCE CARD -->
-              </div>
-              <div class="col-md-6">
-                <!-- COMPLIANCE PAY PREFERENCES CARD -->
-                <div class="head-grey-card h-100">
-                  <div class="card-head">Pay Preferences</div>
-                  <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                           Require Check Payment if Ticket Total is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Check Payment For Restricted Materials when Amount is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Check Payment if CRV Amount is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Allow Overriding of Check Payment Rules for Business Customers
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <!-- END COMPLIANCE PAY PREFERENCES CARD -->
-              </div>
-            </div>
-            <div class="d-flex justify-content-center mt-5">
-              <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto">
-                save
+          <div class="d-flex justify-content-between mb-3">
+            <div class="main-title">Admin Ticket Review</div>
+            <div class="d-flex">
+              <button class="btn btn-skyblue2 with-icon check-btn font-16 extrabold btn-h44 w-auto me-2">
+                <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_482_10915)">
+                  <path d="M6 0C5.20435 0 4.44129 0.316071 3.87868 0.87868C3.31607 1.44129 3 2.20435 3 3V21C3 21.7956 3.31607 22.5587 3.87868 23.1213C4.44129 23.6839 5.20435 24 6 24H18C18.7956 24 19.5587 23.6839 20.1213 23.1213C20.6839 22.5587 21 21.7956 21 21V3C21 2.20435 20.6839 1.44129 20.1213 0.87868C19.5587 0.316071 18.7956 0 18 0L6 0ZM6 1.5H18C18.3978 1.5 18.7794 1.65804 19.0607 1.93934C19.342 2.22064 19.5 2.60218 19.5 3V21C19.5 21.3978 19.342 21.7794 19.0607 22.0607C18.7794 22.342 18.3978 22.5 18 22.5H6C5.60218 22.5 5.22064 22.342 4.93934 22.0607C4.65804 21.7794 4.5 21.3978 4.5 21V3C4.5 2.60218 4.65804 2.22064 4.93934 1.93934C5.22064 1.65804 5.60218 1.5 6 1.5Z" fill="white"/>
+                  <path d="M6.90426 18.1305C6.6119 18.0136 6.37635 17.7877 6.24726 17.5005C5.95476 16.9185 6.05226 16.3365 6.36726 15.8475C6.66426 15.387 7.15626 14.9955 7.71276 14.667C8.41767 14.2672 9.16279 13.9429 9.93576 13.6995C10.536 12.6204 11.0681 11.5047 11.5288 10.359C11.2533 9.73314 11.0374 9.08278 10.8838 8.41648C10.7548 7.81648 10.7053 7.22248 10.8148 6.71248C10.9273 6.18148 11.2258 5.70448 11.7898 5.47798C12.0778 5.36248 12.3898 5.29798 12.6928 5.36248C12.8452 5.39493 12.9885 5.4609 13.1122 5.55559C13.236 5.65029 13.3371 5.77135 13.4083 5.90998C13.5403 6.15598 13.5883 6.44398 13.5988 6.71698C13.6093 6.99748 13.5808 7.30948 13.5283 7.63798C13.4023 8.40298 13.1233 9.33898 12.7483 10.329C13.1621 11.214 13.654 12.0604 14.2183 12.858C14.8859 12.8053 15.5574 12.8304 16.2193 12.933C16.7653 13.0305 17.3203 13.2255 17.6593 13.6305C17.8393 13.8465 17.9488 14.1105 17.9593 14.4075C17.9698 14.6955 17.8888 14.9805 17.7523 15.252C17.634 15.5036 17.4507 15.719 17.2213 15.876C16.9945 16.0239 16.7267 16.0964 16.4563 16.083C15.9598 16.062 15.4753 15.789 15.0568 15.4575C14.5479 15.0367 14.0894 14.5585 13.6903 14.0325C12.6759 14.1475 11.6735 14.3513 10.6948 14.6415C10.246 15.4365 9.73386 16.1939 9.16326 16.9065C8.72826 17.4315 8.25126 17.889 7.77426 18.087C7.50019 18.211 7.18933 18.2265 6.90426 18.1305ZM8.97276 15.279C8.72376 15.393 8.49276 15.513 8.28426 15.636C7.79226 15.927 7.47276 16.2105 7.31376 16.4565C7.17276 16.674 7.16976 16.8315 7.25376 16.998C7.26876 17.031 7.28376 17.052 7.29276 17.064C7.31065 17.0592 7.32819 17.0532 7.34526 17.046C7.55076 16.962 7.87776 16.6935 8.29776 16.188C8.53663 15.8955 8.76187 15.5922 8.97276 15.279ZM11.4328 13.284C11.9336 13.167 12.439 13.0704 12.9478 12.9945C12.6745 12.5766 12.4193 12.1472 12.1828 11.7075C11.9475 12.2394 11.6974 12.7646 11.4328 13.2825V13.284ZM15.1018 13.959C15.3268 14.202 15.5458 14.409 15.7543 14.574C16.1143 14.859 16.3648 14.9535 16.5013 14.958C16.5378 14.9628 16.5749 14.9548 16.6063 14.9355C16.6687 14.8862 16.7172 14.8216 16.7473 14.748C16.8006 14.6566 16.831 14.5537 16.8358 14.448C16.8349 14.4127 16.821 14.3791 16.7968 14.3535C16.7188 14.2605 16.4968 14.1255 16.0198 14.04C15.7163 13.9893 15.4094 13.9627 15.1018 13.9605V13.959ZM12.1168 8.69998C12.243 8.29277 12.3432 7.87793 12.4168 7.45798C12.4633 7.17598 12.4813 6.94348 12.4738 6.76048C12.4742 6.65952 12.458 6.55918 12.4258 6.46348C12.3507 6.47277 12.2774 6.49299 12.2083 6.52348C12.0778 6.57598 11.9713 6.68248 11.9143 6.94798C11.8543 7.23598 11.8693 7.65148 11.9833 8.18098C12.0193 8.34748 12.0643 8.52148 12.1183 8.69998H12.1168Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_482_10915">
+                  <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                EXPORT PDF
+              </button>
+              <button class="btn btn-skyblue2 with-icon check-btn font-16 extrabold btn-h44 w-auto">
+                <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.8258 10.0202C8.76364 9.94181 8.68644 9.8767 8.59875 9.82863C8.51105 9.78057 8.41462 9.75053 8.31514 9.74028C8.21566 9.73003 8.11514 9.73978 8.01948 9.76895C7.92383 9.79813 7.83497 9.84614 7.75814 9.91016C7.68132 9.97418 7.61807 10.0529 7.57212 10.1418C7.52618 10.2306 7.49846 10.3277 7.4906 10.4274C7.48274 10.5271 7.4949 10.6274 7.52636 10.7223C7.55783 10.8172 7.60796 10.9049 7.67381 10.9802L11.0233 15.0002L7.67381 19.0202C7.55211 19.1735 7.49521 19.3684 7.51528 19.5632C7.53534 19.758 7.63078 19.9371 7.78119 20.0625C7.9316 20.1878 8.12507 20.2494 8.32026 20.234C8.51545 20.2186 8.69689 20.1275 8.8258 19.9802L11.9998 16.1717L15.1738 19.9817C15.3013 20.1344 15.4843 20.2303 15.6825 20.2481C15.7806 20.257 15.8795 20.2464 15.9735 20.217C16.0676 20.1877 16.1549 20.14 16.2306 20.0769C16.3062 20.0138 16.3687 19.9364 16.4144 19.8491C16.4601 19.7618 16.4882 19.6664 16.497 19.5683C16.5059 19.4701 16.4953 19.3712 16.4659 19.2772C16.4366 19.1831 16.3889 19.0958 16.3258 19.0202L12.9763 15.0002L16.3258 10.9802C16.4475 10.8268 16.5044 10.6319 16.4843 10.4371C16.4643 10.2424 16.3688 10.0632 16.2184 9.93782C16.068 9.81247 15.8745 9.75092 15.6793 9.7663C15.4842 9.78169 15.3027 9.87279 15.1738 10.0202L11.9998 13.8287L8.8258 10.0202Z" fill="white"/>
+                  <path d="M21 21V6.75L14.25 0H6C5.20435 0 4.44129 0.316071 3.87868 0.87868C3.31607 1.44129 3 2.20435 3 3V21C3 21.7956 3.31607 22.5587 3.87868 23.1213C4.44129 23.6839 5.20435 24 6 24H18C18.7956 24 19.5587 23.6839 20.1213 23.1213C20.6839 22.5587 21 21.7956 21 21ZM14.25 4.5C14.25 5.09674 14.4871 5.66903 14.909 6.09099C15.331 6.51295 15.9033 6.75 16.5 6.75H19.5V21C19.5 21.3978 19.342 21.7794 19.0607 22.0607C18.7794 22.342 18.3978 22.5 18 22.5H6C5.60218 22.5 5.22064 22.342 4.93934 22.0607C4.65804 21.7794 4.5 21.3978 4.5 21V3C4.5 2.60218 4.65804 2.22064 4.93934 1.93934C5.22064 1.65804 5.60218 1.5 6 1.5H14.25V4.5Z" fill="white"/>
+                </svg>
+                EXPORT to XLS
               </button>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <!-- choose filter DARK CARD -->
+              <div class="dark-card choose-filter mb-3">
+                <div class="title">Choose your filter </div>
+                <div class="row justify-content-between">
+                  <div class="col-md-5">
+                    <div class="form-group floating-group floating-diff bg-rgba-white font-md mb-3">
+                      <label class="floating-label">Customer/License/TicketNo</label>
+                      <select id="country" name="country" class="form-control floating-control">
+                        <option value="">Customer/License/TicketNo</option>   
+                        <option value="Afganistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="India">India</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Angola">Angola</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="form-floating bg-rgba-white font-md h-44 mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-md">Customer/License/TicketNo</label>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <button class="btn btn-white-10 btn-lg btn-h-w-44">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10V20M10 15H20M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <button class="btn btn-skyblue2 check-btn font-16 btn-h44 w-auto btn-right">
+                  SEARCH
+                </button>
+              </div>
+              <!-- END choose filter DARK CARD -->
+              <div class="d-flex align-items-center">
+                  <div class="form-group">
+                      <label class="form-label label-md mb-0 me-2">Results per page</label>
+                  </div>
+                  <div class="form-group select-style-3">
+                      <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">1</option>
+                        <option data-tokens="mustard">2</option>
+                        <option data-tokens="frosting">3</option>
+                      </select>
+                  </div>    
+              </div>
+              <div class="ticket-table-container bg-white d-flex flex-column justify-content-between mt-3 mb-4">
+                <table class="table ticket-landing-table tbody-font-sm mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="fw-bold">TICKETS#</th>
+                            <th scope="col" class="fw-bold">CUSTOMER</th>
+                            <th scope="col" class="fw-bold">STATUS</th>
+                            <th scope="col" class="fw-bold">AMOUNT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="color-secondary fw-bold">4764</span></td>
+                            <td>Alexander Smith</td>
+                            <td><div class="badge badge-open">open</div></td>
+                            <td>$ 234.00</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color-secondary fw-bold">4764</span></td>
+                            <td>Brenda Smith</td>
+                            <td><div class="badge badge-cash">paid by cash</div></td>
+                            <td>$ 234.00</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color-secondary fw-bold">4764</span></td>
+                            <td>Alexander Smith</td>
+                            <td><div class="badge badge-open">open</div></td>
+                            <td>$ 234.00</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color-secondary fw-bold">4764</span></td>
+                            <td>Brenda Smith</td>
+                            <td><div class="badge badge-cash">paid by cash</div></td>
+                            <td>$ 234.00</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color-secondary fw-bold">4764</span></td>
+                            <td>Alexander Smith</td>
+                            <td><div class="badge badge-open">open</div></td>
+                            <td>$ 234.00</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color-secondary fw-bold">4764</span></td>
+                            <td>Brenda Smith</td>
+                            <td><div class="badge badge-cash">paid by cash</div></td>
+                            <td>$ 234.00</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color-secondary fw-bold">4764</span></td>
+                            <td>Alexander Smith</td>
+                            <td><div class="badge badge-open">open</div></td>
+                            <td>$ 234.00</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color-secondary fw-bold">4764</span></td>
+                            <td>Brenda Smith</td>
+                            <td><div class="badge badge-cash">paid by cash</div></td>
+                            <td>$ 234.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="entry-txt">Showing 1 to 10 of 21 entries</div>
+                <div class="d-flex">
+                    <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2329 4.18414C10.4626 4.423 10.4551 4.80282 10.2163 5.0325L7.06605 8L10.2163 10.9675C10.4551 11.1972 10.4626 11.577 10.2329 11.8159C10.0032 12.0547 9.62339 12.0622 9.38452 11.8325L5.78452 8.4325C5.66688 8.31938 5.60039 8.16321 5.60039 8C5.60039 7.83679 5.66688 7.68062 5.78452 7.5675L9.38452 4.1675C9.62339 3.93782 10.0032 3.94527 10.2329 4.18414Z" fill="#626262"></path>
+                      </svg>
+                      Previous
+                    </button>
+                    <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                      Next
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76711 11.8159C5.53743 11.577 5.54488 11.1972 5.78374 10.9675L8.93395 8L5.78374 5.0325C5.54488 4.80282 5.53743 4.423 5.76711 4.18413C5.99679 3.94527 6.37661 3.93782 6.61548 4.1675L10.2155 7.5675C10.3331 7.68062 10.3996 7.83679 10.3996 8C10.3996 8.16321 10.3331 8.31938 10.2155 8.4325L6.61548 11.8325C6.37661 12.0622 5.99679 12.0547 5.76711 11.8159Z" fill="#626262"></path>
+                      </svg>
+                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <!-- DOWNLOAD RECEIPT -->
+              <div class="download-receipt-card">
+                <div class="title mb-2">Ticket# 4821</div>
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="row right-part align-items-stretch">
+                      <div class="col-md-6 mb-4">
+                        <div class="skyblue-border-card h-100">
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="address mb-3">RAYMOND RANDALL DAVIS</div>
+                        <div class="address mb-3">164 S PHILLIPS AVE, WAYNESBORO, PA 172680000</div>
+                        <div class="address bold">ID: 29727658</div>
+                        <div class="address bold">Plate#: 56ty3</div>
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-md-4">
+                        <div class="details">Status:</div>
+                        <div class="details">Started By: Cody Brown</div>
+                        <div class="details">Paid By:</div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="d-flex">
+                          <div class="details me-2">Total Price:</div> 
+                          <div class="details bold">$39312.00</div>   
+                        </div>
+                        <div class="d-flex">
+                          <div class="details me-2">Total Items: </div> 
+                          <div class="details bold">1</div>   
+                        </div>
+                        <div class="d-flex">
+                          <div class="details me-2">Total Weight:</div> 
+                          <div class="details bold"> 25200.00 LB</div>   
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="skyblue-border-card h-100">
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                  <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto">
+                    Download Receipt
+                  </button>
+                </div>
+              </div>
+              <!-- END DOWNLOAD RECEIPT -->
+            </div>
+          </div>
         </div>
         <!-- END CONTENT PART -->
         <!-- FOOTER -->

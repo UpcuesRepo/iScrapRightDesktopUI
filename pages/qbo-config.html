@@ -216,132 +216,145 @@
         <!-- END LANDING PAGE NAVBAR -->
         <!-- CONTENT PART -->
         <div class="content-part">
-            <div class="main-title mb-3">Compliance</div>
-            <div class="txt-msg secondary-strip mb-3">
-              Choose the compliance rules that will apply to your business. Please note that compliance rules will still need to be activated for each material.
-            </div>
-            <div class="row align-items-stretch">
-              <div class="col-md-6">
-                <!-- COMPLIANCE CARD -->
-                <div class="head-grey-card">
-                  <div class="card-head">Choose rules which will be enforced to maintain compliance</div>
-                  <div class="card-body">
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Delay payment.
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Require license plate #.
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Exclude All Compliance Rules on a Ticket for Business Customers
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Require License or I.D. to be current
-                      </label>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Customer's Minimum Age to Be
-                        </label>
-                      </div>
+          <div class="main-title mb-4">QBO Config</div>
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <!-- QBO CARD -->
+              <div class="head-grey-card qbo-card">
+                <div class="card-head">Note : Account name must be an exact match in Quickbooks.</div>
+                <div class="card-body">
+                  <div class="row mb-3">
+                    <div class="col-md-6">
                       <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Accounts Payable Account</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Bank Account (Check)</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Bank Account (Cash)</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Bank Account (ATM)</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Cash Customer</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Customer Name PostFix</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check form-inline mb-4">
+                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                    <label class="form-check-label style-2 ms-2" for="check1">
+                      Sync Material as Non - Inventory Item
+                    </label>
+                  </div>
+                  <div class="row mb-5">
+                    <div class="col-md-8">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="fs-15 fw-bold color-primary mb-3">Sync Invoices during:</div>
+                          <div class="form-check form-inline me-3 mb-3">
+                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                            <label class="form-check-label ms-2" for="">Adding Ticket Item</label>
+                          </div>
+                          <div class="form-check form-inline me-3">
+                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                            <label class="form-check-label ms-2" for="">Adding Customer</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="fs-15 fw-bold color-primary mb-3">AP Bills should use:</div>
+                          <div class="form-check form-inline me-3 mb-3">
+                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                            <label class="form-check-label ms-2" for="">Ticket Paid Date</label>
+                          </div>
+                          <div class="form-check form-inline me-3">
+                            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                            <label class="form-check-label ms-2" for="">Ticket Start Date</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto btn-bottom" fdprocessedid="tjkm7b">
+                    Save QuickBooks Configuration
+                  </button>
+                </div>
+              </div>
+              <!-- END QBO CARD -->
+            </div>
+            <div class="col-md-6">
+              <!-- QBO CARD -->
+              <div class="head-grey-card qbo-card">
+                <div class="card-head">Note : Connect to QuickBooks after saving configuration.</div>
+                <div class="card-body">
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Client ID</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Client Secret</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Callback Url</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="label-13">Environment</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-5">
+                    <div class="col-md-6">
+                      <div class="form-floating h-44">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput" class="label-13">AP Account</label>
                       </div>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Exclude All Compliance Rules for Ticket amount <= 
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">AP Account</label>
-                      </div>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Apply daily load limit
-                      </label>
-                    </div>
-                    <div class="fs-sm">* This is a system wide override that can be used to enable or disable compliance rules which have been configured for individual materials. Compliance rules still need to be activated for each material.</div>
                   </div>
+                  <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto btn-bottom" fdprocessedid="tjkm7b">
+                    Connect QuickBooks
+                  </button>
                 </div>
-                <!-- END COMPLIANCE CARD -->
               </div>
-              <div class="col-md-6">
-                <!-- COMPLIANCE PAY PREFERENCES CARD -->
-                <div class="head-grey-card h-100">
-                  <div class="card-head">Pay Preferences</div>
-                  <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                           Require Check Payment if Ticket Total is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Check Payment For Restricted Materials when Amount is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Check Payment if CRV Amount is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Allow Overriding of Check Payment Rules for Business Customers
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <!-- END COMPLIANCE PAY PREFERENCES CARD -->
-              </div>
+              <!-- END QBO CARD -->
             </div>
-            <div class="d-flex justify-content-center mt-5">
-              <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto">
-                save
-              </button>
-            </div>
+          </div>
         </div>
         <!-- END CONTENT PART -->
         <!-- FOOTER -->

@@ -215,133 +215,313 @@
         </nav>
         <!-- END LANDING PAGE NAVBAR -->
         <!-- CONTENT PART -->
-        <div class="content-part">
-            <div class="main-title mb-3">Compliance</div>
-            <div class="txt-msg secondary-strip mb-3">
-              Choose the compliance rules that will apply to your business. Please note that compliance rules will still need to be activated for each material.
-            </div>
-            <div class="row align-items-stretch">
-              <div class="col-md-6">
-                <!-- COMPLIANCE CARD -->
-                <div class="head-grey-card">
-                  <div class="card-head">Choose rules which will be enforced to maintain compliance</div>
-                  <div class="card-body">
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Delay payment.
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Require license plate #.
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Exclude All Compliance Rules on a Ticket for Business Customers
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Require License or I.D. to be current
-                      </label>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Customer's Minimum Age to Be
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">AP Account</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Exclude All Compliance Rules for Ticket amount <= 
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">AP Account</label>
-                      </div>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Apply daily load limit
-                      </label>
-                    </div>
-                    <div class="fs-sm">* This is a system wide override that can be used to enable or disable compliance rules which have been configured for individual materials. Compliance rules still need to be activated for each material.</div>
-                  </div>
-                </div>
-                <!-- END COMPLIANCE CARD -->
-              </div>
-              <div class="col-md-6">
-                <!-- COMPLIANCE PAY PREFERENCES CARD -->
-                <div class="head-grey-card h-100">
-                  <div class="card-head">Pay Preferences</div>
-                  <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                           Require Check Payment if Ticket Total is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Check Payment For Restricted Materials when Amount is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Check Payment if CRV Amount is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Allow Overriding of Check Payment Rules for Business Customers
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <!-- END COMPLIANCE PAY PREFERENCES CARD -->
-              </div>
-            </div>
-            <div class="d-flex justify-content-center mt-5">
-              <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto">
-                save
+        <div class="row content-part">
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between mb-3">
+              <div class="main-title">Outstanding AP Tickets</div>
+              <button class="btn btn-skyblue2 with-icon check-btn font-16 extrabold btn-h44 w-auto">
+                <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 13V14.2C19 15.8802 19 16.7202 18.673 17.362C18.3854 17.9265 17.9265 18.3854 17.362 18.673C16.7202 19 15.8802 19 14.2 19H5.8C4.11984 19 3.27976 19 2.63803 18.673C2.07354 18.3854 1.6146 17.9265 1.32698 17.362C1 16.7202 1 15.8802 1 14.2V13M15 8L10 13M10 13L5 8M10 13V1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                EXPORT PDF
               </button>
             </div>
+            <!-- DARK CARD -->
+            <div class="dark-card search-card d-flex justify-content-between align-items-center mb-3">
+              <div class="form-floating bg-rgba-white search-icon h-44">
+                <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-13">Search</label>
+              </div>
+              <div class="form-group d-flex align-items-center">
+                <label class="form-label mb-0 label-md color-white me-3">From</label>
+                <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+              </div>
+              <div class="form-group d-flex align-items-center">
+                <label class="form-label mb-0 label-md color-white me-3">To</label>
+                <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+              </div>
+              <button class="btn btn-skyblue2 btn-lg btn-h-w-44">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- END DARK CARD -->
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                  <div class="form-group">
+                      <label class="form-label label-md mb-0 me-2">Results per page</label>
+                  </div>
+                  <div class="form-group select-style-3">
+                      <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">1</option>
+                        <option data-tokens="mustard">2</option>
+                        <option data-tokens="frosting">3</option>
+                      </select>
+                  </div>    
+              </div>
+              <div class="d-flex">
+                <button class="btn btn-skyblue2 with-icon check-btn font-16 extrabold btn-h44 w-auto me-2">
+                  DOwNLOAD INVOICE
+                </button>
+                <button class="btn btn-green2 with-icon check-btn font-16 extrabold btn-h44 w-auto">
+                  PAY TICKETS
+                </button>
+              </div>
+            </div>
+            <div class="ticket-table-container bg-white d-flex flex-column justify-content-between mt-3 mb-4">
+              <table class="table ticket-landing-table tbody-font-sm mb-0">
+                  <thead>
+                      <tr>
+                          <th scope="col" class="fw-bold">TICKETS#</th>
+                          <th scope="col" class="fw-bold">CUSTOMER</th>
+                          <th scope="col" class="fw-bold">DATE</th>
+                          <th scope="col" class="fw-bold">AMOUNT</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><span class="color-secondary fw-bold">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                      </tr>
+                      <tr>
+                          <td><span class="color-secondary">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                      </tr>
+                      <tr>
+                          <td><span class="color-secondary">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                      </tr>
+                      <tr>
+                          <td><span class="color-secondary">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                      </tr>
+                      <tr>
+                          <td><span class="color-secondary">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <div class="bottom-strip">
+                  <table class="w-100 table bottom-strip-darkblue-table bold mb-0">
+                      <tbody>
+                          <tr>
+                              <td># of Tickets: 0</td>
+                              <td>Total: $0</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="entry-txt">Showing 1 to 10 of 21 entries</div>
+              <div class="d-flex">
+                  <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"></path>
+                    </svg>
+                    First
+                  </button>
+                  <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2329 4.18414C10.4626 4.423 10.4551 4.80282 10.2163 5.0325L7.06605 8L10.2163 10.9675C10.4551 11.1972 10.4626 11.577 10.2329 11.8159C10.0032 12.0547 9.62339 12.0622 9.38452 11.8325L5.78452 8.4325C5.66688 8.31938 5.60039 8.16321 5.60039 8C5.60039 7.83679 5.66688 7.68062 5.78452 7.5675L9.38452 4.1675C9.62339 3.93782 10.0032 3.94527 10.2329 4.18414Z" fill="#626262"></path>
+                    </svg>
+                    Back
+                  </button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">1</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">2</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">3</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">4</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">...</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">25</button>
+                  <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                    Next
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76711 11.8159C5.53743 11.577 5.54488 11.1972 5.78374 10.9675L8.93395 8L5.78374 5.0325C5.54488 4.80282 5.53743 4.423 5.76711 4.18413C5.99679 3.94527 6.37661 3.93782 6.61548 4.1675L10.2155 7.5675C10.3331 7.68062 10.3996 7.83679 10.3996 8C10.3996 8.16321 10.3331 8.31938 10.2155 8.4325L6.61548 11.8325C6.37661 12.0622 5.99679 12.0547 5.76711 11.8159Z" fill="#626262"></path>
+                    </svg>
+                  </button>
+                  <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                    Last
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.38433 10.9675C3.14547 11.1972 3.13802 11.577 3.3677 11.8159C3.59737 12.0547 3.9772 12.0622 4.21606 11.8325L7.81606 8.4325C7.93371 8.31938 8.0002 8.16321 8.0002 8C8.0002 7.83679 7.93371 7.68062 7.81606 7.5675L4.21606 4.1675C3.9772 3.93782 3.59737 3.94527 3.3677 4.18414C3.13802 4.423 3.14547 4.80282 3.38433 5.0325L6.53453 8L3.38433 10.9675Z" fill="#626262"></path>
+                      <path d="M8.18433 10.9675C7.94547 11.1972 7.93802 11.577 8.1677 11.8159C8.39737 12.0547 8.7772 12.0622 9.01606 11.8325L12.6161 8.4325C12.7337 8.31938 12.8002 8.16321 12.8002 8C12.8002 7.83679 12.7337 7.68062 12.6161 7.5675L9.01606 4.1675C8.7772 3.93782 8.39737 3.94527 8.1677 4.18414C7.93802 4.423 7.94547 4.80282 8.18433 5.0325L11.3345 8L8.18433 10.9675Z" fill="#626262"></path>
+                    </svg>
+                  </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="main-title mb-3">AP Settlements</div>
+            <!-- DARK CARD -->
+            <div class="dark-card search-card d-flex justify-content-between align-items-center mb-3">
+              <div class="form-floating bg-rgba-white search-icon h-44">
+                <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="label-13">Search</label>
+              </div>
+              <div class="form-group d-flex align-items-center">
+                <label class="form-label mb-0 label-md color-white me-3">From</label>
+                <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+              </div>
+              <div class="form-group d-flex align-items-center">
+                <label class="form-label mb-0 label-md color-white me-3">To</label>
+                <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+              </div>
+              <button class="btn btn-skyblue2 btn-lg btn-h-w-44">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- END DARK CARD -->
+            <div class="d-flex align-items-center mb-4">
+                <div class="form-group">
+                    <label class="form-label label-md mb-0 me-2">Results per page</label>
+                </div>
+                <div class="form-group select-style-3">
+                    <select class="selectpicker" data-live-search="true">
+                      <option data-tokens="ketchup mustard">1</option>
+                      <option data-tokens="mustard">2</option>
+                      <option data-tokens="frosting">3</option>
+                    </select>
+                </div>    
+            </div>
+            <div class="ticket-table-container bg-white d-flex flex-column justify-content-between mt-3 mb-4">
+              <table class="table ticket-landing-table tbody-font-sm mb-0">
+                  <thead>
+                      <tr>
+                          <th scope="col" class="fw-bold">INVOICE#</th>
+                          <th scope="col" class="fw-bold">CUSTOMER</th>
+                          <th scope="col" class="fw-bold">PAid on</th>
+                          <th scope="col" class="fw-bold">AMOUNT</th>
+                          <th scope="col" class="fw-bold"></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><span class="color-secondary fw-bold">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                          <td>
+                              <a href="#">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                              </a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><span class="color-secondary">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                          <td>
+                              <a href="#">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                              </a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><span class="color-secondary">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                          <td>
+                              <a href="#">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                              </a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><span class="color-secondary">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                          <td>
+                              <a href="#">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                              </a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><span class="color-secondary">4764</td>
+                          <td>Alexander Smith</td>
+                          <td>02/27/2024 </td>
+                          <td>$ 234.00</td>
+                          <td>
+                              <a href="#">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M17.5 12.5V13.5C17.5 14.9001 17.5 15.6002 17.2275 16.135C16.9878 16.6054 16.6054 16.9878 16.135 17.2275C15.6002 17.5 14.9001 17.5 13.5 17.5H6.5C5.09987 17.5 4.3998 17.5 3.86502 17.2275C3.39462 16.9878 3.01217 16.6054 2.77248 16.135C2.5 15.6002 2.5 14.9001 2.5 13.5V12.5M14.1667 8.33333L10 12.5M10 12.5L5.83333 8.33333M10 12.5V2.5" stroke="#3384D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                              </a>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <div class="bottom-strip">
+                  <table class="w-100 table bottom-strip-darkblue-table bold mb-0">
+                      <tbody>
+                          <tr>
+                              <td># of Tickets: 0</td>
+                              <td>Total: $0</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="entry-txt">Showing 1 to 10 of 21 entries</div>
+              <div class="d-flex">
+                  <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6323 11.8159C12.4026 12.0547 12.0228 12.0622 11.7839 11.8325L8.18394 8.4325C8.06629 8.31938 7.9998 8.16321 7.9998 8C7.9998 7.83679 8.06629 7.68062 8.18394 7.5675L11.7839 4.1675C12.0228 3.93782 12.4026 3.94527 12.6323 4.18413C12.862 4.423 12.8545 4.80282 12.6157 5.0325L9.46547 8L12.6157 10.9675C12.8545 11.1972 12.862 11.577 12.6323 11.8159ZM7.8323 11.8159C7.60263 12.0547 7.2228 12.0622 6.98394 11.8325L3.38394 8.4325C3.26629 8.31938 3.1998 8.16321 3.1998 8C3.1998 7.83679 3.26629 7.68062 3.38394 7.5675L6.98394 4.1675C7.2228 3.93782 7.60263 3.94527 7.8323 4.18413C8.06198 4.423 8.05453 4.80282 7.81567 5.0325L4.66547 8L7.81567 10.9675C8.05453 11.1972 8.06198 11.577 7.8323 11.8159Z" fill="#626262"></path>
+                    </svg>
+                    First
+                  </button>
+                  <button class="btn btn-pagination btn-xs h-36 with-icon me-2">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2329 4.18414C10.4626 4.423 10.4551 4.80282 10.2163 5.0325L7.06605 8L10.2163 10.9675C10.4551 11.1972 10.4626 11.577 10.2329 11.8159C10.0032 12.0547 9.62339 12.0622 9.38452 11.8325L5.78452 8.4325C5.66688 8.31938 5.60039 8.16321 5.60039 8C5.60039 7.83679 5.66688 7.68062 5.78452 7.5675L9.38452 4.1675C9.62339 3.93782 10.0032 3.94527 10.2329 4.18414Z" fill="#626262"></path>
+                    </svg>
+                    Back
+                  </button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">1</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">2</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">3</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">4</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">...</button>
+                  <button class="btn btn-pagination btn-xs h-36 me-2">25</button>
+                  <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                    Next
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76711 11.8159C5.53743 11.577 5.54488 11.1972 5.78374 10.9675L8.93395 8L5.78374 5.0325C5.54488 4.80282 5.53743 4.423 5.76711 4.18413C5.99679 3.94527 6.37661 3.93782 6.61548 4.1675L10.2155 7.5675C10.3331 7.68062 10.3996 7.83679 10.3996 8C10.3996 8.16321 10.3331 8.31938 10.2155 8.4325L6.61548 11.8325C6.37661 12.0622 5.99679 12.0547 5.76711 11.8159Z" fill="#626262"></path>
+                    </svg>
+                  </button>
+                  <button class="btn btn-pagination btn-xs h-36 with-icon icon-after me-2">
+                    Last
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.38433 10.9675C3.14547 11.1972 3.13802 11.577 3.3677 11.8159C3.59737 12.0547 3.9772 12.0622 4.21606 11.8325L7.81606 8.4325C7.93371 8.31938 8.0002 8.16321 8.0002 8C8.0002 7.83679 7.93371 7.68062 7.81606 7.5675L4.21606 4.1675C3.9772 3.93782 3.59737 3.94527 3.3677 4.18414C3.13802 4.423 3.14547 4.80282 3.38433 5.0325L6.53453 8L3.38433 10.9675Z" fill="#626262"></path>
+                      <path d="M8.18433 10.9675C7.94547 11.1972 7.93802 11.577 8.1677 11.8159C8.39737 12.0547 8.7772 12.0622 9.01606 11.8325L12.6161 8.4325C12.7337 8.31938 12.8002 8.16321 12.8002 8C12.8002 7.83679 12.7337 7.68062 12.6161 7.5675L9.01606 4.1675C8.7772 3.93782 8.39737 3.94527 8.1677 4.18414C7.93802 4.423 7.94547 4.80282 8.18433 5.0325L11.3345 8L8.18433 10.9675Z" fill="#626262"></path>
+                    </svg>
+                  </button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- END CONTENT PART -->
         <!-- FOOTER -->

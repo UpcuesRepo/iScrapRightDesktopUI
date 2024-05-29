@@ -19,40 +19,40 @@ body{
                 padding: 15px;
                 border-right: 1px solid $dark-bluergba2;
             }
-            .right-part{
-                
-            }
         }
     }   
 }
 .layout-2{
+    .main-title{
+        font-size: $font-size-22;
+        font-weight: $font-900;
+        line-height: $line-height-44;
+        letter-spacing: $letter-spacing10;
+        position: relative;
+        text-transform: $text-uppercase;
+        &::after{
+            content: "";
+            background-image: url("../../../images/icons/green-underline.svg");
+            position: absolute;
+            height: 6px;
+            width: 150px;
+            bottom: 0;
+            left: 0;
+        }
+    }
     .content-part{
         padding: 20px 15px;
         background-image: url("../../../images/backgrounds/price-shape.png");
         background-repeat: no-repeat;
-        .title{
-            font-size: $font-size-22;
-            font-weight: $font-900;
-            line-height: $line-height-36;
-            letter-spacing: $letter-spacing10;
-            position: relative;
-            text-transform: $text-uppercase;
-            &::after{
-                content: "";
-                background-image: url("../../../images/icons/green-underline.svg");
-                position: absolute;
-                height: 6px;
-                width: 150px;
-                bottom: 0;
-                left: 0;
-            }
-        }
         .entry-txt{
             font-size: $font-size-md;
             font-weight: $font-700;
             line-height: $line-height-20;
             color: $primary;
             text-transform: $text-uppercase;
+            &.extra-bold{
+                font-weight: $font-800;
+            }
         }
     }
 }

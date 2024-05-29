@@ -216,131 +216,154 @@
         <!-- END LANDING PAGE NAVBAR -->
         <!-- CONTENT PART -->
         <div class="content-part">
-            <div class="main-title mb-3">Compliance</div>
-            <div class="txt-msg secondary-strip mb-3">
-              Choose the compliance rules that will apply to your business. Please note that compliance rules will still need to be activated for each material.
-            </div>
+            <div class="main-title mb-3">Ticket Builder</div>
             <div class="row align-items-stretch">
-              <div class="col-md-6">
-                <!-- COMPLIANCE CARD -->
-                <div class="head-grey-card">
-                  <div class="card-head">Choose rules which will be enforced to maintain compliance</div>
-                  <div class="card-body">
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Delay payment.
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Require license plate #.
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Exclude All Compliance Rules on a Ticket for Business Customers
-                      </label>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Require License or I.D. to be current
-                      </label>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Customer's Minimum Age to Be
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">AP Account</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Exclude All Compliance Rules for Ticket amount <= 
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">AP Account</label>
-                      </div>
-                    </div>
-                    <div class="form-check d-flex align-items-center mb-3">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Apply daily load limit
-                      </label>
-                    </div>
-                    <div class="fs-sm">* This is a system wide override that can be used to enable or disable compliance rules which have been configured for individual materials. Compliance rules still need to be activated for each material.</div>
-                  </div>
+              <div class="col-md-8">
+                <div class="txt-msg secondary-strip mb-3">
+                  Customize your ticket receipts using the options below
                 </div>
-                <!-- END COMPLIANCE CARD -->
-              </div>
-              <div class="col-md-6">
-                <!-- COMPLIANCE PAY PREFERENCES CARD -->
-                <div class="head-grey-card h-100">
-                  <div class="card-head">Pay Preferences</div>
-                  <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                           Require Check Payment if Ticket Total is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
+                <div class="form-check d-flex align-items-center mb-3">
+                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                  <label class="form-check-label style-2 ms-2" for="check1">
+                    Show Barcode
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center mb-3">
+                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                  <label class="form-check-label style-2 ms-2" for="check1">
+                    Use Custom Logo
+                  </label>
+                </div>
+                <div class="txt-msg darkyellow-strip extrabold text-caps mb-5">
+                  NOTE: Entering a different check number will result in the current check number being voided.
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="form-floating h-44">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-13">Website</label>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Check Payment For Restricted Materials when Amount is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                      <div class="form-check d-flex align-items-center me-3">
-                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                        <label class="form-check-label style-2 ms-2" for="check1">
-                          Require Check Payment if CRV Amount is Greater than or Equal to $
-                        </label>
-                      </div>
-                      <div class="form-floating h-44">
-                        <input type="email" class="form-control w-50" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput" class="label-13">0.00</label>
-                      </div>
-                    </div>
-                    <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
-                      <label class="form-check-label style-2 ms-2" for="check1">
-                        Allow Overriding of Check Payment Rules for Business Customers
-                      </label>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating h-44">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-13">Phone Number</label>
                     </div>
                   </div>
                 </div>
-                <!-- END COMPLIANCE PAY PREFERENCES CARD -->
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="form-floating h-44">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-13">RC Number</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="form-floating floating-textarea">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                      <label for="floatingTextarea">Weighmater Certification</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating floating-textarea">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                      <label for="floatingTextarea">Disclaimer Text</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <div class="form-check form-inline me-5">
+                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                    <label class="form-check-label style-2 ms-2" for="check1">
+                      Show Customer Name
+                    </label>
+                  </div>
+                  <div class="form-check form-inline me-5">
+                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                    <label class="form-check-label style-2 ms-2" for="check1">
+                      Show ID/License#
+                    </label>
+                  </div>
+                  <div class="form-check form-inline me-5">
+                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                    <label class="form-check-label style-2 ms-2" for="check1">
+                      Show Vehicle Plate
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <div class="form-check form-inline me-5">
+                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                    <label class="form-check-label style-2 ms-2" for="check1">
+                      Show Seller's Address
+                    </label>
+                  </div>
+                  <div class="form-check form-inline me-5">
+                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                    <label class="form-check-label style-2 ms-2" for="check1">
+                      Show Signature
+                    </label>
+                  </div>
+                  <div class="form-check form-inline me-5">
+                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                    <label class="form-check-label style-2 ms-2" for="check1">
+                      Show Fingerprint
+                    </label>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="form-floating h-44">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-13">Footer Line 1</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating h-44">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput" class="label-13">Footer Line 2</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- HEAD GREY CARD -->
+                <div class="head-grey-card mb-5">
+                  <div class="card-head">
+                    <div class="form-check form-inline me-5">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                      <label class="form-check-label style-2 ms-2" for="check1">
+                        Send Emails to Your Customers(must be a gmail account.)
+                      </label>
+                    </div> 
+                  </div>
+                  <div class="card-body">
+                    <div class="row mb-3">
+                      <div class="col-md-6">
+                        <div class="form-floating h-44">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput" class="label-13">Gmail Address</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-floating h-44">
+                          <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput" class="label-13">Gmail Password</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END HEAD GREY CARD -->
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto">
+                    SAVE SETTINGS
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="d-flex justify-content-center mt-5">
-              <button class="btn btn-skyblue2 check-btn font-16 extrabold btn-h44 w-auto">
-                save
-              </button>
+              <div class="col-md-4">
+                <div class="blank-card h-100 w-100"></div>
+              </div>
             </div>
         </div>
         <!-- END CONTENT PART -->

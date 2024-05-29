@@ -151,6 +151,10 @@
     background-color: $grey-10;
 }
 
+.blank-card{
+    box-shadow: 0px 5px 10px 5px #0000000D;
+    background-color: $white;
+}
 
 .txt-msg{
     background-color: $light-yellow;
@@ -246,12 +250,15 @@
         }
     }
     &.my-plan{
+        overflow: visible;
+        position: relative;
         .card-head{
             font-size: $font-size-md;
             font-weight: $font-800;
             line-height: $line-height-18;
             color: $primary;
             text-transform: $text-uppercase;
+            border-radius: 10px 10px 0 0;
         }
         .black-strip{
             background-color: $black;
@@ -292,18 +299,21 @@
                 }
                 .btn-bottom{
                     position: absolute;
-                    left: 45%;
+                    right: 40%;
                 }
             }        
         }
     }
     &.check-sign{
+        position: relative;
+        overflow: visible;
         .card-head{
             font-size: $font-size-md;
             font-weight: $font-800;
             line-height: $line-height-18;
             color: $primary;
             text-transform: $text-uppercase;
+            border-radius: 10px 10px 0 0;
         }
         .card-body{
             .skyblue-border-card{
@@ -320,11 +330,17 @@
             }
             .btn-part{
                 position: absolute;
-                right: 12%;
+                right: 5%;
+                bottom: -25px;
             }
         }
     }
     &.info-card{
+        overflow: visible;
+        position: relative;
+        .card-head{
+            border-radius: 10px 10px 0 0;
+        }
         .card-body{
             .grey-box{
                 background-color: $box-grey;
@@ -337,7 +353,8 @@
             }
             .btn-bottom{
                 position: absolute;
-                right: 50%;
+                right: 45%;
+                bottom: -20px;
             }
         }
     }
@@ -362,7 +379,7 @@
     &.qbo-card{
         .btn-bottom{
             position: absolute;
-            left: 45%;
+            right: 30%;
             top:95%;
         }
         .btn-bottom-left{
