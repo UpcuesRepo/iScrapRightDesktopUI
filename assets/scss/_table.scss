@@ -81,14 +81,74 @@
         tbody{
             tr{
                 td{
-                    border-bottom: 1px solid $dark-bluergba1;
                     font-size: $font-size-md;
                     font-weight: $font-500;
                     line-height: $line-height-20;
                     vertical-align: middle;
                     padding: 15px;
+                    background-color: $white;
                     &:last-child{
                         text-align: end;
+                    }
+                    span{
+                        &.color-secondary{
+                            color: $secondary;
+                        }
+                    }
+                }
+                &:not(:last-child){
+                    td{
+                        border-bottom: 1px solid $dark-bluergba1;    
+                    }
+                }
+                &[role="button"]{
+                    &:hover,&:active{
+                        td{
+                            background-color: $secondary;
+                            color: $white;
+                            span{
+                                &.color-secondary{
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.new-pitch{
+            thead {
+                tr{
+                    th {
+                        &:last-child{
+                            text-align: start;
+                        }
+                    }
+                }   
+            }
+            tbody{
+                tr{
+                    td{
+                        &:last-child{
+                            text-align: start;
+                        }
+                    }
+                }
+            }    
+        }
+        &.last-row-primary{
+            tbody{
+                tr{
+                    &:last-child{
+                        td{
+                            background-color: $primary;
+                            color: $white;
+                            span{
+                                &.color-secondary{
+                                    color: $white;
+                                }
+                            }
+                        }
                     }
                 }
             }
