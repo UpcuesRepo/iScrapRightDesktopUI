@@ -375,6 +375,16 @@
     }
     .card-body{
         padding: 15px;
+        .grey-pitch-strip{
+            background-color: $grey-head;
+            font-size: $font-size-16;
+            color: $primary;
+            line-height: $line-height-20;
+            font-weight: $font-700;
+            padding:5px 10px;
+            border-radius: $radius-lg;
+            text-transform: $text-uppercase;
+        }
     }
     &.qbo-card{
         .btn-bottom{
