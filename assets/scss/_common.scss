@@ -40,3 +40,87 @@ a{
     }
 }
 // END PAGINATION TICKET LANDING PAGE NAVBAR
+
+// CREATE NEW PITCH PROGRESSBAR
+.progressbar{
+    display: flex;
+    margin: 40px 0;
+    user-select: none;
+    .step{
+        text-align: center;
+        width: 20%;
+        position: relative;
+        p{
+            font-weight: $font-900;
+            font-size: $font-size-16;
+            line-height: $line-height-36;
+            letter-spacing: $letter-spacing10;
+            margin-bottom: 8px;
+            text-transform: $text-uppercase;
+        }
+        .bullet{
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            border-radius: 50%;
+            position: relative;
+            transition: 0.2s;
+            background-color: $grey-10;
+            span{
+                position: absolute;
+                top: 25%;
+                transform: translateX(-50%);
+            }
+        }
+        &:last-child{
+            &::before{
+                width: 0;
+            }
+        }
+        &.active{
+            .bullet{
+                background: $green-2;
+                svg{
+                    path{
+                        stroke: $white;
+                    }
+                }
+            }
+            &:before{
+                background: $green-2;
+                transform-origin: left;
+                animation: animate 0.3s linear forwards;
+            }
+        }
+        &::before{
+            background: #C0C0C0;
+            content: "";
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            top: 22%;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+}
+.plan-content{
+    width: 100%;
+    overflow: hidden;
+    .inner-plan-content{
+        display: flex;
+        width: 600%;
+        .page{
+            width: 25%;
+            transition: margin-left 0.3s ease-in-out;
+            .secondary-title{
+                font-size: $font-size-lg;
+                font-weight: $font-900;
+                line-height: $line-height-36;
+                letter-spacing: $letter-spacing10;
+                color: $secondary;
+            }
+        }
+    }
+}
+// END CREATE NEW PITCH PROGRESSBAR

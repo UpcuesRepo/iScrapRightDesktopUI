@@ -1,0 +1,18 @@
+.new-pitch-4-card{
+    background-color: $white;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 5px #0000000D;
+    padding: 0 15px;
+    a{
+        &.pitch-btn{
+            padding: 21px 0;
+        }
+    }
+    .collapse{
+        padding: 20px 40px;
+        &.show{
+            border-top: 1px solid $dark-bluergba1;
+        }
+    }
+}
