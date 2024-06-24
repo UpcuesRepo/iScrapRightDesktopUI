@@ -2,7 +2,52 @@
 
 
 $(document).ready(function() {
+    // ----floatin input label in input and select
 
+    $('.form-group').find('.floating-control').each(function (index, ele) {
+      var $ele = $(ele);
+      if($ele.val() != '' || $ele.is(':selected') === true){
+        $ele.parents('.floating-group').addClass('focused');
+      }
+    })
+    
+    
+    
+    
+    $('.floating-control').on('focus', function (e) {
+      $(this).parents('.floating-group').addClass('focused');	
+    }).on('blur', function(){
+      if($(this).val().length > 0){
+        $(this).paren
+    ts('.floating-group').addClass('focused');		
+      }else{
+        $(this).parents('.floating-group').removeClass('focused');
+      }
+    });
+    $('.floating-control').on('change', function (e) {
+      if($(this).is('select')){
+        if($(this).val() === $("option:first", $(this)).val()) {
+          $(this).parents('.floating-group').removeClass('focused');
+        }
+        else{
+          $(this).parents('.floating-group').addClass('focused');
+        }
+      }
+    })
+      //---- select2 single----
+      $('.customSelect').each(function() {
+        var dropdownParents = $(this).parents('.select2Part')
+        $(this).select2({
+          dropdownParent: dropdownParents,
+          minimumResultsForSearch: -1
+        }).on("select2:open", function (e) { 
+          $(this).parents('.floating-group').addClass('focused');
+        }).on("select2:close", function (e) {
+          if($(this).find(':selected').val() === ''){
+            $(this).parents('.floating-group').removeClass('focused');
+          }
+        });
+    });
 
 // PRICING STEPS
 const slidePage = document.querySelector(".slide-page");
@@ -104,52 +149,7 @@ prevBtnSixth.addEventListener("click", function(event){
 
 // END PRICING STEPS
 
-    // ----floatin input label in input and select
 
-$('.form-group').find('.floating-control').each(function (index, ele) {
-	var $ele = $(ele);
-	if($ele.val() != '' || $ele.is(':selected') === true){
-		$ele.parents('.floating-group').addClass('focused');
-	}
-})
-
-
-
-
-$('.floating-control').on('focus', function (e) {
-	$(this).parents('.floating-group').addClass('focused');	
-}).on('blur', function(){
-	if($(this).val().length > 0){
-		$(this).paren
-ts('.floating-group').addClass('focused');		
-	}else{
-		$(this).parents('.floating-group').removeClass('focused');
-	}
-});
-$('.floating-control').on('change', function (e) {
-	if($(this).is('select')){
-		if($(this).val() === $("option:first", $(this)).val()) {
-			$(this).parents('.floating-group').removeClass('focused');
-		}
-		else{
-			$(this).parents('.floating-group').addClass('focused');
-		}
-	}
-})
-	//---- select2 single----
-	$('.customSelect').each(function() {
-		var dropdownParents = $(this).parents('.select2Part')
-		$(this).select2({
-			dropdownParent: dropdownParents,
-			minimumResultsForSearch: -1
-		}).on("select2:open", function (e) { 
-			$(this).parents('.floating-group').addClass('focused');
-		}).on("select2:close", function (e) {
-			if($(this).find(':selected').val() === ''){
-				$(this).parents('.floating-group').removeClass('focused');
-			}
-		});
-});
 });
 
 

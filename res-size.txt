@@ -1,0 +1,64 @@
+-> navbar fix in all screen responsive
+
+account-profile
+768, 552
+
+admin-ticket-review
+992 and below
+
+ap-tickets
+1200 and below
+
+check-register
+576
+
+compliance
+all size font small
+
+contamination
+768 and below
+
+create-new-pitch
+all screen
+
+customers
+768 and below
+
+iot-device
+768 and below
+
+materials
+992 and below
+
+qbo-config
+768 and below
+
+qbo-transaction
+768 and below
+
+sales-pitch-add
+768 and below
+
+search-tickets
+992 and below
+
+subscription
+768 and below
+
+ticket-builder
+768 and below
+
+ticket-landing
+992 and below
+
+training-videos
+all screen font and image height width
+
+upload
+992 and below
+
+users
+768 and below
+
+workstation
+768 and below

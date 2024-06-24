@@ -39,6 +39,9 @@ body{
             bottom: 0;
             left: 0;
         }
+        @include media-breakpoint-down(md){
+            margin-bottom: 15px;
+        }
     }
     .content-part{
         padding: 20px 15px;
@@ -52,6 +55,24 @@ body{
             text-transform: $text-uppercase;
             &.extra-bold{
                 font-weight: $font-800;
+            }
+            @include media-breakpoint-down(md){
+                margin-bottom: 15px;
+            }
+        }
+        .mb-15{
+            @include media-breakpoint-down(lg){
+                margin-bottom: 15px;
+            }   
+        }
+        .md-flex-column{
+            @include media-breakpoint-down(md){
+                flex-direction: column;
+            }
+        }
+        .lg-w-100{
+            @include media-breakpoint-down(lg){
+                    width: 100%;
             }
         }
     }
