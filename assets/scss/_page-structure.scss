@@ -42,6 +42,18 @@ body{
         @include media-breakpoint-down(md){
             margin-bottom: 15px;
         }
+        @include media-breakpoint-down(lg){
+            margin-bottom: 15px;
+        }
+    }
+    .md-flex-column{
+        @include media-breakpoint-down(md){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .btn-skyblue2{
+            margin-bottom: 10px;
+        }
     }
     .content-part{
         padding: 20px 15px;
@@ -71,9 +83,14 @@ body{
             }
         }
         .lg-w-100{
-            @include media-breakpoint-down(lg){
+            @include media-breakpoint-down(xl){
                     width: 100%;
             }
+        }
+    }
+    .lg-flex-column{
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
         }
     }
     // &.create-new-pitch{

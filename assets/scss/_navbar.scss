@@ -225,6 +225,11 @@ nav{
         &.search-ticket-navbar{
             padding: 10px 15px;
             background-color: $black;
+            .sm-mb-15{
+                @include media-breakpoint-down(lg){
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
 }
