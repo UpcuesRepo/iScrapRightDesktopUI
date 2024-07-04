@@ -55,6 +55,26 @@ body{
             margin-bottom: 10px;
         }
     }
+    .sm-flex-column{
+        @include media-breakpoint-down(sm){
+            flex-direction: column;
+        }
+    }
+    .sm-w-50{
+        @include media-breakpoint-down(sm){
+            width: 50%;
+        }
+    }
+    .sm-w-33{
+        @include media-breakpoint-down(sm){
+            width: 33.33%;
+        }
+    }
+    .sm-mb-15{
+        @include media-breakpoint-down(sm){
+            margin-bottom: 15px;
+        }
+    }
     .content-part{
         padding: 20px 15px;
         background-image: url("../../../images/backgrounds/price-shape.png");

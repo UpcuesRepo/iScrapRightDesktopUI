@@ -26,6 +26,9 @@
         color: $white;
         font-size: $font-size-md;
         font-weight: $font-600;
+        @include media-breakpoint-down(sm){
+            margin-bottom: 15px;
+        }
         &:hover{
             color: $secondary;
             svg{
@@ -39,6 +42,15 @@
         color: $white;
         font-size: $font-size-md;
         font-weight: $font-600;   
+    }
+    .sm-mb-15{
+        @include media-breakpoint-down(sm){
+            margin-bottom: 15px;
+        }    
+    }
+    @include media-breakpoint-down(sm){
+        flex-direction: column;
+        padding: 15px!important;
     }
 }
 .category-box{
@@ -79,6 +91,18 @@
     &.search-card{
         border-radius: $radius-xl;
         padding: 20px;
+        &.sm-flex-column{
+            @include media-breakpoint-down(sm){
+                flex-direction: column;
+                align-items: flex-start!important;
+            }
+            .form-floating, .form-group{
+                @include media-breakpoint-down(sm){
+                    margin-bottom: 10px;
+                    width: 100%;
+                }    
+            }
+        }
     }
     &.choose-filter{
         box-shadow: 10px 0px 10px 0px #03030326 inset;
@@ -218,6 +242,16 @@
     }
     .card-body{
         padding: 15px;
+    }
+    .sm-w-90{
+        @include media-breakpoint-down(sm){
+            width: 90%;
+        }
+    }
+    .sm-w-10{
+        @include media-breakpoint-down(sm){
+            width: 10%;
+        }
     }
     &.account-summary{
         .card-head{

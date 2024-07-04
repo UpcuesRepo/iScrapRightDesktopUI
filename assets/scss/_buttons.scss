@@ -17,6 +17,9 @@
         color: $black;
         &.h-36{
             padding: 6px 13px;
+            @include media-breakpoint-down(sm){
+                padding: 6px 10px;
+            }
         }
         &:hover, &:active{
             background-color: $black;
@@ -109,6 +112,9 @@
                 }
                 @include media-breakpoint-down(xl){
                     font-size: $font-size-md;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: $font-size-sm;
                 }
             }
         }
@@ -240,6 +246,9 @@
         &.bold{
             font-weight: $font-700;
         }
+        @include media-breakpoint-down(sm){
+            font-size: $font-size-md;
+        }
     }
     &.btn-16{
         font-size: $font-size-16;
@@ -250,6 +259,9 @@
         }
         @include media-breakpoint-down(xl){
             font-size: $font-size-md;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: $font-size-sm;
         }
     }
     &.btn-h40{
