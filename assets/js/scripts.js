@@ -2,6 +2,10 @@
 
 
 $(document).ready(function() {
+
+
+$('#myTable').DataTable();
+
     // ----floatin input label in input and select
 
     $('.form-group').find('.floating-control').each(function (index, ele) {
