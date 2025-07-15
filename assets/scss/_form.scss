@@ -48,6 +48,15 @@ textarea{
             color: $primary;
         }
     }
+    &.h-32{
+        padding: 3px 10px;
+        font-size: $font-size-sm;
+        color: $primary;
+        &::placeholder{
+            font-size: $font-size-sm;
+            color: $primary;
+        }
+    }
     &.style-3{
         border: 0;
         border-radius: $radius-lg;

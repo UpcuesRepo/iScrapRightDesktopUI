@@ -7,6 +7,9 @@
     a{
         &.pitch-btn{
             padding: 21px 0;
+            &:hover{
+                color: $black;
+            }
         }
     }
     .collapse{

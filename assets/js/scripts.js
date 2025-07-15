@@ -1,10 +1,12 @@
 
-
+$(document).ready(function() {
+  $('#myTable').DataTable();
+});
 
 $(document).ready(function() {
 
 
-$('#myTable').DataTable();
+
 
     // ----floatin input label in input and select
 
