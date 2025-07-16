@@ -8,6 +8,20 @@ a{
         }
     }
 }
+// plus minus plugin scss
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating){
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.input-group>.form-control{
+    width: 50px;
+    padding: 3px 15px;
+    text-align: center;
+}
 // DATA TABLE SCSS
 div{
     &.dt-container{
