@@ -469,6 +469,10 @@
             }
         }
     }
+    .inner-box{
+        border-radius: $radius-lg;
+        border: 1px solid $grey-2;
+    }
 }
 
 .skyblue-box{
