@@ -13,6 +13,16 @@
         &.color-white{
             color: $white-rgba4
         }
+        &.fixed{
+            background-color: $white;
+            padding: 2px 5px;
+            margin-bottom: 0;
+            font-size: $font-size-13;
+            position: absolute;
+            top: -10px;
+            z-index: 9;
+            left: 10px;
+        }
     }
 }
 textarea{
@@ -346,6 +356,118 @@ textarea{
     }
 }
 // END SIMPLE INPUT
+// FIXED LABEL INPUT
+.form-label-fixed{
+    .dropdown {
+        &.bootstrap-select {
+            width: 100% !important;
+
+            .btn {
+                border-radius: $radius-xxl;
+                &.btn-select {
+                    height: 44px;
+                    font-weight: $font-700;
+                    border: 1px solid $skyblue-6;
+                    color: $primary;
+                    letter-spacing: inherit;
+                    background: $white;
+                    width: 100%;
+                    text-transform: inherit;
+                    font-size: $font-size-13;
+                    padding: 10px 20px;
+                    line-height: 25px;
+                    &:focus,
+                    &:hover {
+                        outline: none !important;
+                        color: $primary;
+                        border: 1px solid $skyblue-6;
+                    }
+                }
+                &.dropdown-toggle {
+                    &.show {
+                        &:after {
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='10' fill='%23D5D5D5' viewBox='0 96 960 960' width='6'%3E%3Cpath d='m283 711-43-43 240-240 240 239-43 43-197-197-197 198Z'/%3E%3C/svg%3E%0A");
+                        }
+                    }
+                    &:after {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='10' viewBox='0 96 960 960' width='6' fill='%23D5D5D5'%3E%3Cpath d='M480 711 240 471l43-43 197 198 197-197 43 43-240 239Z'/%3E%3C/svg%3E%0A");
+                        background-size: 100%;
+                        border: 0;
+                        width: 24px;
+                        height: 24px;
+                        content: '';
+                        margin-top: 0px;
+                        background-position: center;
+                        margin-right: -10px;
+                    }
+                }
+            }
+
+            .bs-actionsbox,
+            .bs-donebutton,
+            .bs-searchbox {
+                margin-bottom: 10px;
+            }
+
+            .dropdown-menu {
+                font-weight: $font-600;
+                box-shadow: $shadow-md;
+                font-size: $font-size-sm;
+
+                .form-control {
+                    height: 30px;
+                }
+
+                a {
+                    color: $black;
+                    width: auto;
+
+                    &:hover,
+                    &:focus {
+                        background-color: $grey-5;
+
+                        span {
+                            color: $black;
+                        }
+                    }
+
+                    &.active {
+                        background-color: $primary;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.h-36{
+        .dropdown{
+            &.bootstrap-select{
+                .btn{
+                    &.btn-select{
+                        height: 36px;
+                        line-height: 23px;
+                        padding: 7px 20px;
+                    }
+                }
+            }    
+        }
+    }
+    &.font-15{
+        .dropdown{
+            &.bootstrap-select{
+                .btn{
+                    &.btn-select{
+                        font-size: $font-size-15;;
+                    }
+                }
+            }    
+        }
+    }
+}
+//END FIXED LABEL INPUT
 .select-style-2{
     .dropdown{
         &.bootstrap-select{
@@ -1381,3 +1503,5 @@ input[type="date"] {
 /*.select2multiple .select2-container--default .select2-results__option[aria-selected=true] {
     display: none;
 }*/
+
+
