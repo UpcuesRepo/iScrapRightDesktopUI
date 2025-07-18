@@ -49,7 +49,7 @@
                 <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalAddMaterial">add material</button>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-md-4">
                 <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalSetQBO">Set QBO account for all materials</button>
             </div>
@@ -58,6 +58,17 @@
             </div>
             <div class="col-md-2">
                 <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalAddWorkstation">Add Workstation</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalscaleConfiguration">Scale Configuration</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalCameraConfiguration">Camera Configuration</button>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-grey-5 btn-lg btn-h50 radius-xxl letter-space7"  data-bs-toggle="modal" data-bs-target="#modalIotConfiguration">IoT device Configuration</button>
             </div>
         </div>
 
@@ -1419,6 +1430,226 @@
                             <div class="d-flex justify-content-between w-100">
                                 <button class="btn btn-white-10 check-btn btn-modal-footer btn-h44 w-auto">close</button> 
                                 <button class="btn btn-skyblue2 check-btn btn-h44 w-auto">SAVE</button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalscaleConfiguration" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md modal-edit-check overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-start p-0">
+                            <button type="button" class="btn btn-skyblue2 radius-top0 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <h1 class="modal-title p-4" id="modaleditCheckLabel">Scale Configuration</h1>
+                            <div class="top-part p-4">
+                                <div class="row align-items-center pb-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating h-44">
+                                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput" class="label-13">title*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="category-box style-2 flex-wrap p-3">
+                                            Live Scale Reading
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="row pb-4">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating h-44">
+                                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                    <label for="floatingInput" class="label-13">Port*</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group form-label-fixed">
+                                                    <label class="form-label fixed">Boud Rate*</label>
+                                                    <select class="selectpicker" data-live-search="true">
+                                                    <option data-tokens="ketchup mustard">300</option>
+                                                    <option data-tokens="mustard">2</option>
+                                                    <option data-tokens="frosting">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-label-fixed">
+                                            <label class="form-label fixed">Parity*</label>
+                                            <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">None</option>
+                                            <option data-tokens="mustard">2</option>
+                                            <option data-tokens="frosting">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-label-fixed">
+                                            <label class="form-label fixed">Stop Bits*</label>
+                                            <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">None</option>
+                                            <option data-tokens="mustard">2</option>
+                                            <option data-tokens="frosting">3</option>
+                                            </select>
+                                        </div>  
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check form-inline">
+                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                            <label class="form-check-label style-2 ms-2" for="check1">
+                                                My scale has continuous reading
+                                            </label>
+                                        </div>  
+                                    </div>
+                                </div> 
+                            </div> 
+                            <div class="row p-4">
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">New Line Character</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Replace Character</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-4 pt-0">
+                                <div class="col-md-6">
+                                    <div class="form-floating h-44">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput" class="label-13">Skip Position</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-label-fixed">
+                                        <label class="form-label fixed">Skip Position Orientation</label>
+                                        <select class="selectpicker" data-live-search="true">
+                                        <option data-tokens="ketchup mustard">First</option>
+                                        <option data-tokens="mustard">2</option>
+                                        <option data-tokens="frosting">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-4 pt-0">
+                                <div class="col-md-12">
+                                    <div class="txt-msg red-strip">
+                                        <span class="fw-extrabold">Note:</span>
+                                        To apply these changes, you'll need to restart the IoT service.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="btn btn-white-10 check-btn btn-modal-footer btn-h44 w-auto">close</button>      
+                                <button class="btn btn-skyblue2 check-btn btn-h44 w-auto">save</button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalCameraConfiguration" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md modal-edit-check overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-start p-0">
+                            <button type="button" class="btn btn-skyblue2 radius-top0 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <h1 class="modal-title p-4" id="modaleditCheckLabel">Camera Configuration</h1>
+                            <div class="row p-4">
+                                <div class="col-md-4">
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-floating h-44">
+                                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput" class="label-13">Title*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-group form-label-fixed">
+                                            <label class="form-label fixed">Type*</label>
+                                            <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Axis</option>
+                                            <option data-tokens="mustard">2</option>
+                                            <option data-tokens="frosting">3</option>
+                                            </select>
+                                        </div>
+                                    </div>  
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-floating h-44">
+                                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput" class="label-13">URL/IP*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-floating h-44">
+                                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput" class="label-13">Username*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-floating h-44">
+                                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput" class="label-13">Password*</label>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-md-8">
+                                    <label class="label-md d-flex justify-content-center">CAMERA PREVIEW</label>
+                                    <div class="skyblue-border-card w-100 h-90p mb-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex justify-content-between w-100">
+                                <button class="btn btn-white-10 check-btn btn-modal-footer btn-h44 w-auto">close</button>      
+                                <button class="btn btn-skyblue2 check-btn btn-h44 w-auto">save</button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalIotConfiguration" tabindex="-1" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-35 modal-edit-check overflow-hidden">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-start p-0">
+                            <button type="button" class="btn btn-skyblue2 radius-top0 btn-lg btn-h-w-50 letter-space7" data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <h1 class="modal-title p-4" id="modaleditCheckLabel">IoT Device Configuration</h1>
+                            <div class="row p-4">
+                                <div class="col-md-4"> 
+                                    <button class="btn btn-skyblue2 check-btn btn-h44 w-100 me-3">CAMERA</button>  
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-skyblue2 check-btn btn-h44 w-100 me-3">MOBISIG</button>      
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-skyblue2 check-btn btn-h44 w-100">SCALE</button>   
+                                </div>
                             </div>
                         </div>
                     </div>
