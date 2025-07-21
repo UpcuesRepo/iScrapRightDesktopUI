@@ -2,7 +2,6 @@
 $(document).ready(function() {
    $('#myTable').DataTable();  
 });
-
 $(document).ready(function() {
 
 $('.btn-number').click(function(e){
