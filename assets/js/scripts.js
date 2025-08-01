@@ -4,6 +4,7 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
 
+  //plus minus
 $('.btn-number').click(function(e){
     e.preventDefault();
     
@@ -75,7 +76,7 @@ $(".input-number").keydown(function (e) {
             e.preventDefault();
         }
     });
-
+//end plus minus
 
     // ----floatin input label in input and select
 
