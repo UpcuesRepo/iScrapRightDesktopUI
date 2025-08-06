@@ -464,6 +464,25 @@ textarea{
             }    
         }
     }
+    &.bg-rgba-white{
+        .form-label{
+            &.fixed{
+                background-color: $black;
+                color: $white;
+            }
+        } 
+        .dropdown{
+            &.bootstrap-select{
+                .btn{
+                    &.btn-select{
+                        background-color: $white-rgba1;
+                        border: none;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
 }
 //END FIXED LABEL INPUT
 .select-style-2{
