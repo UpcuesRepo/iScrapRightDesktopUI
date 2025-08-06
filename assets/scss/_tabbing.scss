@@ -1,0 +1,567 @@
+// SUBSCRIPTION NEW STEPS
+.pricing{
+    position: relative;
+    background-color: $dark-blue;
+    @include media-breakpoint-down(md){
+        padding: 30px 45px;
+    }
+    .white-box{
+        background-color: $white-2;
+        padding: 50px 30px;
+        border-radius: 0 50px 50px 0;
+        box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        .mb-60{
+            margin-bottom: 60px;
+        }
+        .step-section{
+            .stepper {
+                display: flex;
+                // justify-content: space-between;
+                margin-bottom: 20px;
+                position: relative;
+                width: 95%;
+                .step{
+                    width: 25%;
+                    position: relative;
+                    text-align: center;
+                    .bullet {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 36px;
+                        background: $grey-10;
+                        color: $grey-11;
+                        font-size: $font-size-22;
+                        font-weight: $font-900;
+                        text-align: center;
+                        border-radius: 50%;
+                        position: relative;
+                        z-index: 0;
+                    }
+                    p{
+                        font-size: $font-size-16;
+                        line-height: $line-height-36;
+                        font-weight: $font-900;
+                        letter-spacing: $letter-spacing10;
+                        text-transform: $text-uppercase;
+                    }
+                    &::before{
+                        background: $grey-12 ;
+                        content: "";
+                        height: 2px;
+                        position: absolute;
+                        top: 21%;
+                        width: 100%;
+                        z-index: 0;
+                    }
+                    &:last-child{
+                        &::after{
+                            .bullet {
+                                display: none;
+                            }
+                        } 
+                        &::before{
+                            width: 0;
+                            display: none;
+                        }
+                    }
+                    &.active{
+                        .bullet {
+                            background: $secondary;
+                            color: $white;
+                        }
+                        &:before{
+                            background: $secondary;
+                        }
+                        // &::after{
+                        //     .bullet {
+                        //         background: #007bff;
+                        //     }
+                        // } 
+                    } 
+                    &::after{
+                        .bullet {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 100%;
+                            width: calc(100% - 40px);
+                            height: 4px;
+                            background: $green-2;
+                            transform: translateY(-50%);
+                            z-index: 0;
+                        }
+                    } 
+                }
+            }
+            .content {
+                display: none;
+                &.active {
+                    display: block;
+                }
+                .pricing-slide{
+                    .slick-slide{
+                        padding-top: 60px;
+                    }
+                    .slick-arrow{
+                        &.slick-prev{
+                            height: 25px;
+                            width: 25px;
+                            background-size: contain;
+                            background-image: url("../../../images/icons/arrow-circle-right-black.svg");
+                            background-repeat: no-repeat;
+                            left: -30px;
+                            top: 50%;
+                            &::before{
+                                content: "";
+                            }
+                        }
+                        &.slick-next{
+                            height: 25px;
+                            width: 25px;
+                            background-size: contain;
+                            background-image: url("../../../images/icons/arrow-circle-right-black.svg");
+                            transform: rotate(180deg);
+                            background-repeat: no-repeat;
+                            right: -27px;
+                            top: 49%;
+                            &::before{
+                                content: "";
+                            }
+                        }
+                    }
+                    .slick-dots{
+                        li{
+                            height: 13px;
+                            width: 13px;
+                            button{
+                                height: 13px;
+                                width: 13px;
+                                background: rgba(0, 0, 0, 0.1);
+                                border-radius: $radius-full;
+                                &::before{
+                                    content: "";
+                                }
+                            }
+                            &.slick-active{
+                                width: 40px;
+                                button{
+                                    background: $secondary;
+                                    width: 40px;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card-section{
+        padding: 50px 30px;
+    }
+    .review-plan-card{
+        background-color: $white;
+        border-radius: $radius-15;
+        box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.05);
+        position: relative;
+        .ongoing-payment-part{
+            background-color: $grey13-rgba4;
+            padding: 15px;
+            border-radius: 10px;
+            .ongoing-payment-title{
+                font-size: $font-size-md;
+                font-weight: $font-900;
+                line-height: $line-height-24;
+                letter-spacing: $letter-spacing10;
+                text-transform: $text-uppercase;
+                color: $secondary;
+            }
+            .ongoing-payment-sub-title{
+                font-size: $font-size-13;
+                line-height: $line-height-24;
+                text-transform: $text-uppercase;
+                color: $grey-14;
+            }
+        }
+        .total-part{
+            &.border-bottom-grey{
+                border-bottom: 1px solid $grey-13;
+            }
+            .month{
+                font-size: $font-size-16;
+                font-weight: $font-700;
+                line-height: $line-height-26;
+                color: $grey-15;
+                text-transform: $text-uppercase;
+            }
+            .total{
+                font-size: $font-size-16;
+                font-weight: $font-700;
+                line-height: $line-height-26;
+                color: $black;
+            }
+            .scanning{
+                font-size: $font-size-16;
+                line-height: $line-height-26;
+                color: $grey-14;
+                text-transform: $text-uppercase;
+            }
+            .free{
+                font-size: $font-size-16;
+                font-weight: $font-700;
+                line-height: $line-height-26;
+                color: $black;
+            }
+            .month-total{
+                font-size: $font-size-16;
+                font-weight: $font-800;
+                line-height: $line-height-26;
+                color: $black;
+            }
+            .charge{
+                font-size: $font-size-16;
+                font-weight: $font-800;
+                line-height: $line-height-26;
+                color: $black;
+            }
+        }
+        .total-due{
+            padding: 20px 15px 40px 15px;
+            background-color: $secondary;
+            box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.05);
+            border-radius: $radius-lg;
+            .total{
+                font-size: $font-size-16;
+                font-weight: $font-800;
+                line-height: $line-height-26;
+                color: $white;
+                text-transform: $text-uppercase;
+            }
+            .pay-total{
+                font-size: $font-size-20;
+                font-weight: $font-800;
+                color: $white;
+            }
+            .pay-text{
+                font-size: $font-size-13;
+                color: $white;
+                text-transform: $text-uppercase;
+            }
+        }
+        .btn{
+            &.btn-bottom{
+                position: absolute;
+                bottom: -4%;
+                left: 150px;
+            }
+        }
+    }
+    .feature-card{
+        box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.05);
+        border-radius: $radius-lg;
+        padding: 20px 10px;
+        background-color: $white;
+        position: relative;
+        cursor: pointer;
+        &.active{
+            border: 1px solid $secondary;
+            background-color: $skyblue-6;
+        }
+        .feature-card-title{
+            font-size: $font-size-22;
+            font-weight: $font-800;
+            letter-spacing: $letter-spacing10;
+            color: $secondary;
+            text-transform: $text-uppercase;
+        }
+        .feature-card-subtitle{
+            font-size: $font-size-md;
+            font-weight: $font-700;
+            text-transform: $text-uppercase;
+        }
+        .feature-white-box{
+            box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.05);
+            background-color: $white;
+            border:1px solid $skyblue-5;
+            border-radius: $radius-lg;
+            padding: 15px 15px 40px 15px;
+            position: relative;
+            &.without-btn{
+                padding: 15px;
+            }
+            .box-title{
+                font-size: $font-size-md;
+                font-weight: $font-800;
+                text-transform: $text-uppercase;
+                &.red-title{
+                    color: $red-2
+                }
+            }
+            .box-labels{
+                color: $dark-2;
+                font-size: $font-size-13;
+                &.red-labels{
+                    color: $red-2
+                }
+            }
+            .btn{
+                &.btn-skyblue2{
+                    &:hover{
+                        background-color: $secondary;
+                        color: $white;
+                        svg{
+                            path{
+                                stroke: $white;
+                            }
+                        }
+                    }
+                }
+                &.btn-bottom{
+                    position: absolute;
+                    right: 0;
+                    bottom: -20px;
+                }
+            }
+        }
+        &::before{
+            content: "";
+            background: url("../../../images/backgrounds/Flat-ipad-2.png");
+            width: 180px;
+            height: 130px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: -55px;
+            right: 0;
+        }
+    }
+    .ote-card{
+        box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.05);
+        border-radius: $radius-lg;
+        background-color: $white;
+        position: relative;
+        cursor: pointer;    
+        border: 1px solid $skyblue-5;
+        &.active{
+            border: 1px solid $secondary;
+            background-color: $skyblue-6;
+        }
+        &::before{
+            content: "";
+            background: url("../../../images/backgrounds/Flat-ipad-2.png");
+            width: 115px;
+            height: 90px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: -55px;
+            right: 0;
+        }
+        &.subscription-card{
+            z-index: 1;
+            &.small-img-top{
+                &::before{
+                    content: "";
+                    background: url("../../../images/backgrounds/Flat-ipad-2.png");
+                    width: 85px;
+                    height: 60px;
+                    position: absolute;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    top: -30px;
+                    right: 0;
+                }    
+            }
+            &.img-top-none{
+                &::before{
+                    width: 0;
+                    height: 0;
+                    background: none;
+                }
+            }
+            &.disable{
+                background-color: $grey-16;
+                pointer-events: none;
+            }
+            .subscription-title{
+                font-size: $font-size-16;
+                font-weight: $font-800;
+                letter-spacing: $letter-spacing10;
+                color: $dark-blue;
+            }
+            img{
+                &.top-tag{
+                    top: -15px;
+                    left: 55px;
+                    position: absolute;
+                }
+            }
+        }
+        &.basic-card{
+            position: relative;
+            .subtitle{
+                font-size: $font-size-lg;
+                font-weight: $font-700;
+            }
+            .desc-title{
+                font-size: $font-size-16;
+                font-weight: $font-700;    
+            }
+            .desc{
+                font-size: $font-size-md;
+            }
+            &::before{
+                content: "";
+                background: url("../../../images/backgrounds/Flat-ipad-2.png");
+                width: 115px;
+                height: 90px;
+                position: absolute;
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: -55px;
+                left: 0;
+            }    
+            .tag-top{
+                top: -15px;
+                right: 0;
+                position: absolute;
+            }
+        }
+        .border-bottom-skyblue{
+            border-bottom: 1px solid $secondary;
+        }
+        .ote-title{
+            font-size: $font-size-22;
+            font-weight: $font-800;
+            letter-spacing: $letter-spacing10;
+            color: $secondary;
+            text-transform: $text-uppercase;
+        }
+        .red-subtitle{
+            font-size: $font-size-md;
+            font-weight: $font-800;
+            text-transform: $text-uppercase;   
+            color: $red-2;
+            .line-through{
+                text-decoration: line-through;
+            }
+        }
+        .green-subtitle{
+            font-size: $font-size-24;
+            font-weight: $font-900;
+            text-transform: $text-uppercase;   
+            color: $green-2;
+        }
+        .black-subtitle{
+            font-size: $font-size-md;
+            font-weight: $font-700;
+        }
+        .box-labels{
+            font-size: $font-size-13;
+            text-transform: lowercase;
+        }
+    }
+    .addon-card{
+        box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.05);
+        border-radius: $radius-lg;
+        background-color: $white;
+        position: relative;
+        cursor: pointer;    
+        border: 1px solid $skyblue-5;  
+        padding: 20px 10px;
+        height: 355px;
+        &.active{
+            border: 1px solid $secondary;
+            background-color: $skyblue-6;
+        }  
+        .addon-title{
+            font-size: $font-size-22;
+            font-weight: $font-800;
+            letter-spacing: $letter-spacing10;
+            color: $secondary;
+            text-transform: $text-uppercase;
+            &.black-title{
+                color: $black;
+            }
+        }
+        .addon-paragraph{
+            font-size: $font-size-md;
+            line-height: $line-height-26;
+        }
+    }
+    .subscription-content{
+        .blue-strip{
+            background-color: $secondary;
+            box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid $skyblue-5;
+            border-radius: $radius-lg;
+            padding: 5px;
+            width: 100%;
+            color: $white-2;
+            font-size: $font-size-22;
+            font-weight: $font-800;
+            letter-spacing: $letter-spacing10;
+            text-align: center;
+            position: relative;
+        }
+        .plan-part{
+            .description-row{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                height: 40%;
+                width: 3px;
+                background: $secondary;
+                top: 44%;
+                z-index: 0;
+                right: 91%;
+                z-index: 0;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                height: 40%;
+                width: 3px;
+                background: $secondary;
+                top: 44%;
+                z-index: 0;
+                right: 75%;
+                z-index: 0;
+            }
+            .vertical-lines{
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 40%;
+                    width: 2px;
+                    background: $secondary;
+                    top: 44%;
+                    z-index: 0;
+                    right: 45%;
+                    z-index: 0;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 40%;
+                    width: 3px;
+                    background: $secondary;
+                    top: 44%;
+                    z-index: 0;
+                    right: 60%;
+                    z-index: 0;
+                }
+            }
+        }
+    } 
+    @keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+    }
+}
+//END SUBSCRIPTION NEW STEPS

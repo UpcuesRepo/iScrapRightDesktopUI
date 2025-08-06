@@ -52,9 +52,11 @@ $font-size-40:  2.5rem;    //40px
 $primary:     #0E3456;
 $secondary:   #3384D8;
 $white:       #ffffff;
+$white-2:     #F8F9FB;
 $green-2:     #4EB855;
 $red:         #E50F10;
 $red-2:       #FF3B3B;
+$dark-blue:   #0E3456;
 $skyblue:     #EFF5FF;
 $skyblue-3:   #EDF4FC;
 $skyblue-4:   #B6CEF7;
@@ -63,6 +65,7 @@ $skyblue-6:   #D5E6F9;
 $skyblue-7:   #E4E6EF;
 $skyblue-8:   #F7FAFE;
 $dark   :     #000000;
+$dark-2   :   #090909;
 $grey-1 :     #E1E1E1;
 $grey-2 :     #898989;
 $grey-3 :     #EEEEEE;
@@ -73,6 +76,12 @@ $grey-7 :     #F0F0F0;
 $grey-8 :     #2E2E2E;
 $grey-9 :     #707070;
 $grey-10:     #D9D9D9;
+$grey-11 :    #9B9B9B;
+$grey-12 :    #C0C0C0;
+$grey-13 :    #ECECEC;
+$grey-14 :    #888888;
+$grey-15 :    #333333;
+$grey-16 :    #DEDEDE;
 $grey-head:   #F6F6F6;
 $badge-grey:  #989898;
 $box-grey:    #F4F4F4;
@@ -103,6 +112,7 @@ $skyblue6-rgba5:rgba(213, 230, 249, 0.5);
 $red2-rgba1:rgba(255, 59, 59, 0.1);
 $grey-rgba5:rgba(21, 21, 21, 0.05);
 $dark-yellow-rgba1:rgba(249, 188, 98, 0.1);
+$grey13-rgba4:rgba(236, 236, 236, 0.4);
 
 //  =======================
 //  LETTER SPACING
@@ -155,6 +165,7 @@ $radius-xs:       2px;
 $radius-sm:       5px; 
 $radius-md:       8px;
 $radius-lg:      10px;
+$radius-15:      15px;
 $radius-xl:      20px;
 $radius-xxl:     30px;
 $radius-50:      50%;

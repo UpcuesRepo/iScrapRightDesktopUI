@@ -1,5 +1,5 @@
 {
-  "name": "ISCRAP-RIGHT",
+  "name": "iscrap-right",
   "version": "1.0.0",
   "description": "Gulp 4 - Compile SASS and minify",
   "main": "index.js",
@@ -13,9 +13,7 @@
     "choices.js": "^10.2.0",
     "cssnano": "^5.1.13",
     "datatables.net-dt": "^2.3.2",
-    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-concat": "^2.6.1",
     "gulp-postcss": "^9.0.1",
     "gulp-purgecss": "^5.0.0",
     "gulp-rename": "^2.0.0",
@@ -23,9 +21,14 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^3.0.0",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-concat": "^2.6.1",
+    "jquery": "^3.7.1",
     "vanillajs-datepicker": "^1.3.4"
-  }
+  },
+  "keywords": []
 }
