@@ -1522,4 +1522,73 @@ input[type="date"] {
     display: none;
 }*/
 
-
+// COMPLIANT DROPDOWN
+.dropdown{
+    &.compliant-menu{
+        .dropdown-menu{
+            box-shadow: 0px 4px 4px 0px #00000040;
+            border: 0;
+            background-color: $black;
+            border-radius: 10px 0 0 10px;
+            width: 300px;
+            padding: 10px;
+            li{
+                .dropdown-item{
+                    font-size: $font-size-sm;
+                    line-height: $line-height-18;
+                    color: $white;
+                    padding: 10px 0;
+                    white-space: normal;
+                    &.header{
+                        font-size: $font-size-md;
+                        font-weight: $font-700;
+                        line-height: $line-height-18;
+                        color: $white;
+                        border-bottom: 1px solid $secondary;
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                    .color-green{
+                        color: $green-2;
+                        &:hover{
+                            color: $green-2;
+                        }
+                    }
+                    .color-red{
+                        color: $red-2;
+                        &:hover{
+                            color: $red-2;
+                        }
+                    }
+                    &:hover{
+                        color: $secondary;
+                        background-color: transparent;
+                    }
+                }
+                &:not(:last-child){
+                    border-bottom: 1px solid $white-rgba1;
+                }
+            }
+            &::after{
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 20px solid $black;
+                content: "";
+                height: 0;
+                position: absolute;
+                width: 0;
+                top: 25px;
+                left: 100%;
+            }
+        }
+    }
+    &.dropstart{
+        .dropdown-toggle{
+            &::before{
+                display: none;
+            }
+        }
+    }
+}
+// END COMPLIANT DROPDOWN
