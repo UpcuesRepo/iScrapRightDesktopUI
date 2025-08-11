@@ -358,6 +358,27 @@
         right: 0;
     }
 }
+.btn-dashed-skyblue{
+    border: 1px dashed $secondary;
+    border-radius: 10px;
+    padding: 20px;   
+    width: calc(100% - 144px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: $text-uppercase;
+    font-size: $font-size-sm;
+    font-weight: $font-700;
+    line-height: $line-height-18;
+    color: $secondary;
+    cursor: pointer;
+    &.square{
+        height: 60px;
+        width: 60px;
+        padding: 5px;
+    }
+}
 .offcanvas{
     &.offcanvas-addMaterial,&.offcanvas-payTicket{
         .btn-close{

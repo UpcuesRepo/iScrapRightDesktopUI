@@ -102,6 +102,17 @@
                     color: $secondary;
                     text-decoration: underline;
                 }
+                .camera-btn{
+                    border-radius: $radius-full;
+                    height: 100px;
+                    width: 100px;
+                    box-shadow: 5px 5px 10px 0px #123350, -5px -5px 10px 0px #325574;
+                    border: 1px solid $white;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
             .dark-box{
                 background-color: $black;

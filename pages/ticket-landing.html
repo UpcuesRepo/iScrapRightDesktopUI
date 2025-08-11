@@ -624,29 +624,34 @@
                       <div class="row pb-3 border-bottom-secondary">
                         <div class="col-md-12">
                           <div class="d-flex w-100">
-                            <div class="upload-box id-upload d-flex align-items-center h-190 me-2">
-                              <form method="post" class="browse-file w-100" enctype="multipart/form-data" action="">
-                                <span id="filename-5" class="filename"></span>
-                                <div class="button-part sm-id-upload w-100 h-100">
-                                  <label for="file-upload-5"><img src="../images/icons/user-02.svg" alt=""><input type="file" id="file-upload-5" class="file-upload"></label>
-                                </div>
-                              </form>
+                            <div class="btn-dashed-skyblue square me-2"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasuser" aria-controls="offcanvasuser">
+                              <img src="../images/icons/user-02.svg" alt="">  
                             </div>
-                            <div class="upload-box id-upload d-flex align-items-center h-190 w-100 me-2">
-                              <form method="post" class="browse-file w-100" enctype="multipart/form-data" action="">
-                                <span id="filename-7" class="filename"></span>
-                                <div class="button-part w-100 h-100">
-                                  <label for="file-upload-7">Upload Signature<input type="file" id="file-upload-7" class="file-upload"></label>
-                                </div>
-                              </form>
+                            <!-- USER - TICKET LANDING PAGE -->
+                            <div class="offcanvas offcanvas-payTicket offcanvas-bottom" tabindex="-1" id="offcanvasuser" aria-labelledby="offcanvasuserLabel">
+                              <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                  <div class="row align-items-stretch h-100">
+                                    <div class="col-md-10">
+                                      <div class="dark-box h-100">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <div class="email d-flex justify-content-center align-items-center h-100">
+                                        <a href="#" class="camera-btn"><img src="../images/icons/camera-02.svg" alt=""></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
                             </div>
-                            <div class="upload-box id-upload d-flex align-items-center h-190">
-                              <form method="post" class="browse-file w-100" enctype="multipart/form-data" action="">
-                                <span id="filename-6" class="filename"></span>
-                                <div class="button-part w-100 h-100">
-                                  <label for="file-upload-6"><img src="../images/icons/finger-print.svg" class="h-100 w-100" alt=""><input type="file" id="file-upload-6" class="file-upload"></label>
-                                </div>
-                              </form>
+                          <!-- END USER - TICKET LANDING PAGE -->
+                            <div class="btn-dashed-skyblue me-2">
+                              Upload Signature  
+                            </div>
+                            <div class="btn-dashed-skyblue square me-2">
+                              <img src="../images/icons/finger-print.svg" alt="">  
                             </div>
                           </div>
                         </div>
