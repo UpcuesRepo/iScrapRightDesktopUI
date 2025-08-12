@@ -139,7 +139,6 @@
             border-radius: 50px;
             font-size: $font-size-lg;
             font-weight: $font-700;
-            font-size: $font-size-13;
             text-transform: $text-uppercase;
             width: 100%;
             letter-spacing: 0.38px;
@@ -213,9 +212,54 @@
             background-color: $secondary;
         }
     }
+    &.btn-light{
+        background-color: $grey-4;
+        color: $black;
+        font-size: $font-size-16;
+        font-weight: $font-700;
+        text-transform: capitalize;
+        &:hover,
+        &:focus {
+            background-color: $grey-1;
+            color: $white;
+        }
+    }
     &.btn-edit{
         border-radius: $radius-lg;
         padding: 4px 7px;
+    }
+    &.btn-xl{
+        height: 88px;
+        width: 92%;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        &.btn-light{
+            font-size: $font-size-30;
+            font-weight: $font-800;
+            text-transform: uppercase;
+        }
+        &.border-d3{
+            border: 1px solid $grey-5;
+        }
+        &.btn{
+            padding: 14px 7px;
+        }
+    }
+    &.btn-xxl{
+        height: 180px;
+        width: 92%;
+        border-radius: $radius-lg;
+        &.border-d3{
+            border: 1px solid $grey-5;
+        }
+        &.btn-light{
+            font-size: $font-size-16;
+            font-weight: $font-800;
+            text-transform: uppercase;
+        }
+         &.btn{
+            padding: 14px 8px;
+        }
     }
     &.btn-xs{
         font-size: $font-size-md;

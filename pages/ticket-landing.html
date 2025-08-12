@@ -646,10 +646,47 @@
                                   </div>
                               </div>
                             </div>
-                          <!-- END USER - TICKET LANDING PAGE -->
-                            <div class="btn-dashed-skyblue me-2">
+                            <!-- END USER - TICKET LANDING PAGE -->
+                            <div class="btn-dashed-skyblue me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasUploadSign" aria-controls="offcanvasUploadSign">
                               Upload Signature  
                             </div>
+                            <!-- UPLOAD SIGN - TICKET LANDING PAGE -->
+                            <div class="offcanvas offcanvas-payTicket offcanvas-bottom" tabindex="-1" id="offcanvasUploadSign" aria-labelledby="offcanvasUploadSignLabel">
+                              <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                  <div class="row align-items-stretch h-100">
+                                    <div class="col-md-10">
+                                      <div class="fs-16 fw-bold text-caps color-white mb-3">Disclaimer and signature</div>
+                                      <div class="d-flex mb-3">
+                                        <div class="fs-md fw-bold color-white me-1">Ownership:</div>
+                                        <div class="fs-13 fw-300 font-italic color-white">Assumes no responsibility or liability for any errors or omissions in the content of this site. The information contained in this site is provided on an “as is” basis with no guarantees of completeness, accuracy, usefulness or timeliness.</div>
+                                      </div>
+                                      <div class="white-sign-box">
+                                        <a href="#" class="close-btn">
+                                          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.1">
+                                            <path d="M39 13L13 39M13 13L39 39" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                          </svg>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <div class="email d-flex justify-content-between flex-column align-items-center h-100">
+                                        <button class="btn btn-white-10 check-btn btn-h44">
+                                          CLEAR
+                                        </button>
+                                        <button class="btn btn-green2 btn-h44 check-btn">
+                                          Save
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <!-- END UPLOAD SIGN - TICKET LANDING PAGE -->
                             <div class="btn-dashed-skyblue square me-2">
                               <img src="../images/icons/finger-print.svg" alt="">  
                             </div>
