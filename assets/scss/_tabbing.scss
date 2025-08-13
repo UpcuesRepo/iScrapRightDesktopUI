@@ -94,7 +94,7 @@
                     } 
                 }
             }
-            .content {
+            .content{
                 display: none;
                 &.active {
                     display: block;
@@ -562,6 +562,52 @@
     100%{
         transform: scaleX(1);
     }
+    }
+    &.cash-card{
+        background-color: $white;
+        .white-box{
+            background-color: $white;
+            border-radius: 0;
+            box-shadow: none;
+            .step-section{
+                .stepper {
+                    border-bottom: $border-grey;
+                    .step{
+                        .bullet {
+                            background: $grey-10;
+                            width: 60px;
+                            height: 60px;
+                        }
+                        &::before{
+                            background: $grey-10;
+                            top: 25%;
+                        }
+                        &.active{
+                            .bullet {
+                                background: $primary;
+                                position: relative;
+                                svg{
+                                    path{
+                                        stroke: $white;
+                                    }
+                                }
+                            }
+                            &:before{
+                                background: $primary;
+                            }
+                        } 
+                    }
+                }
+                .content{
+                    .step-tab{
+                        color: $black-rgba4;
+                        &.active{
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 //END SUBSCRIPTION NEW STEPS

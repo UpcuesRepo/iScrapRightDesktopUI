@@ -5,7 +5,7 @@ $(document).ready(function() {
 //    $('#subscriTable').DataTable();  
 // });
 
-// STEPS
+// SUBSCRIPTION-NEW STEPS
 let currentStep = 0;
     const steps = document.querySelectorAll('.step');
     const contents = document.querySelectorAll('.content');
@@ -32,7 +32,9 @@ let currentStep = 0;
         updateStepper();
       }
     }
-// END STEPS
+// END SUBSCRIPTION -NEW STEPS
+
+
 
 
 
