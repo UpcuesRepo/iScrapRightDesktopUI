@@ -23,6 +23,7 @@
     &.ticket-table {
         tbody{
             tr{
+                
                 td{
                     font-size: $font-size-sm;
                     font-weight: $font-600;
@@ -190,6 +191,7 @@
         }  
             tbody{
                 tr{
+
                     td{
                         font-size: $font-size-md;
                         font-weight: $font-600;
@@ -301,4 +303,8 @@ tfoot.bottom-strip-darkblue-table{
             margin-bottom: 10px;
         }
     }
+}
+
+tr.selected{
+    background-color: $secondary;
 }
