@@ -207,6 +207,10 @@
 }
 tfoot.bottom-strip-darkblue-table{
     background-color: $primary;
+    td{
+        color: #fff;
+        font-weight: 700;
+    }
 }
 .ticket-table-container{
     border-radius: $radius-lg;
