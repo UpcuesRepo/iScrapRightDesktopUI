@@ -253,3 +253,11 @@ div{
     }
 }
 // END CREATE NEW PITCH PROGRESSBAR
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
