@@ -114,6 +114,17 @@
                         }
                     }
                 }
+                &.selected{
+                    td{
+                        background-color: $secondary;
+                        color: $white;
+                        span{
+                            &.color-secondary{
+                                color: $white;
+                            }
+                        }
+                    }
+                }
             }
         }
         &.new-pitch{
