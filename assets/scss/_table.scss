@@ -274,3 +274,15 @@
         }
     }
 }
+
+@media (max-width: 1024px){
+    .ticket-table-container{
+        overflow-x: scroll;
+    }    
+    .lg-flex-column{
+        flex-direction: column;
+        .entry-txt{
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,5 +1,9 @@
 nav{
     &.navbar{
+        display: block;
+        @include media-breakpoint-down(xl){
+            // display: none;
+        }
         &.inner-navbar{
             padding: 0;
             background-color: $primary;
@@ -65,6 +69,82 @@ nav{
                             }
                         }
                     }
+                }
+            }
+            &.mobile-nav{
+                display: none;
+                &.inner-navbar{
+                    .img-part{
+                        img{
+                            width: 65px;
+                            height: 50px;
+                        }
+                    }   
+                }
+                .offcanvas{
+                    &.offcanvas-mobile-nav{
+                        width: 100%;
+                        background-image: url("../../../images/backgrounds/bg-nav.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        .offcanvas-header{
+                            .btn-close{
+                                background-image: none;
+                                height: 30px;
+                                width: 30px;
+                                opacity: 1;
+                                position: absolute;
+                                right: 20px;
+                                top:20px;
+                            }
+                        }
+                        .offcanvas-body{
+                            .nav-link{
+                                color: $white;
+                                font-size: $font-size-16;
+                                font-weight: $font-700;
+                                padding: 15px 20px;
+                                text-transform: $text-uppercase;
+                                &:hover{
+                                    background-color: $white;
+                                    color: $primary;
+                                    border-radius: $radius-lg;
+                                }
+                                &[aria-expanded="true"]{
+                                    background-color: $white;
+                                    border-radius: $radius-lg;
+                                    color: $primary;
+                                }
+                            }
+                            .collapse{
+                                .card{
+                                    &.card-body{
+                                        background-color: transparent;
+                                        border: 0;
+                                        padding: 0;
+                                        .nav-link{
+                                            padding: 10px 40px;
+                                            text-transform: $text-uppercase;
+                                            font-size: $font-size-sm;
+                                            &.not-clickable{
+                                                &:hover{
+                                                    background-color: transparent;
+                                                    color: $white;
+                                                    border-radius: 0;
+                                                }    
+                                            }
+                                            &.color-green{
+                                                color: $green-2;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                @include media-breakpoint-down(xl){
+                    // display: block;
                 }
             }
         }
@@ -232,4 +312,62 @@ nav{
             }
         }
     }
+}
+
+@media (max-width: 1024px){
+    nav{
+        &.navbar{
+            .btn{
+                &.btn-h64{
+                    padding: 16px 10px;
+                }
+                &.btn-md{
+                    font-size: $font-size-sm;
+                }
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &.ticket-landing-navbar{
+                .link-part{
+                    .dropdown{
+                        .nav-link{
+                            padding: 20px 3px;
+                            font-size: $font-size-sm;
+                        }
+                    } 
+                } 
+                .user-menu{
+                    &.dropdown{
+                        .user-btn{
+                            padding: 15px 10px;
+                            svg{
+                                height: 28px;
+                                width: 28px;
+                            }
+                        }
+                    }
+                } 
+            } 
+        }
+    }
+    .pagination-ticket-navbar{
+        .pagination-title{
+            padding: 10px 0;
+            .ticket-number{
+                font-size: $font-size-sm;
+                line-height: 16px;
+            }
+            .ticket-name{
+                font-size: $font-size-11;
+            }
+        }
+    } 
+    .lg-w-100{
+        width: 100%;
+    } 
+    .lg-w-50{
+        width: 50%;
+    } 
 }

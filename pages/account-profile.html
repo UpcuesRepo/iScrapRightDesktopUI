@@ -31,26 +31,26 @@
     <div class="layout-2">
         <!-- LANDING PAGE NAVBAR -->
         <nav class="navbar ticket-landing-navbar navbar-expand-xl">
-            <div class="d-flex justify-content-between align-items-center w-100">
-              <div class="d-flex align-items-center ms-3">
-                <img src="../images/logo/iSR-logo.svg" class="logo me-3" alt="">
-                <div class="pagination-ticket-navbar d-flex align-items-center">
-                  <a href="#" class="arrow me-4">
+            <div class="d-flex justify-content-between align-items-center w-100 h-100">
+              <div class="d-flex align-items-center ms-3 h-100">
+                <img src="../images/logo/iSR-logo.svg" class="logo me-3 me-sm-1" alt="">
+                <div class="pagination-ticket-navbar d-flex align-items-center h-100 me-sm-1">
+                  <a href="#" class="arrow me-4 me-sm-2">
                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.2">
                         <path d="M16.9999 11.3335L11.3333 17.0002M11.3333 17.0002L16.9999 22.6668M11.3333 17.0002H22.6666M31.1666 17.0002C31.1666 24.8242 24.824 31.1668 16.9999 31.1668C9.17588 31.1668 2.83325 24.8242 2.83325 17.0002C2.83325 9.17613 9.17588 2.8335 16.9999 2.8335C24.824 2.8335 31.1666 9.17613 31.1666 17.0002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </g>
                     </svg>
                   </a>
-                  <div class="pagination-title">
+                  <div class="pagination-title text-center h-100">
                     <div class="ticket-number">
                       Ticket #4717 <span class="f-sm-secondary">(Inbound)</span>
                     </div>
                     <div class="ticket-name text-center">
-                      CODY SCOTT BROWN
+                      CODY SCOTT
                     </div>
                   </div>
-                  <a href="#" class="arrow ms-4">
+                  <a href="#" class="arrow ms-4 ms-sm-2">
                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.2">
                         <path d="M17.0001 11.3335L22.6667 17.0002M22.6667 17.0002L17.0001 22.6668M22.6667 17.0002H11.3334M2.83342 17.0002C2.83342 24.8242 9.17605 31.1668 17.0001 31.1668C24.8241 31.1668 31.1667 24.8242 31.1667 17.0002C31.1667 9.17613 24.8241 2.8335 17.0001 2.8335C9.17605 2.8335 2.83342 9.17613 2.83342 17.0002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -214,6 +214,207 @@
             </div>  
         </nav>
         <!-- END LANDING PAGE NAVBAR -->
+         <!-- MOBILE INNER NAVBAR -->
+            <nav class="navbar inner-navbar mobile-nav ticket-landing-navbar navbar-expand-xl navigation">
+                <div class="nav-content d-flex justify-content-between w-100 h-100">
+                    <div class="img-part d-flex align-items-center px-4">
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMobileNav" aria-controls="offcanvasMobileNav">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" height="50" width="50" id="hamburger-menu"><path d="M5 7h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1z"></path></svg>
+                        </a>
+                        <!-- Mobile NAV -->
+                        <div class="offcanvas offcanvas-mobile-nav offcanvas-start" tabindex="-1" id="offcanvasMobileNav" aria-labelledby="offcanvasMobileNavLabel">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" height="30" width="30" id="close"><path d="M15.71,8.29a1,1,0,0,0-1.42,0L12,10.59,9.71,8.29A1,1,0,0,0,8.29,9.71L10.59,12l-2.3,2.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l2.29,2.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L13.41,12l2.3-2.29A1,1,0,0,0,15.71,8.29ZM19,2H5A3,3,0,0,0,2,5V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V5A3,3,0,0,0,19,2Zm1,17a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V5A1,1,0,0,1,5,4H19a1,1,0,0,1,1,1Z"></path></svg>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="d-flex mb-3">
+                                  <button class="btn with-icon btn-white-10 btn-h64 btn-md fw-xxbold me-2">
+                                    <svg class="me-2" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M15 10V20M10 15H20M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Add New Ticket
+                                  </button>
+                                  <button class="btn with-icon btn-white-10 btn-h64 btn-md fw-xxbold">
+                                    <svg class="me-2" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Search tikets
+                                  </button>
+                                </div>
+                                <a class="nav-link" data-bs-toggle="collapse" href="#cashdrawer" role="button" aria-expanded="false" aria-controls="cashdrawer">
+                                  CASH DRAWER
+                                </a>
+                                <div class="collapse" id="cashdrawer">
+                                  <div class="card card-body">
+                                    <div class="row">
+                                      <div class="col-md-5">
+                                        <div class="d-flex justify-content-between">
+                                          <div class="nav-link not-clickable">
+                                            Startup Amount
+                                          </div>
+                                          <div class="nav-link not-clickable">
+                                            $0.00
+                                          </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="nav-link not-clickable">
+                                            Cash Paid
+                                          </div>
+                                          <div class="nav-link not-clickable">
+                                            $0.00
+                                          </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="nav-link not-clickable">
+                                            Addition
+                                          </div>
+                                          <div class="nav-link not-clickable">
+                                            $0.00
+                                          </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="nav-link not-clickable">
+                                            Deduction
+                                          </div>
+                                          <div class="nav-link not-clickable">
+                                            $0.00
+                                          </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="nav-link not-clickable">
+                                            Balance Total
+                                          </div>
+                                          <div class="nav-link not-clickable color-green">
+                                            $0.00
+                                          </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="nav-link not-clickable">
+                                            open
+                                          </div>
+                                          <button class="btn btn-skyblue2 radius-xxl btn-md btn-h36">MAKE ENTRY</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <a class="nav-link" data-bs-toggle="collapse" href="#transaction" role="button" aria-expanded="false" aria-controls="transaction">
+                                  TRANSACTION
+                                </a>
+                                <div class="collapse" id="transaction">
+                                  <div class="card card-body">
+                                    <a href="#" class="nav-link">Ticketing Screen</a>
+                                    <a href="#" class="nav-link">AP Screen</a>
+                                    <a href="#" class="nav-link">Check Register</a>
+                                    <a href="#" class="nav-link">Admin Ticket Review</a>
+                                  </div>
+                                </div>
+                                <a class="nav-link" data-bs-toggle="collapse" href="#admin" role="button" aria-expanded="false" aria-controls="admin">
+                                  admin
+                                </a>
+                                <div class="collapse" id="admin">
+                                  <div class="card card-body">
+                                    <a href="#" class="nav-link">My Account</a>
+                                    <a href="#" class="nav-link">Customers</a>
+                                    <a href="#" class="nav-link">Users</a>
+                                    <a href="#" class="nav-link">Materials</a>
+                                    <a href="#" class="nav-link">Contamination</a>
+                                    <a href="#" class="nav-link">QBO Config</a>
+                                    <a href="#" class="nav-link">QBO Manual Upload</a>
+                                    <a href="#" class="nav-link">QBO Transactions</a>
+                                    <a href="#" class="nav-link">Compliance & Pay</a>
+                                    <a href="#" class="nav-link">Uploads</a>
+                                    <a href="#" class="nav-link">Ticket Builder</a>
+                                    <a href="#" class="nav-link">Training Videos</a>
+                                    <a href="#" class="nav-link">Workstations</a>
+                                    <a href="#" class="nav-link">My IoT Devices</a>
+                                    <a href="#" class="nav-link">Subscriptions</a>
+                                    <a href="#" class="nav-link">PITCH DECK</a>
+                                  </div>
+                                </div>
+                                <a class="nav-link" data-bs-toggle="collapse" href="#reports" role="button" aria-expanded="false" aria-controls="reports">
+                                  REPORTS
+                                </a>
+                                <div class="collapse" id="reports">
+                                  <div class="card card-body">
+                                    <a href="#" class="nav-link">Purchase Summary</a>
+                                    <a href="#" class="nav-link">Cashier Reconciliation</a>
+                                    <a href="#" class="nav-link">Non-Compliant Tickets</a>
+                                    <a href="#" class="nav-link">Transaction Detail</a>
+                                    <a href="#" class="nav-link">Material/Price</a>
+                                    <a href="#" class="nav-link">VIN</a>
+                                    <a href="#" class="nav-link">POS</a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Mobile NAV -->
+                        <img src="../images/logo/iSR-logo.svg" class="ms-3" alt="">
+                        <div class="pagination-ticket-navbar d-flex align-items-center ms-3">
+                          <a href="#" class="arrow me-4">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.2">
+                                <path d="M16.9999 11.3335L11.3333 17.0002M11.3333 17.0002L16.9999 22.6668M11.3333 17.0002H22.6666M31.1666 17.0002C31.1666 24.8242 24.824 31.1668 16.9999 31.1668C9.17588 31.1668 2.83325 24.8242 2.83325 17.0002C2.83325 9.17613 9.17588 2.8335 16.9999 2.8335C24.824 2.8335 31.1666 9.17613 31.1666 17.0002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                            </svg>
+                          </a>
+                          <div class="pagination-title">
+                            <div class="ticket-number">
+                              Ticket #4717 <span class="f-sm-secondary">(Inbound)</span>
+                            </div>
+                            <div class="ticket-name text-center">
+                              CODY SCOTT BROWN
+                            </div>
+                          </div>
+                          <a href="#" class="arrow ms-4">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.2">
+                                <path d="M17.0001 11.3335L22.6667 17.0002M22.6667 17.0002L17.0001 22.6668M22.6667 17.0002H11.3334M2.83342 17.0002C2.83342 24.8242 9.17605 31.1668 17.0001 31.1668C24.8241 31.1668 31.1667 24.8242 31.1667 17.0002C31.1667 9.17613 24.8241 2.8335 17.0001 2.8335C9.17605 2.8335 2.83342 9.17613 2.83342 17.0002Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                            </svg>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="dropdown user-menu">
+                  <button class="user-btn dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.08823 25.9177C7.89933 24.0068 9.79307 22.6665 11.9998 22.6665H19.9998C22.2066 22.6665 24.1003 24.0068 24.9114 25.9177M21.3332 12.6665C21.3332 15.612 18.9454 17.9998 15.9998 17.9998C13.0543 17.9998 10.6665 15.612 10.6665 12.6665C10.6665 9.72099 13.0543 7.33317 15.9998 7.33317C18.9454 7.33317 21.3332 9.72099 21.3332 12.6665ZM29.3332 15.9998C29.3332 23.3636 23.3636 29.3332 15.9998 29.3332C8.63604 29.3332 2.6665 23.3636 2.6665 15.9998C2.6665 8.63604 8.63604 2.6665 15.9998 2.6665C23.3636 2.6665 29.3332 8.63604 29.3332 15.9998Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu user-dropdown dropdown-menu-lg-end">
+                    <li>
+                      <div class="dropdown-link pb-0">Nick Carter</div>
+                      <div class="dropdown-link">nick19@scrapright.com</div>
+                    </li>
+                    <li>
+                      <div class="dropdown-link" >Workstation:</div>
+                      <div class="form-group floating-group floating-diff bg-rgba-white mb-3">
+                        <label class="floating-label"></label>
+                        <select id="workstation" name="workstation" class="form-control floating-control">
+                          <option value="">Nick</option>   
+                          <option value="Afganistan">Afghanistan</option>
+                          <option value="Albania">Albania</option>
+                          <option value="India">India</option>
+                          <option value="American Samoa">American Samoa</option>
+                          <option value="Andorra">Andorra</option>
+                          <option value="Angola">Angola</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-link d-flex justify-content-between">
+                          <div class="inner-content">Company Name: </div> 
+                          <div class="inner-content">Admin Account</div> 
+                        </div>
+                        <button class="btn btn-skyblue2 btn-md btn-h36 w-100">LOGOUT</button>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+            </nav>
+            <!-- END MOBILE INNER NAVBAR -->
         <!-- CONTENT PART -->
         <div class="content-part">
           <div class="d-flex justify-content-between align-items-center md-flex-column mb-4">

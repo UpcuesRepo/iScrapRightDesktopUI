@@ -626,3 +626,13 @@
         justify-content: center;
     }
 }
+
+
+
+@media (max-width: 1024px){
+    .head-grey-card{
+        .card-head{
+            font-size: $font-size-11;
+        }
+    }
+}

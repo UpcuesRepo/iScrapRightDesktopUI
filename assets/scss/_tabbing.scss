@@ -611,3 +611,37 @@
     }
 }
 //END SUBSCRIPTION NEW STEPS
+
+ @media (max-width: 1024px){
+    .pricing{
+        .white-box{
+            border-radius: 0; 
+        }
+        .subscription-content{
+            .plan-part{
+                &:before{
+                    height: 27%;
+                    top: 29%;
+                    right: 87%;
+                }
+                &:after{
+                    height: 27%;
+                    top: 29%;
+                    right: 63%;
+                }
+                .vertical-lines{
+                    &::before{
+                        height: 27%;
+                        top: 29%;    
+                        right: 39%;
+                    }
+                    &:after{
+                        height: 27%;
+                        top: 29%;
+                        right: 15%;
+                    }
+                }
+            }
+        }
+    }
+ }

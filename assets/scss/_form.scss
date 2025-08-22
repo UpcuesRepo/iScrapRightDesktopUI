@@ -1,6 +1,9 @@
 .form-group{
     position: relative;
     .form-label{
+        &.hide{
+            display: none;
+        }
         &.label-lg{
             font-size: $font-size-lg;
         }
@@ -23,6 +26,11 @@
             z-index: 9;
             left: 10px;
         }
+    }
+}
+.form-label{
+    &.hide{
+        display: none;
     }
 }
 textarea{
@@ -177,6 +185,9 @@ textarea{
                         left: 2%;
                     }    
                 } 
+            }
+            label{
+                padding-left: 30px;
             }
         }
     }
@@ -1603,4 +1614,12 @@ input[type="date"] {
      padding: 2px 0px;
      font-size: $font-size-sm;
      font-weight: $font-600;
+ }
+
+ @media (max-width: 1024px){
+    .form-label{
+        &.hide{
+            display: inline;
+        }
+    }
  }
