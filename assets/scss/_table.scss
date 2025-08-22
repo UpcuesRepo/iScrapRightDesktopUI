@@ -147,6 +147,8 @@
                 }
             }    
         }
+
+
         &.last-row-primary{
             tbody{
                 tr{
@@ -200,6 +202,9 @@
             }    
         }
     }
+}
+tfoot.bottom-strip-darkblue-table{
+    background-color: $primary;
 }
 .ticket-table-container{
     border-radius: $radius-lg;
