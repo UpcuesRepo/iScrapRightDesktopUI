@@ -261,3 +261,13 @@ div{
     clear: both;
     display: table;
 }
+
+.cam-preview {
+    height: 156px;
+    width: 226px;
+    margin-top: 11px;
+    position: relative;
+    left: -16px;
+    margin-bottom: 5px;
+    border: solid 1px #ccc;
+}
