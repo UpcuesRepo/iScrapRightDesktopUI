@@ -994,7 +994,7 @@ textarea{
         &:checked {
             background-color: $secondary;
             border-color: $secondary;
-            background-image: none;
+            // background-image: none;
         }
         &:focus {
             box-shadow: $shadow-lg;

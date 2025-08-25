@@ -25,6 +25,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "compass-mixins": "^0.12.12",
     "gulp": "^5.0.1",
     "gulp-concat": "^2.6.1",
     "jquery": "^3.7.1",
