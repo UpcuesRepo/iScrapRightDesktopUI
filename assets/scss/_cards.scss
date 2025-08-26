@@ -630,6 +630,23 @@
         justify-content: center;
     }
 }
+.img-overlay{
+    position: relative;
+    .card-overlay{
+        background: $primary;
+        position: absolute;
+        bottom: 0;
+        color: $white;
+        height: 23%;
+        opacity: .8;
+        width: 100%;
+        .content{
+            bottom: 0;
+            padding: 10px;
+            position: absolute;
+        }
+    }
+}
 
 
 
