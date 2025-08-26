@@ -67,6 +67,14 @@
     &.style-2{
         background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.35) 4.29%, rgba(255, 255, 255, 0.35) 95.6%),#DDDDDD;
     }
+    .materialgroup{
+        color: $primary;
+        font-size: $font-size-16;
+        font-weight: $font-800;
+        line-height: $line-height-22;    
+        border: 0;
+        background: none;
+    }
 }
 
 .amount-card{
@@ -646,6 +654,26 @@
             position: absolute;
         }
     }
+}
+
+#license-container{
+    height: 192px; 
+    width: 320px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    .img-overlay{
+        position: absolute;
+        bottom: 0;
+        background-color: $secondary;
+        height: 30%;
+        width: 100%;
+        padding: 10px 0;
+        #license-overlay{
+            color: $white;
+        }
+    }
+    
 }
 
 

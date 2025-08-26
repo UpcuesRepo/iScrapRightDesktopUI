@@ -276,28 +276,32 @@ body {
   min-height: 32em;
   background: gainsboro;
 }
-
-.loader {
-  &.spinningDisc {
-    animation: spinDisc 1.5s linear infinite;
-    background: $secondary;
-    background-clip: content-box;
-    border-color: $grey-2 transparent;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 10px;
-    height: 90px;
-    padding: 20px;
-    width: 90px;
-    @at-root {
-      @keyframes spinDisc {
-        50% {
-          border-top-color: $grey-2;
-          border-bottom-color: $grey-2;
-          background-color: $primary;
+.loader-screen{
+    position: fixed;
+    z-index: 99;
+    background-color: $white-rgba7;
+    .loader {
+    &.spinningDisc {
+        animation: spinDisc 1.5s linear infinite;
+        background: $secondary;
+        background-clip: content-box;
+        border-color: $grey-2 transparent;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 10px;
+        height: 90px;
+        padding: 20px;
+        width: 90px;
+        @at-root {
+        @keyframes spinDisc {
+            50% {
+            border-top-color: $grey-2;
+            border-bottom-color: $grey-2;
+            background-color: $primary;
+            }
+            100% { transform: rotate(1turn); }
         }
-        100% { transform: rotate(1turn); }
-      }
+        }
     }
-  }
+    }
 }
