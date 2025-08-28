@@ -96,6 +96,11 @@ body{
             margin-top: 15px;
         }
     }
+    .md-h-300{
+        @include media-breakpoint-down(lg){
+            height: 300px;
+        }
+    }
     .content-part{
         padding: 20px 15px;
         background-image: url("../../../images/backgrounds/price-shape.png");

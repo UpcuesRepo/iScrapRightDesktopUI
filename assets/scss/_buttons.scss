@@ -230,13 +230,17 @@
     }
     &.btn-xl{
         height: 88px;
-        width: 92%;
+        width: 95%;
         margin-bottom: 5px;
         border-radius: 10px;
         &.btn-light{
             font-size: $font-size-30;
             font-weight: $font-800;
             text-transform: uppercase;
+        }
+        &.calc-btn{
+            font-size: $font-size-md;
+            text-wrap: wrap;
         }
         &.border-d3{
             border: 1px solid $grey-5;
@@ -247,7 +251,7 @@
     }
     &.btn-xxl{
         height: 180px;
-        width: 92%;
+        width: 95%;
         border-radius: $radius-lg;
         &.border-d3{
             border: 1px solid $grey-5;
