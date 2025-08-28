@@ -11,14 +11,28 @@ $(document).ready(function(){
             autoclose: true,     // Close the datepicker when a date is selected
             todayHighlight: true // Highlight today's date
         });
-    });
+});
 $(document).ready(function(){
         $('#myDatepicker2').datepicker({
             format: 'dd-mm-yyyy', // Define the date format
             autoclose: true,     // Close the datepicker when a date is selected
             todayHighlight: true // Highlight today's date
         });
-    });
+});
+$(document).ready(function(){
+        $('.calender-simple').datepicker({
+            format: 'dd-mm-yyyy', // Define the date format
+            autoclose: true,     // Close the datepicker when a date is selected
+            todayHighlight: true // Highlight today's date
+        });
+});
+$(document).ready(function(){
+        $('.calender-rgba').datepicker({
+            format: 'dd-mm-yyyy', // Define the date format
+            autoclose: true,     // Close the datepicker when a date is selected
+            todayHighlight: true // Highlight today's date
+        });
+});
 
 // SUBSCRIPTION-NEW STEPS
 let currentStep = 0;
