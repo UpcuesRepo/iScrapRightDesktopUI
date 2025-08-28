@@ -409,22 +409,23 @@ var mainHeight = $(window).innerHeight();
 var headerHeight = $('.ticket-landing-navbar').innerHeight();
 var FooterHeight = $('.ticket-footer').innerHeight();
 var innercontentHeight = mainHeight - (headerHeight + FooterHeight); 
-var skyblueHeight = $('.skyblue-strip-scroll').innerHeight();
+var skyblueHeight = $('#skyblue-strip-scroll').innerHeight();
 
 $('#content-part-scroll').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
-$('#rightscroll').css('height', mainHeight-(headerHeight + FooterHeight + skyblueHeight)+'px');
+$('#rightscroll').css('height', mainHeight- (headerHeight + FooterHeight + skyblueHeight)+'px');
 
 console.log(FooterHeight);
 console.log(headerHeight);
 console.log(innercontentHeight);
 console.log(mainHeight);
+console.log(skyblueHeight);
 
 window.onresize = function(event) {
 var mainHeight = $(window).innerHeight();
 var headerHeight = $('.ticket-landing-navbar').innerHeight();
 var FooterHeight = $('.ticket-footer').innerHeight();
 var innercontentHeight = mainHeight - (headerHeight + FooterHeight); 
-var skyblueHeight = $('.skyblue-strip-scroll').innerHeight();
+var skyblueHeight = $('#skyblue-strip-scroll').innerHeight();
 
 $('#content-part-scroll').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
 $('#rightscroll').css('height', mainHeight-(headerHeight + FooterHeight + skyblueHeight)+'px');
@@ -433,6 +434,7 @@ $('#rightscroll').css('height', mainHeight-(headerHeight + FooterHeight + skyblu
   console.log(headerHeight);
   console.log(innercontentHeight);
   console.log(mainHeight);
+  console.log(skyblueHeight);
 };
 
 
