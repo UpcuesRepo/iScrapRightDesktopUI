@@ -18,7 +18,7 @@
                     .btn-skyblue2 {
                         z-index: 1;
                         position: absolute;
-                        right: 20px;
+                        right: 0;
                         top: 0;
                     }
                 }
@@ -32,26 +32,117 @@
                 .modal-footer {
                     border-top: 1px solid $dark-bluergba1;
                     display: flex;
+                    border-radius: 0 0 10px 10px;
                 }
         }
  
         &.modal-sm {
             max-width: 19.5%;
+            // @include media-breakpoint-down(xxl){
+            //     max-width: 25%;
+            // }
+            // @include media-breakpoint-down(xl){
+            //     max-width: 30.5%;
+            // }
+            // @include media-breakpoint-down(lg){
+            //     max-width: 39%;
+            // }
+            @include media-breakpoint-down(xxl){
+                max-width: 300px;
+            }
+            @include media-breakpoint-down(xl){
+                max-width: 300px;
+            }
+            @include media-breakpoint-down(lg){
+                max-width: 300px;
+            }
         }
         &.modal-md {
             max-width: 38%;
+            // @include media-breakpoint-down(xxl){
+            //     max-width: 48.5%;
+            // }
+            // @include media-breakpoint-down(xl){
+            //     max-width: 59%;
+            // }
+            // @include media-breakpoint-down(lg){
+            //     max-width: 76.5%;
+            // }
+            @include media-breakpoint-down(xxl){
+                max-width: 570px;
+            }
+            @include media-breakpoint-down(xl){
+                max-width: 570px;
+            }
+            @include media-breakpoint-down(lg){
+                max-width: 570px;
+            }
         }
         &.modal-39 {
             max-width: 39%;
+            // @include media-breakpoint-down(xxl){
+            //     max-width: 39%;
+            // }
+            // @include media-breakpoint-down(xl){
+            //     max-width: 47%;
+            // }
+            // @include media-breakpoint-down(lg){
+            //     max-width: 61%;
+            // }
+            @include media-breakpoint-down(xxl){
+                max-width: 460px;
+            }
+            @include media-breakpoint-down(xl){
+                max-width: 460px;
+            }
+            @include media-breakpoint-down(lg){
+                max-width: 460px;
+            }
         }
         &.modal-35 {
-            max-width: 35.5%;
+            max-width: 41.5%;
+            // @include media-breakpoint-down(xxl){
+            //     max-width: 45.5%;
+            // }
+            // @include media-breakpoint-down(xl){
+            //     max-width: 55%;
+            // }
+            // @include media-breakpoint-down(lg){
+            //     max-width: 72%;
+            // }
+            @include media-breakpoint-down(xxl){
+                max-width: 540px;
+            }
+            @include media-breakpoint-down(xl){
+                max-width: 540px;
+            }
+            @include media-breakpoint-down(lg){
+                max-width: 540px;
+            }
         }
         &.modal-52 {
             max-width: 52.7%;
+            @include media-breakpoint-down(xxl){
+                max-width: 65%;
+            }
+            @include media-breakpoint-down(xl){
+                max-width: 78%;
+            }
+            @include media-breakpoint-down(lg){
+                max-width: 90%;
+            }
         }
         &.modal-lg {
             max-width: 57.3%;
+            @include media-breakpoint-down(xxl){
+                max-width: 65%;
+            }
+            @include media-breakpoint-down(xl){
+                max-width: 78%;
+            }
+            @include media-breakpoint-down(lg){
+                max-width: 90%;
+            }
         }
  
         &.modal-cancel-ticket {
