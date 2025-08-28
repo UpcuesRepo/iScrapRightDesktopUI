@@ -1261,9 +1261,9 @@ textarea{
                     line-height: 14px;
                 }
             }
-            &::after{
-                transform: rotate(180deg);
-            }
+            // &::after{
+            //     transform: rotate(180deg);
+            // }
         }
         &::after{
             content: "";

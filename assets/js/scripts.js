@@ -178,7 +178,7 @@ $(".input-number").keydown(function (e) {
     });
 //end plus minus
 
-    // ----floatin input label in input and select
+    // ----floating input label in input and select
 
     $('.form-group').find('.floating-control').each(function (index, ele) {
       var $ele = $(ele);
@@ -210,6 +210,12 @@ $(".input-number").keydown(function (e) {
         }
       }
     })
+
+
+
+
+
+
       //---- select2 single----
       $('.customSelect').each(function() {
         var dropdownParents = $(this).parents('.select2Part')
