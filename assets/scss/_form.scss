@@ -88,6 +88,9 @@ textarea{
         &.h-32{
             padding: 6px 20px;
         }
+        &::placeholder{
+            color: $white;
+        }
     }
     &.style-4{
         border: 0;

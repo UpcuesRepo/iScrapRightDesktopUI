@@ -662,6 +662,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 15px;
+    margin: 0 auto;
     .img-overlay{
         position: absolute;
         bottom: 0;
@@ -673,7 +674,11 @@
             color: $white;
         }
     }
-    
+    .qq-upload-button-selector{
+        a{
+            color: $skyblue-6;
+        }
+    }
 }
 
 
