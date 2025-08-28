@@ -435,6 +435,7 @@ $('#rightscroll').css('height', mainHeight-(headerHeight + FooterHeight + skyblu
   console.log(innercontentHeight);
   console.log(mainHeight);
   console.log(skyblueHeight);
+
 };
 
 
