@@ -403,3 +403,34 @@ $('#file-upload-8').change(function() {
 
 
 
+///// Script For Height Calculation
+
+var mainHeight = $(window).innerHeight();
+var headerHeight = $('.ticket-landing-navbar').innerHeight();
+var FooterHeight = $('.ticket-footer').innerHeight();
+var innercontentHeight = mainHeight - (headerHeight + FooterHeight); 
+
+$('#content-part-scroll').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
+$('#rightscroll').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
+
+console.log(FooterHeight);
+console.log(headerHeight);
+console.log(innercontentHeight);
+console.log(mainHeight);
+
+window.onresize = function(event) {
+  var mainHeight = $(window).innerHeight();
+  var headerHeight = $('.ticket-landing-navbar').innerHeight();
+  var FooterHeight = $('.ticket-footer').innerHeight();
+  var innercontentHeight = mainHeight - (headerHeight + FooterHeight); 
+  
+  $('.content-part').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
+  $('.right-innerissue').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
+  
+  console.log(FooterHeight);
+  console.log(headerHeight);
+  console.log(innercontentHeight);
+  console.log(mainHeight);
+};
+
+
