@@ -409,9 +409,10 @@ var mainHeight = $(window).innerHeight();
 var headerHeight = $('.ticket-landing-navbar').innerHeight();
 var FooterHeight = $('.ticket-footer').innerHeight();
 var innercontentHeight = mainHeight - (headerHeight + FooterHeight); 
+var skyblueHeight = $('.skyblue-strip-scroll').innerHeight();
 
 $('#content-part-scroll').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
-$('#rightscroll').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
+$('#rightscroll').css('height', mainHeight-(headerHeight + FooterHeight + skyblueHeight)+'px');
 
 console.log(FooterHeight);
 console.log(headerHeight);
@@ -419,13 +420,14 @@ console.log(innercontentHeight);
 console.log(mainHeight);
 
 window.onresize = function(event) {
-  var mainHeight = $(window).innerHeight();
-  var headerHeight = $('.ticket-landing-navbar').innerHeight();
-  var FooterHeight = $('.ticket-footer').innerHeight();
-  var innercontentHeight = mainHeight - (headerHeight + FooterHeight); 
-  
-  $('.content-part').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
-  $('.right-innerissue').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
+var mainHeight = $(window).innerHeight();
+var headerHeight = $('.ticket-landing-navbar').innerHeight();
+var FooterHeight = $('.ticket-footer').innerHeight();
+var innercontentHeight = mainHeight - (headerHeight + FooterHeight); 
+var skyblueHeight = $('.skyblue-strip-scroll').innerHeight();
+
+$('#content-part-scroll').css('height', mainHeight-(headerHeight + FooterHeight)+'px');
+$('#rightscroll').css('height', mainHeight-(headerHeight + FooterHeight + skyblueHeight)+'px');
   
   console.log(FooterHeight);
   console.log(headerHeight);
