@@ -313,4 +313,11 @@ body {
 
 #rightscroll{ 
     overflow-y: scroll;
+    position: relative;
+}
+
+.stickyrightside{
+    position: sticky;
+    width: 100%;
+    bottom: 0px;
 }
