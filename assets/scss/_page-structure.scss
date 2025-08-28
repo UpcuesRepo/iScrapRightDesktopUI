@@ -46,6 +46,12 @@ body{
             margin-bottom: 15px;
         }
     }
+    .xl-flex-column{
+        @include media-breakpoint-down(xxl){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
     .md-flex-column{
         @include media-breakpoint-down(md){
             flex-direction: column;
@@ -54,6 +60,16 @@ body{
         .btn-skyblue2{
             margin-bottom: 10px;
         }
+    }
+    .lg-flex-row{
+         @include media-breakpoint-down(md){
+            flex-direction: row;
+        }    
+    }
+    .lg-flex-column{
+         @include media-breakpoint-down(md){
+            flex-direction: column;
+        }    
     }
     .sm-flex-column{
         @include media-breakpoint-down(sm){
@@ -73,6 +89,11 @@ body{
     .sm-mb-15{
         @include media-breakpoint-down(sm){
             margin-bottom: 15px;
+        }
+    }
+    .md-mt-15{
+        @include media-breakpoint-down(lg){
+            margin-top: 15px;
         }
     }
     .content-part{
@@ -104,6 +125,11 @@ body{
         }
         .lg-w-100{
             @include media-breakpoint-down(xl){
+                    width: 100%;
+            }
+        }
+        .xl-w-100{
+            @include media-breakpoint-down(xxl){
                     width: 100%;
             }
         }

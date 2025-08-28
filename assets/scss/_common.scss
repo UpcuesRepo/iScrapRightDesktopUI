@@ -160,6 +160,10 @@ div{
                 color: $secondary;
                 font-size: $font-size-sm;
             }
+            @include media-breakpoint-down(xxl){
+                font-size: $font-size-md;
+                line-height: $line-height-18;    
+            }
         }
         .ticket-name{
             font-size: $font-size-sm;

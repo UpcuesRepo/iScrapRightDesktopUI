@@ -44,6 +44,9 @@
                         font-weight: $font-900;
                         letter-spacing: $letter-spacing10;
                         text-transform: $text-uppercase;
+                        @include media-breakpoint-down(xxl){
+                            font-size: $font-size-md;
+                        }
                     }
                     &::before{
                         background: $grey-12 ;
@@ -53,6 +56,10 @@
                         top: 21%;
                         width: 100%;
                         z-index: 0;
+                        @include media-breakpoint-down(xxl){
+                            top: 15px;
+                            left: 60px;
+                        }
                     }
                     &:last-child{
                         &::after{
