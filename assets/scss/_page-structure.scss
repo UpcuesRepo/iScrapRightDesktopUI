@@ -19,6 +19,17 @@ body{
                 padding: 15px;
                 border-right: 1px solid $dark-bluergba2;
             }
+            &.lg-flex-column{
+                @include media-breakpoint-down(xl){
+                    flex-direction: column;  
+                    // height: 100%!important;  
+                }
+            }
+            .lg-w-100{
+                @include media-breakpoint-down(xl){
+                    width: 100%;   
+                }
+            }
         }
     }   
 }
@@ -130,7 +141,7 @@ body{
         }
         .lg-w-100{
             @include media-breakpoint-down(xl){
-                    width: 100%;
+                width: 100%;
             }
         }
         .xl-w-100{
@@ -150,4 +161,7 @@ body{
     //         height: calc(100% - 115px);
     //     }
     // }
+
 }
+
+

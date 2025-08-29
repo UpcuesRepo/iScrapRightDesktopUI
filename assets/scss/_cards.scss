@@ -431,6 +431,22 @@
             }
         }
     }
+    .inventory-card{
+        .inventory-content{
+            .calc-section{
+                .calculator-section{
+                    &.mw-33p{
+                        @include media-breakpoint-down(lg){
+                            max-width: 55%;
+                        }
+                        @include media-breakpoint-down(xl){
+                            max-width: 47%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .head-grey-card{
     border-radius: $radius-lg;
@@ -477,9 +493,35 @@
         }
     }
     &.training-video{
+        @include media-breakpoint-down(lg){
+                height: 250px;
+        }
+        @include media-breakpoint-down(xl){
+                height: 260px;
+        }
+        @include media-breakpoint-down(xxl){
+                height: 300px;
+        }
+        .card-head{
+            @include media-breakpoint-down(xxl){
+                height: 62px;
+                padding: 0 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }    
+        }
+        .card-body{
+            @include media-breakpoint-down(xxl){
+                height: calc(100% - 62px);
+            }     
+        }
         img{
             border-radius: $radius-lg;
             box-shadow: 0px 5px 10px 5px #0000000D;
+            @include media-breakpoint-down(xxl){
+                height: 100%;
+            }
         }
     }
     &.iot-device{
