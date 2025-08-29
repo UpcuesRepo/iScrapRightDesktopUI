@@ -588,6 +588,9 @@
                         &::before{
                             background: $grey-10;
                             top: 25%;
+                            @include media-breakpoint-down(xxl){
+                                left: 70px;
+                            }
                         }
                         &.active{
                             .bullet {

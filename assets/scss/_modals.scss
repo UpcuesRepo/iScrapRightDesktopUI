@@ -38,87 +38,87 @@
  
         &.modal-sm {
             max-width: 19.5%;
-            // @include media-breakpoint-down(xxl){
-            //     max-width: 25%;
-            // }
-            // @include media-breakpoint-down(xl){
-            //     max-width: 30.5%;
-            // }
-            // @include media-breakpoint-down(lg){
-            //     max-width: 39%;
-            // }
             @include media-breakpoint-down(xxl){
-                max-width: 300px;
+                max-width: 25%;
             }
             @include media-breakpoint-down(xl){
-                max-width: 300px;
+                max-width: 30.5%;
             }
             @include media-breakpoint-down(lg){
-                max-width: 300px;
+                max-width: 39%;
             }
+            // @include media-breakpoint-down(xxl){
+            //     max-width: 300px;
+            // }
+            // @include media-breakpoint-down(xl){
+            //     max-width: 300px;
+            // }
+            // @include media-breakpoint-down(lg){
+            //     max-width: 300px;
+            // }
         }
         &.modal-md {
             max-width: 38%;
-            // @include media-breakpoint-down(xxl){
-            //     max-width: 48.5%;
-            // }
-            // @include media-breakpoint-down(xl){
-            //     max-width: 59%;
-            // }
-            // @include media-breakpoint-down(lg){
-            //     max-width: 76.5%;
-            // }
             @include media-breakpoint-down(xxl){
-                max-width: 570px;
+                max-width: 48.5%;
             }
             @include media-breakpoint-down(xl){
-                max-width: 570px;
+                max-width: 59%;
             }
             @include media-breakpoint-down(lg){
-                max-width: 570px;
+                max-width: 76.5%;
             }
+            // @include media-breakpoint-down(xxl){
+            //     max-width: 570px;
+            // }
+            // @include media-breakpoint-down(xl){
+            //     max-width: 570px;
+            // }
+            // @include media-breakpoint-down(lg){
+            //     max-width: 570px;
+            // }
         }
         &.modal-39 {
             max-width: 39%;
-            // @include media-breakpoint-down(xxl){
-            //     max-width: 39%;
-            // }
-            // @include media-breakpoint-down(xl){
-            //     max-width: 47%;
-            // }
-            // @include media-breakpoint-down(lg){
-            //     max-width: 61%;
-            // }
             @include media-breakpoint-down(xxl){
-                max-width: 460px;
+                max-width: 39%;
             }
             @include media-breakpoint-down(xl){
-                max-width: 460px;
+                max-width: 47%;
             }
             @include media-breakpoint-down(lg){
-                max-width: 460px;
+                max-width: 61%;
             }
+            // @include media-breakpoint-down(xxl){
+            //     max-width: 460px;
+            // }
+            // @include media-breakpoint-down(xl){
+            //     max-width: 460px;
+            // }
+            // @include media-breakpoint-down(lg){
+            //     max-width: 460px;
+            // }
         }
         &.modal-35 {
             max-width: 41.5%;
-            // @include media-breakpoint-down(xxl){
-            //     max-width: 45.5%;
-            // }
-            // @include media-breakpoint-down(xl){
-            //     max-width: 55%;
-            // }
-            // @include media-breakpoint-down(lg){
-            //     max-width: 72%;
-            // }
             @include media-breakpoint-down(xxl){
-                max-width: 540px;
+                max-width: 45.5%;
             }
             @include media-breakpoint-down(xl){
-                max-width: 540px;
+                max-width: 55%;
             }
             @include media-breakpoint-down(lg){
-                max-width: 540px;
+                max-width: 72%;
             }
+            // @include media-breakpoint-down(xxl){
+            //     max-width: 540px;
+            // }
+            // @include media-breakpoint-down(xl){
+            //     max-width: 540px;
+            // }
+            // @include media-breakpoint-down(lg){
+            //     max-width: 540px;
+            // }
         }
         &.modal-52 {
             max-width: 52.7%;
