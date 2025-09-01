@@ -609,6 +609,9 @@
                           Add New
                         </a>
                     </div>
+                    <div class="primary-strip d-flex justify-content-between">
+                        <div class="ms-3" id="ticket-starttime">Started by NV on Aug 29,2025 at 6:29:51 AM</div>
+                    </div>
                   </div>
                   <div class="row pe-0">
                     <div class="col-md-10 p-0" id="rightscroll">
@@ -634,7 +637,7 @@
                           </div>
                         </div>
                       </div> -->
-                      <div class="col-xs-12 text-center hidecrv my-4">
+                      <div class="col-xs-12 text-center hidecrv d-flex align-items-center my-4">
                           <div id="license-container">
                                   <img id="txccYes" class="txccbadge licimg" src="/Content/Images/txcc/TXCC_badge_YES.png" style="display:none">
                                   <img id="txccNo" class="txccbadge licimg" src="/Content/Images/txcc/TXCC_badge_NO.png" style="display:none">
@@ -738,6 +741,13 @@
                                         </div>
                                     </script>
                                 </div>
+                          </div>
+                          
+                          <div id="txcccc-controls" class="d-flex flex-column px-3">
+                              <button type="button" id="btncashcardNo" class="btn autowidth btn-xs btn-danger licimg mb-2"><span>TXCC </span><br><span>Not Issued</span></button>
+                              <button type="button" id="btncashcardYesExt" class="btn autowidth btn-xs btn-success licimg mb-2"><span>Create New</span><br><span>Cash Card</span></button>
+                              <button type="button" id="btncashcardYes" class="btn autowidth btn-xs btn-success licimg mb-2" fdprocessedid="ke2xq">TXCC #<span id="txccid">1016</span><br>Exp:<span id="txccexpdate">08/29/2027</span> </button>
+                              <button type="button" id="btncashcardLink" class="btn autowidth btn-xs btn-info licimg mb-2" fdprocessedid="41sga"><span id="extsp1">Use Existing</span><br><span id="extsp2">Cash Card</span></button>
                           </div>
                       </div>
                       <div class="row pb-3 border-bottom-secondary m-0">

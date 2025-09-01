@@ -600,6 +600,11 @@
 .skyblue-strip{
     background-color: $skyblue-6;
 }
+.primary-strip{
+    background-color: $primary;
+    color: $white;
+    font-size: $font-size-11;
+}
 .no-record{
     background-color: $grey-rgba5;
     border-radius: $radius-lg;
@@ -698,18 +703,18 @@
         right: 20px;
         width: 120px;
     }
-    .ticketitem-calc-screen{
+    #ticketitem-calc-screen{
         text-align: right;
         width: 100%;
         padding: 10px;
-        .ticketitem-value-info{
-            .ticketitem-value-type{
+        #ticketitem-value-info{
+            #ticketitem-value-type{
                 color: $white;
             }
-            .ticketitem-value-uom{
+            #ticketitem-value-uom{
                 color: $white;
             }
-            .ticketitem-value{
+            #ticketitem-value{
                 input{
                     background-color: transparent;
                     border: none;
@@ -720,7 +725,7 @@
                 }
             }
         }
-        .calc-footer{
+        #calc-footer{
             position: absolute;
             bottom: 0;
             right: 0;
@@ -728,10 +733,10 @@
             justify-content: space-between;
             width: 50%;
             padding: 10px;
-            .calc-date{
+            #calc-date{
             color: $white;
             }
-            .calc-time{
+            #calc-time{
                 color: $white;
             }
         }
@@ -743,11 +748,27 @@
     box-shadow: 0 5px 10px #d6d6d6;
     height: 100px;
     width: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     .content{
         align-items: center;
         display: flex;
         height: 100%;
         justify-content: center;
+    }
+    .contamination{
+        color: $black;
+        font-size: $font-size-lg;
+        background: none;
+        border: 0;
+        font-weight: $font-800;
+        text-transform: $text-uppercase;
+        letter-spacing: $letter-spacing10;
+    }
+    &#contamination-percentages{
+        flex-direction: column;
+        height: 150px;
     }
 }
 .img-overlay{

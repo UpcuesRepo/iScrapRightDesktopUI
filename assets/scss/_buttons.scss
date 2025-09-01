@@ -237,6 +237,9 @@
             font-size: $font-size-30;
             font-weight: $font-800;
             text-transform: uppercase;
+            &.font-16{
+                font-size: $font-size-16;
+            }
         }
         &.calc-btn{
             font-size: $font-size-md;
@@ -269,6 +272,33 @@
         font-size: $font-size-md;
         font-weight: $font-400;
         width: auto;
+        &.btn-danger{
+            border-radius: $radius-lg;
+            background-color: $red-2;
+            color: $white;
+            &:hover{
+                background-color: $grey-12;
+                color: $black;
+            }
+        }
+        &.btn-success{
+            border-radius: $radius-lg;
+            background-color: $green-2;
+            color: $white;
+            &:hover{
+                background-color: $grey-12;
+                color: $black;
+            }
+        }
+        &.btn-info{
+            border-radius: $radius-lg;
+            background-color: $secondary;
+            color: $white;
+            &:hover{
+                background-color: $grey-12;
+                color: $black;
+            }
+        }
     }
     &.btn-md{
         font-size: $font-size-md;
@@ -451,4 +481,8 @@
             }
         }
     }
+}
+#btnremovecontaminate, #btncancelcontamination{
+    text-wrap: wrap;
+    font-size: $font-size-md;
 }
