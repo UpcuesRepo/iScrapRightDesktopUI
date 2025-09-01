@@ -73,7 +73,9 @@ table.on('click', 'tbody td.dt-control', function (e) {
 //END CLICKABLE ROW DATA TABLE
 
 $(document).ready(function () {
-    $('#myTable').DataTable();
+    $('#myTable').DataTable({
+    
+    });
 });
 // $(document).ready(function() {
 //    $('#subscriTable').DataTable();  
