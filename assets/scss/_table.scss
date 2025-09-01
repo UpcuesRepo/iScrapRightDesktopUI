@@ -148,8 +148,6 @@
                 }
             }    
         }
-
-
         &.last-row-primary{
             tbody{
                 tr{
@@ -208,6 +206,15 @@
                     }
                 }
             }    
+        }
+        &.text-start{
+            tbody{
+                tr{
+                    td[colspan="5"]{
+                        text-align: left;
+                    }
+                }
+            }
         }
     }
 }

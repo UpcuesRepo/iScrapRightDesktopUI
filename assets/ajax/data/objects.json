@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Cody Brown",
+      "username": "cody.brown@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "2",
+      "name": "Michelle Domaruk",
+      "username": "michelle.domaruk@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "3",
+      "name": "Mike Revano",
+      "username": "michael.revano@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "4",
+      "name": "Nick Carter",
+      "username": "nick19@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "5",
+      "name": "RD3 Davis",
+      "username": "nick19@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "6",
+      "name": "Sally Sample",
+      "username": "michael.revano@scrapright.com",
+      "permission level": "Cashier"
+    },
+    {
+      "id": "7",
+      "name": "Sally Sample",
+      "username": "michelle.domaruk@scrapright.com",
+      "permission level": "Cashier"
+    },
+    {
+      "id": "8",
+      "name": "Sally Sample",
+      "username": "cody.brown@scrapright.com",
+      "permission level": "Cashier"
+    },
+    {
+      "id": "9",
+      "name": "Sally Sample",
+      "username": "cody.brown@scrapright.com",
+      "permission level": "Cashier"
+    },
+    {
+      "id": "10",
+      "name": "Sally Sample",
+      "username": "cody.brown@scrapright.com",
+      "permission level": "Cashier"
+    },
+    {
+      "id": "11",
+      "name": "Cody Brown",
+      "username": "cody.brown@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "12",
+      "name": "Michelle Domaruk",
+      "username": "michelle.domaruk@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "13",
+      "name": "Mike Revano",
+      "username": "michael.revano@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "14",
+      "name": "Nick Carter",
+      "username": "nick19@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "15",
+      "name": "RD3 Davis",
+      "username": "nick19@scrapright.com",
+      "permission level": "Admin"
+    },
+    {
+      "id": "16",
+      "name": "Sally Sample",
+      "username": "michael.revano@scrapright.com",
+      "permission level": "Cashier"
+    },
+    {
+      "id": "17",
+      "name": "Sally Sample",
+      "username": "michelle.domaruk@scrapright.com",
+      "permission level": "Cashier"
+    },
+    {
+      "id": "18",
+      "name": "Sally Sample",
+      "username": "cody.brown@scrapright.com",
+      "permission level": "Cashier"
+    },
+    {
+      "id": "19",
+      "name": "Sally Sample",
+      "username": "cody.brown@scrapright.com",
+      "permission level": "Cashier"
+    },
+    {
+      "id": "20",
+      "name": "Sally Sample",
+      "username": "cody.brown@scrapright.com",
+      "permission level": "Cashier"
+    }
+  ]
+}
