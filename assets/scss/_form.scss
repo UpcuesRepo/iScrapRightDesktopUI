@@ -1083,6 +1083,163 @@ textarea{
 }
 // END CHECKBOX
 
+// DEVELOPER CLASS CHECKBOX
+.manualpayment[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-lg;
+    border: 1px solid $skyblue-5;
+    background-color: $white;
+    margin-bottom: 0px;
+    appearance: none;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: top;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    &:checked {
+        background-color: $secondary;
+        border-color: $secondary;
+        // background-image: none;
+    }
+    &:focus {
+        box-shadow: $shadow-lg;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: $secondary;
+    }
+    &.add-after {
+        z-index: 1;
+        position: absolute;
+        left: 57%;
+        top: -6px;
+        margin: 0;
+        min-height: 30px;
+        & + svg {
+            display: none;
+            pointer-events: none;
+            -webkit-pointer-events: none;
+            -moz-pointer-events: none;
+        }
+        &:checked {
+            & + svg {
+                z-index: 2;
+                display: block;
+                position: absolute;
+                right: 127px;
+                top: 0;
+                color: $white;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+.fee-checkbox{
+    position: relative;
+    margin-bottom: 15px;
+    .includefirstmonthfee[type="checkbox"], .includeprinterandpaper[type="checkbox"], #chkAllowScales_1370[type="checkbox"], #chkAllowFPCapturing_1370[type="checkbox"], #chkAllowFlipId_1370[type="checkbox"]{
+        width: 30px;
+        height: 30px;
+        border-radius: $radius-lg;
+        box-shadow: $shadow-lg;
+        border: 1px solid $skyblue-5;
+        background-color: $white;
+        margin-bottom: 0px;
+        appearance: none;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: top;
+        margin-right: 0!important;
+        margin-left: 0!important;
+        &:checked {
+            background-color: $secondary;
+            border-color: $secondary;
+            // background-image: none;
+        }
+        &:focus {
+            box-shadow: $shadow-lg;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: $secondary;
+        }
+        &.add-after {
+            z-index: 1;
+            position: absolute;
+            left: -15px;
+            top: -6px;
+            margin: 0;
+            min-height: 30px;
+            & + svg {
+                display: none;
+                pointer-events: none;
+                -webkit-pointer-events: none;
+                -moz-pointer-events: none;
+            }
+            &:checked {
+                & + svg {
+                    z-index: 2;
+                    display: block;
+                    position: absolute;
+                    left: -10px;
+                    top: 0;
+                    color: $white;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .includefirstmonthfee[type="checkbox"]{
+        left: 10px;
+        &.add-after{
+            left: 10px;
+            &:checked {
+                & + svg {
+                    left: 15px;
+                }
+            }    
+        }
+    }
+    #chkAllowScales_1370[type="checkbox"]{
+        &.add-after{
+            left: 55px;
+            &:checked {
+                & + svg {
+                    left: 60px;
+                }
+            }    
+        }
+    }
+    #chkAllowFPCapturing_1370[type="checkbox"]{
+        &.add-after{
+            left: -40px;
+            &:checked {
+                & + svg {
+                    left: -35px;
+                }
+            }    
+        }
+    }
+    #chkAllowFlipId_1370[type="checkbox"]{
+        &.add-after{
+            left: 50px;
+            &:checked {
+                & + svg {
+                    left: 55px;
+                }
+            }    
+        }
+    }
+}
+// END DEVELOPER CLASS CHECKBOX
+
+
 // RADIO BUTTON
 .form-check-input[type="radio"] {
     width: 30px;

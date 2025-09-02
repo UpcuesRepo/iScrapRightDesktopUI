@@ -211,6 +211,19 @@
             color: $white;
             background-color: $secondary;
         }
+        &.changeplan,&.createcustomplan, &.savenote, &.changesetupfee, &.setpermissions{
+            background-color: $white;
+            border: 1px solid $secondary;
+            color: $secondary;
+            border-radius: $radius-xxl;
+            font-size: $font-size-md;
+            font-weight: $font-800;
+            line-height: $line-height-20;
+            &:hover{
+                background-color: $secondary;
+                color: $white;
+            }
+        }
     }
     &.btn-light{
         background-color: $grey-4;
@@ -297,6 +310,32 @@
             &:hover{
                 background-color: $grey-12;
                 color: $black;
+            }
+        }
+        &.comp{
+            background-color: $white;
+            border: 1px solid $secondary;
+            color: $secondary;
+            border-radius: $radius-xxl;
+            font-size: $font-size-md;
+            font-weight: $font-800;
+            line-height: $line-height-20;
+            &:hover{
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+        &.deactivate{
+            background-color: $white;
+            border: 1px solid $secondary;
+            color: $secondary;
+            border-radius: $radius-xxl;
+            font-size: $font-size-md;
+            font-weight: $font-800;
+            line-height: $line-height-20;
+            &:hover{
+                background-color: $secondary;
+                color: $white;
             }
         }
     }
