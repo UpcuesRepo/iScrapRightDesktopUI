@@ -806,17 +806,25 @@
         position: absolute;
         bottom: 0;
         background-color: $secondary;
-        height: 30%;
+        height: 37%;
         width: 100%;
         padding: 10px 0;
         #license-overlay{
             color: $white;
+        }
+        #license-uploader{
+            top: 0;
+            position: absolute;
+            width: 100%;
         }
     }
     .qq-upload-button-selector{
         a{
             color: $skyblue-6;
         }
+    }
+    .qq-upload-drop-area-selector{
+        border: 0;
     }
 }
 

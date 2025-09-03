@@ -6,6 +6,9 @@
     }
     &.offcanvas-addMaterial{
         height: 460px;
+        @include media-breakpoint-down(xl){
+            height: 88%;
+        }
         .offcanvas-header{
             padding: 0;
         }
@@ -50,6 +53,9 @@
                             padding: 10px 20px;
                             .category-box{
                                 width: 13%;
+                                @include media-breakpoint-down(xl){
+                                    width: 22%;
+                                }
                             }
                         }
                     }
