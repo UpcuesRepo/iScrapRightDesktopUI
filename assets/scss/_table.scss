@@ -96,6 +96,9 @@
                             color: $secondary;
                         }
                     }
+                    &.dataTables_empty, &.dt-empty{
+                        text-align: center;
+                    }
                 }
                 &:not(:last-child){
                     td{
