@@ -312,6 +312,7 @@ body {
 
 
 #rightscroll{ 
+    overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
 }

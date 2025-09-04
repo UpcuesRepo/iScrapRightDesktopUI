@@ -828,7 +828,17 @@
         border: 0;
     }
 }
-
+#txcccc-controls{
+    @include media-breakpoint-down(xl){
+        flex-direction: row!important; 
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .btn{
+        margin-right: 10px;
+    }
+}
 
 
 @media (max-width: 1024px){

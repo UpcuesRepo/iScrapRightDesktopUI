@@ -255,6 +255,9 @@
                                     display: flex;
                                     justify-content: space-between;
                                     padding: 15px;
+                                    @include media-breakpoint-down(xl){
+                                        width: 40%;
+                                    }
                                     &:not(:last-child){
                                         border-bottom: 1px solid rgba(14,52,86,.1);
                                     }
@@ -268,9 +271,9 @@
                                         color: $primary;   
                                         text-align: end;
                                         position: relative;
-                                        label[for="chkmanualpay_1370"]{
-                                            padding-left: 50px;
-                                        }
+                                        // label[for="chkmanualpay_1370"]{
+                                        //     padding-left: 50px;
+                                        // }
                                         select{
                                             &.currentplan{
                                                 margin-top: 20px;

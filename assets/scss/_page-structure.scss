@@ -25,6 +25,12 @@ body{
                     // height: 100%!important;  
                 }
             }
+            .lg-flex-column{
+                @include media-breakpoint-down(xl){
+                    flex-direction: column;  
+                    // height: 100%!important;  
+                }
+            }
             .lg-w-100{
                 @include media-breakpoint-down(xl){
                     width: 100%;   
