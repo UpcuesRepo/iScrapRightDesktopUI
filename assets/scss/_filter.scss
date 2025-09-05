@@ -139,6 +139,11 @@
             }
         }
     }
+    &#offcanvasAddMaterial{
+        .offcanvas-body{
+            overflow: hidden;
+        }
+    }
 }
 .offcanvas-backdrop{
     background-color: $primary;

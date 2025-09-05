@@ -311,9 +311,33 @@ nav{
                 }
             }
         }
+        #ticket-outbound{
+            margin-left: 10px;
+            .switch-label{
+                display: none;
+            }
+        }
     }
 }
-
+.outbound{
+    nav{
+        &.navbar{
+            &.ticket-landing-navbar{
+                background-image: none;
+                background-color: $black;
+            }    
+        }
+    }
+    .layout-1{
+        &.style-1{
+            .content-part{
+                .left-part{
+                    background-color: $grey-3;
+                }
+            }
+        }
+    }  
+}
 @media (max-width: 1024px){
     nav{
         &.navbar{
