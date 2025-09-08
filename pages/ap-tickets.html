@@ -227,24 +227,28 @@
               </button>
             </div>
             <!-- DARK CARD -->
-            <div class="dark-card search-card d-flex justify-content-between sm-flex-column xl-flex-column mb-3">
-              <div class="form-floating bg-rgba-white search-icon h-44 mb-md-2 xl-w-100">
-                <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput" class="label-13">Search</label>
+            <div class="dark-card search-card d-flex justify-content-between sm-flex-column mb-3">
+              <div class="w-40p">
+                  <div class="form-floating bg-rgba-white search-icon mb-md-2 h-44 xl-w-100">
+                    <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="label-13">Search</label>
+                  </div>
               </div>
-              <div class="form-group d-flex align-items-center mb-md-2 xl-w-100">
-                <label class="form-label mb-0 label-md color-white me-3">From</label>
-                <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+              <div class="w-60p d-flex">
+                    <div class="form-group d-flex align-items-center mb-md-2 xl-w-100">
+                      <label class="form-label mb-0 label-md color-white mx-2">From</label>
+                      <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+                    </div>
+                    <div class="form-group d-flex align-items-center mb-md-2 xl-w-100">
+                      <label class="form-label mb-0 label-md color-white mx-2">To</label>
+                      <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+                    </div>
+                    <button class="btn btn-skyblue2 btn-lg btn-h-w-44">
+                      <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
               </div>
-              <div class="form-group d-flex align-items-center mb-md-2 xl-w-100">
-                <label class="form-label mb-0 label-md color-white me-3">To</label>
-                <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
-              </div>
-              <button class="btn btn-skyblue2 btn-lg btn-h-w-44">
-                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </button>
             </div>
             <!-- END DARK CARD -->
             <div class="d-flex align-items-center justify-content-between">
@@ -363,24 +367,36 @@
           <div class="col-md-6 lg-w-100">
               <div class="main-title mb-3">AP Settlements</div>
             <!-- DARK CARD -->
-            <div class="dark-card search-card d-flex justify-content-between sm-flex-column xl-flex-column mb-3">
-              <div class="form-floating bg-rgba-white search-icon mb-md-2 h-44 xl-w-100">
-                <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput" class="label-13">Search</label>
+            <div class="dark-card search-card d-flex justify-content-between sm-flex-column mb-3">
+              <div class="w-40p">
+                  <div class="form-floating bg-rgba-white search-icon mb-md-2 h-44 xl-w-100">
+                    <input type="email" class="form-control search-icon" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="label-13">Search</label>
+                  </div>
               </div>
-              <div class="form-group d-flex align-items-center mb-md-2 xl-w-100">
-                <label class="form-label mb-0 label-md color-white me-3">From</label>
-                <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+              <div class="w-60p">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="form-group d-flex align-items-center mb-md-2 xl-w-100">
+                      <label class="form-label mb-0 label-md color-white mx-2">From</label>
+                      <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="form-group d-flex align-items-center mb-md-2 xl-w-100">
+                      <label class="form-label mb-0 label-md color-white mx-2">To</label>
+                      <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <button class="btn btn-skyblue2 btn-lg btn-h-w-44">
+                      <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="form-group d-flex align-items-center mb-md-2 xl-w-100">
-                <label class="form-label mb-0 label-md color-white me-3">To</label>
-                <input type="date" class="form-control form-calender-white2 style-4 font-md h-44" placeholder="ID Expiration">
-              </div>
-              <button class="btn btn-skyblue2 btn-lg btn-h-w-44">
-                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M26.25 26.5845L20.8125 21.2307M13.75 8.12297C17.2018 8.12297 20 10.8781 20 14.2768M23.75 14.2768C23.75 19.7147 19.2728 24.123 13.75 24.123C8.22715 24.123 3.75 19.7147 3.75 14.2768C3.75 8.83894 8.22715 4.43066 13.75 4.43066C19.2728 4.43066 23.75 8.83894 23.75 14.2768Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </button>
             </div>
             <!-- END DARK CARD -->
             <div class="d-flex align-items-center mb-4">

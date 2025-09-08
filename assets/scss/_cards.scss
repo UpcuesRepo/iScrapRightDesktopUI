@@ -130,6 +130,18 @@
                 }    
             }
         }
+        .w-40p{
+            width: 40%;
+            @include media-breakpoint-only(ipad){
+                width: 100%;
+            }
+        }
+        .w-60p{
+            width: 60%;
+            @include media-breakpoint-only(ipad){
+                width: 100%;
+            }
+        }
     }
     &.choose-filter{
         box-shadow: 10px 0px 10px 0px #03030326 inset;
@@ -722,7 +734,7 @@
                     border: none;
                     border-bottom: 1px solid $white;
                     &:focus{
-                        outline: none;
+                        outline: 0;
                     }
                 }
             }
@@ -847,4 +859,20 @@
             font-size: $font-size-11;
         }
     }
+}
+
+@media (max-width:1367px) and (min-width:1366px){
+    .dark-card{
+        &.search-card{
+            &.sm-flex-column{
+                flex-direction: column;
+            }
+            .w-40p{
+                width: 100%;
+            }
+            .w-60p{
+                width: 100%;
+            }
+        }
+    }    
 }
