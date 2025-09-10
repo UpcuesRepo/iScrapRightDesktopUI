@@ -99,11 +99,9 @@
                     &.dataTables_empty, &.dt-empty{
                         text-align: center;
                     }
-                    &#ticketitem-section{
-                        .ticketitem{
-                            border-bottom: 1px solid $dark-bluergba1;
-                            padding: 10px;
-                        }
+                    .ticketitem{
+                        border-bottom: 1px solid $dark-bluergba1;
+                        padding: 10px;
                     }
                 }
                 &:not(:last-child){
