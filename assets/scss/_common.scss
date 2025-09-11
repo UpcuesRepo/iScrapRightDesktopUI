@@ -26,6 +26,7 @@ a{
 div{
     &.dt-container{
         .dt-paging{
+            padding: 10px 0 40px 0;
             .dt-paging-button{
                 padding: 6px 13px;
                 font-size: .875rem;
@@ -81,7 +82,7 @@ div{
         }
         div{
             &.dt-layout-row{
-                padding: 20px 0;
+                padding: 0;
             }
         }
         .dt-info{
