@@ -1815,3 +1815,14 @@ textarea{
         }
     }
  }
+
+
+ .ticketitementry.clickable.active{
+    background: $skyblue-4;
+}
+
+
+.calc-display  #ticketitem-value-type, 
+.calc-display #ticketitem-value-uom {
+    color: #fff;
+}

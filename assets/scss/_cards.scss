@@ -683,7 +683,7 @@
                 .test-details{
                     border-top: $border-grey;
                     border-bottom: $border-grey;
-                    padding: 10px 20px;
+                    //padding: 10px 20px;
                 }
                 .calc-section{
                     table{
@@ -708,14 +708,22 @@
     height: 140px;
     position: relative;
     padding: 10px;
-    &:before {
+    #ticketitem-value{
+        position: relative;
+
+        input{
+            font-size: 40px;
+        }
+    }
+
+    #ticketitem-value:before {
         background: #fff;
-        bottom: 40px;
+        bottom: 0px;
         content: "";
         height: 1px;
         position: absolute;
-        right: 20px;
-        width: 120px;
+        right: 0px;
+        width: 100%;
     }
     #ticketitem-calc-screen{
         text-align: right;
@@ -875,4 +883,11 @@
             }
         }
     }    
+}
+
+
+.card-material-group{
+    .active{
+        background: $skyblue-4;
+    }
 }

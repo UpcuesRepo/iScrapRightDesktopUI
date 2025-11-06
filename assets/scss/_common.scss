@@ -325,3 +325,9 @@ body {
     bottom: 0px;
     z-index: 9;
 }
+
+
+
+.form-check.style-2 .form-check-input[type=checkbox].add-after:checked+svg path { stroke: #000;
+}
+
