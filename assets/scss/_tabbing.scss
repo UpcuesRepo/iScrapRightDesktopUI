@@ -257,10 +257,16 @@
             }
         }
         .btn{
-            &.btn-bottom{
+            /*&.btn-bottom{
                 position: absolute;
                 bottom: -4%;
                 left: 150px;
+            }*/
+            &.btn-bottom{
+                position: absolute;
+                bottom: -4%;
+                left: 0px;
+                width: 100%;
             }
         }
     }
