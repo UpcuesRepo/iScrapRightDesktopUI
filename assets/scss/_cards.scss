@@ -891,3 +891,18 @@
         background: $skyblue-4;
     }
 }
+
+
+#materialsetup-container{
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    a{
+        border-radius: 15px;
+        padding: 10px 15px;
+        margin-top: 20px;
+    }
+}
